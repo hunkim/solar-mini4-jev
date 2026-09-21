@@ -47,14 +47,18 @@ CALIBRATION:
 """
 
 
-def _key() -> str:
-    key = (os.environ.get("UPSTAGE_API_KEY") or "").strip()
+def _key(api_key: str | None = None) -> str:
+    """Resolve Upstage API key. Prefer explicit BYOK arg over process env."""
+    key = (api_key or os.environ.get("UPSTAGE_API_KEY") or "").strip()
     if not key:
-        raise RuntimeError("UPSTAGE_API_KEY is not set")
+        raise RuntimeError(
+            "Upstage API key required (pass api_key=... / X-Upstage-Api-Key, "
+            "or set UPSTAGE_API_KEY for local use)"
+        )
     return key
 
 
-def _chat(messages: list[dict[str, str]], schema: dict[str, Any], *, model: str, temperature: float = 0.0) -> dict[str, Any]:
+def _chat(messages: list[dict[str, str]], schema: dict[str, Any], *, model: str, temperature: float = 0.0, api_key: str | None = None) -> dict[str, Any]:
     body = {
         "model": model,
         "temperature": temperature,
@@ -74,7 +78,7 @@ def _chat(messages: list[dict[str, str]], schema: dict[str, Any], *, model: str,
         UPSTAGE_URL,
         data=json.dumps(body).encode(),
         headers={
-            "Authorization": f"Bearer {_key()}",
+            "Authorization": f"Bearer {_key(api_key)}",
             "Content-Type": "application/json",
         },
         method="POST",
@@ -90,7 +94,7 @@ def _chat(messages: list[dict[str, str]], schema: dict[str, Any], *, model: str,
                 UPSTAGE_URL,
                 data=json.dumps(body).encode(),
                 headers={
-                    "Authorization": f"Bearer {_key()}",
+                    "Authorization": f"Bearer {_key(api_key)}",
                     "Content-Type": "application/json",
                 },
                 method="POST",
@@ -969,6 +973,7 @@ def system_one(
     questions: dict[str, Any],
     *,
     model: str = DEFAULT_MODEL,
+    api_key: str | None = None,
 ) -> dict[str, Any]:
     if not questions:
         raise ValueError("questions required")
@@ -978,7 +983,7 @@ def system_one(
         {"role": "user", "content": _prompt(state, questions)},
     ]
     t0 = time.perf_counter()
-    result = _chat(messages, schema, model=model)
+    result = _chat(messages, schema, model=model, api_key=api_key)
     latency_s = time.perf_counter() - t0
     answers = _normalize_answers(questions, result["parsed"])
     state_s = state if isinstance(state, str) else json.dumps(state, ensure_ascii=False)

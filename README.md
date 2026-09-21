@@ -43,6 +43,45 @@ Field accuracy by language:
 
 **Takeaway:** Solar Mini4 wins on judged quality (`none`). Jev wins on speed (~3.2×). p50 latency 1.17s; ~22% of Solar calls are sub-1s.
 
+
+## Deploy (Vercel) · BYOK System One
+
+The live API is **Bring Your Own Key**. The server never stores your Upstage key.
+
+```bash
+# local
+uvicorn server:app --host 0.0.0.0 --port 8092
+
+# call (System One shape)
+curl -s https://YOUR_DEPLOYMENT.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Payment success rate dropped to 12%.",
+    "questions": {
+      "urgent": {"type": "noul", "instructions": "Should on-call be paged immediately?"}
+    }
+  }'
+```
+
+Auth headers (any one):
+- `X-Upstage-Api-Key: <upstage_key>`
+- `Authorization: Bearer <upstage_key>`
+
+Deploy:
+
+```bash
+npx vercel@latest --prod
+```
+
+Routes:
+- `GET /` — scorecard (static)
+- `GET /health` — liveness
+- `POST /v1/systemone` — System One API (BYOK)
+
+No `UPSTAGE_API_KEY` is required in Vercel project env for production BYOK. Optional env only for local/dev convenience.
+
 ## Quick start
 
 ```bash
