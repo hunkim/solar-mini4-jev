@@ -59,6 +59,8 @@ def _chat(messages: list[dict[str, str]], schema: dict[str, Any], *, model: str,
         "model": model,
         "temperature": temperature,
         "messages": messages,
+        # Default solar-mini4 reasoning is medium; pin none for latency.
+        "reasoning_effort": (os.environ.get("SOLAR_REASONING_EFFORT") or "none").strip(),
         "response_format": {
             "type": "json_schema",
             "json_schema": {
