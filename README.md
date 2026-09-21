@@ -9,6 +9,11 @@ POST /v1/systemone
 
 지원 질문 타입: `noul` | `choice` | `score` (Jev와 동일 스키마).
 
+## Results at a glance
+
+![Hanna golden · Solar Mini4 vs Jev](bench/infographic_summary.png)
+
+
 ## Quick start
 
 ```bash
