@@ -1,29 +1,29 @@
 # solar-mini4-jev
 
-Upstage **Solar Mini4**를 TypeSafe Jev System One API 형태로 감싼 드롭인 wrapper.
+A drop-in wrapper that exposes Upstage **Solar Mini4** through the TypeSafe Jev System One API shape.
 
 ```
 POST /v1/systemone
 { "model": "solar-mini4-jev", "state": "...", "questions": { ... } }
 ```
 
-지원 질문 타입: `noul` | `choice` | `score` (Jev와 동일 스키마).
+Supported question types: `noul` | `choice` | `score` (same schema as Jev).
 
 ## Official gold: Grok 4.6 Judge
 
-**Jev는 gold가 아닙니다.** Jev도 비교 대상 모델입니다.  
-공식 채점 기준은 **Grok 4.6 Judge** 루브릭 라벨입니다 (`bench/gold_grok46_judge_test400.json`).
+**Jev is not the gold standard.** Jev is a peer model under comparison.
+The official scoring reference is the **Grok 4.6 Judge** rubric labels (`bench/gold_grok46_judge_test400.json`).
 
 ## Results at a glance
 
-**독립 판정자(Grok 4.6 Judge) 기준, Solar Mini4가 Jev보다 더 자주 맞았다.**
-448개 답변 필드 중 Solar Mini4는 6개, Jev는 26개를 틀렸다. 판정이 갈린 30필드에서는 Solar 25 : Jev 5.
+**Judged by an independent grader (Grok 4.6 Judge), Solar Mini4 is right more often than Jev.**
+Out of 448 answer fields, Solar Mini4 missed 6 and Jev missed 26. On the 30 fields where the two disagree, Solar is right on 25 and Jev on 5.
 
-![Solar Mini4 vs Jev · Grok 4.6 Judge 스코어카드](bench/infographic_grok46_judge.png)
+![Solar Mini4 vs Jev · Grok 4.6 Judge scorecard](bench/infographic_grok46_judge.png)
 
-Jev의 오답은 두 패턴(생명·안전 상황 저평가, 사소한 일 과잉 긴급도)에 몰려 있고, Solar의 오답은 대부분 "너무 신중한" 방향이다.
+Jev's misses cluster into two patterns (underrating life-safety situations, treating trivial work as urgent). Solar's misses mostly err on the side of caution.
 
-![지표별 정확도와 갈리는 케이스](bench/infographic_grok46_judge_detail.png)
+![Accuracy by metric and diverging cases](bench/infographic_grok46_judge_detail.png)
 
 Interactive scorecard: [view on GitHub Pages](https://hunkim.github.io/solar-mini4-jev/) · [source](docs/index.html)
 
@@ -32,16 +32,16 @@ Interactive scorecard: [view on GitHub Pages](https://hunkim.github.io/solar-min
 | model | field_acc | noul≤0.25 | sign@0.5 | choice | score≤1 | miss | avg latency |
 |-------|----------:|----------:|---------:|-------:|--------:|-----:|------------:|
 | **Solar Mini4** | **98.7%** | **97.6%** | **98.8%** | **100%** | **100%** | **6** | 1.41s |
-| Jev | 94.2% | 95.2% | 92.3% | 100% | 85.0% | 26 | **0.38s** |
+| Jev 1.13.0 | 94.2% | 95.2% | 92.3% | 100% | 85.0% | 26 | **0.38s** |
 
-Language field_acc:
+Field accuracy by language:
 
-| | KO (n=70) | EN (n=330) |
+| | KO (n=70 cases) | EN (n=330 cases) |
 |--|----------:|-----------:|
 | **Solar Mini4** | **98.8%** | **98.6%** |
 | Jev | 93.9% | 94.3% |
 
-**Takeaway:** Judge 품질은 Solar Mini4, 속도는 Jev (~3.7×).
+**Takeaway:** Solar Mini4 wins on judged quality. Jev wins on speed (~3.7×).
 
 ## Quick start
 
@@ -55,30 +55,30 @@ uvicorn server:app --host 0.0.0.0 --port 8080
 from engine import system_one
 
 out = system_one(
-    state="결제 성공률이 12%로 떨어졌다.",
-    questions={"urgent": {"type": "noul", "instructions": "온콜을 즉시 호출해야 하는가?"}},
+    state="Payment success rate dropped to 12%.",
+    questions={"urgent": {"type": "noul", "instructions": "Should on-call be paged immediately?"}},
 )
 print(out["answers"])
 ```
 
-환경변수:
-- `UPSTAGE_API_KEY` — Solar Mini4 (필수). `solar-mini4`는 현재 `solar-mini4-260922`로 resolve.
-- `TYPESAFE_API_KEY` — 벤치마크용 실제 Jev 호출 시에만 (`jev_ref.py`)
-- `SOLAR_MINI_MODEL` — 선택적 모델 오버라이드
+Environment variables:
+- `UPSTAGE_API_KEY` — Solar Mini4 (required). `solar-mini4` currently resolves to `solar-mini4-260922`.
+- `TYPESAFE_API_KEY` — only for calling the real Jev during benchmarks (`jev_ref.py`, uses `jev-latest`, which resolved to `jev-1.13.0` for this run)
+- `SOLAR_MINI_MODEL` — optional model override
 
 ## Layout
 
-| path | 설명 |
+| path | description |
 |------|------|
-| `engine.py` | Solar Mini4 + Jev-호환 휴리스틱 |
+| `engine.py` | Solar Mini4 + Jev-compatible heuristics |
 | `server.py` | FastAPI `POST /v1/systemone` |
-| `jev_ref.py` | 실제 Jev 클라이언트 (비교용) |
-| `bench/gold_grok46_judge_test400.json` | **공식 gold** (Grok 4.6 Judge) |
-| `bench/gold_jev_test400.json` | Jev 응답 스냅샷 (비교 모델) |
-| `bench/results_test400_rerun_260922.jsonl` | Solar Mini4 재채점 결과 |
-| `docs/index.html` | 인터랙티브 스코어카드 (GitHub Pages) |
-| `bench/infographic_grok46_judge*.png` | README용 스코어카드 PNG |
+| `jev_ref.py` | Real Jev client (for comparison) |
+| `bench/gold_grok46_judge_test400.json` | **Official gold** (Grok 4.6 Judge) |
+| `bench/gold_jev_test400.json` | Jev response snapshot (peer model) |
+| `bench/results_test400_rerun_260922.jsonl` | Solar Mini4 re-scored results |
+| `docs/index.html` | Interactive scorecard (GitHub Pages) |
+| `bench/infographic_grok46_judge*.png` | Scorecard PNG crops used in this README |
 
 ## License
 
-실험/연구 코드. API 키는 커밋하지 마세요.
+Experimental / research code. Do not commit API keys.

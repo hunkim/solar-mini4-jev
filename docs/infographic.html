@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
@@ -140,6 +140,7 @@
   .case:last-child{padding-bottom:0}
   .case .st{font-size:14px;color:var(--ink);line-height:1.5}
   .case .q{font-size:13px;color:var(--muted);margin-top:2px}
+  .gloss{color:var(--muted);font-size:13px}
   .case .vals{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
   .chip{font-family:var(--mono);font-size:12px;padding:3px 9px;border-radius:6px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
   .chip.g{border-color:var(--line-2);font-weight:600;color:var(--ink)}
@@ -193,21 +194,21 @@
     <span>test400 · 448 fields</span>
     <span>gold <b>Grok 4.6 Judge</b></span>
     <span>solar-mini4 <b>→ solar-mini4-260922</b></span>
-    <span>2026-09-21 re-run</span>
+    <span>re-run 2026-09-21</span>
   </div>
 
-  <h1>독립 판정자 기준, <span class="s">Solar Mini4</span>가 Jev보다 더 자주 맞았다.</h1>
+  <h1>Judged by an independent grader, <span class="s">Solar Mini4</span> is right more often than Jev.</h1>
   <p class="lede">
-    400개 케이스·448개 답변 필드를 <b>Grok 4.6 Judge</b> 루브릭 라벨로 채점했다.
-    Jev는 정답이 아니라 <b>같은 시험을 본 비교 모델</b>이다.
-    Solar Mini4는 <b>6개</b>를 틀렸고 Jev는 <b>26개</b>를 틀렸다.
+    400 cases and 448 answer fields, scored against <b>Grok 4.6 Judge</b> rubric labels.
+    Jev is not the gold standard here. It is <b>a peer model taking the same test</b>.
+    Solar Mini4 missed <b>6</b> fields. Jev missed <b>26</b>.
   </p>
 
   <div class="hero">
     <div class="solar">
       <div class="who"><i></i>Solar Mini4</div>
       <div class="big">98.7<span style="font-size:.5em">%</span></div>
-      <div class="cap">field accuracy · 442 / 448 정답</div>
+      <div class="cap">field accuracy · 442 / 448 correct</div>
       <div class="sub">
         <div>miss<b>6</b></div>
         <div>noul MAE<b>0.076</b></div>
@@ -217,7 +218,7 @@
     <div class="jev">
       <div class="who"><i></i>Jev 1.13.0</div>
       <div class="big">94.2<span style="font-size:.5em">%</span></div>
-      <div class="cap">field accuracy · 422 / 448 정답</div>
+      <div class="cap">field accuracy · 422 / 448 correct</div>
       <div class="sub">
         <div>miss<b>26</b></div>
         <div>noul MAE<b>0.085</b></div>
@@ -226,29 +227,29 @@
     </div>
     <div class="verdict">
       <span class="lead">Solar +4.5pp</span>
-      <span>오답 <b>4.3배 적음</b> (6 vs 26)</span>
-      <span>서로 다르게 답한 30필드 중 <b>Solar가 25번 정답</b></span>
-      <span>한국어·영어 모두 <b>98%+</b></span>
+      <span><b>4.3× fewer misses</b> (6 vs 26)</span>
+      <span>Of 30 fields where they disagree, <b>Solar is right on 25</b></span>
+      <span><b>98%+</b> in both Korean and English</span>
     </div>
   </div>
 
   <!-- HEAD TO HEAD -->
   <section>
     <div class="sec-head">
-      <h2>448개 필드, 누가 맞았나</h2>
-      <p>각 칸이 답변 필드 하나. 두 모델이 같은 판정을 받은 칸은 회색, 한쪽만 맞은 칸에 그 모델의 색.</p>
+      <h2>448 fields: who got it right</h2>
+      <p>One cell per answer field. Grey when both models got the same verdict; a model's color when only that model was right.</p>
     </div>
     <div class="h2h">
       <div>
         <div class="waffle" id="waffle" aria-label="448 fields head-to-head"></div>
-        <div class="waffle-cap">순서: 둘 다 정답 → Solar만 정답 → Jev만 정답 → 둘 다 오답 · 칸에 마우스를 올리면 케이스가 보입니다.</div>
+        <div class="waffle-cap">Order: both right → Solar only → Jev only → both wrong. Hover a cell to see the case.</div>
       </div>
       <div class="tally">
-        <div class="row both"><i></i><span>둘 다 정답</span><span class="n">417</span></div>
-        <div class="row s"><i></i><span>Solar만 정답</span><span class="n">25</span></div>
-        <div class="row j"><i></i><span>Jev만 정답</span><span class="n">5</span></div>
-        <div class="row x"><i></i><span>둘 다 오답</span><span class="n">1</span></div>
-        <p class="note">판정이 갈린 30필드에서 <b>Solar 25 : Jev 5</b>. 이 차이가 곧 4.5pp다.</p>
+        <div class="row both"><i></i><span>Both right</span><span class="n">417</span></div>
+        <div class="row s"><i></i><span>Solar only</span><span class="n">25</span></div>
+        <div class="row j"><i></i><span>Jev only</span><span class="n">5</span></div>
+        <div class="row x"><i></i><span>Both wrong</span><span class="n">1</span></div>
+        <p class="note">On the 30 fields where they disagree: <b>Solar 25 : Jev 5</b>. That gap is the 4.5pp.</p>
       </div>
     </div>
   </section>
@@ -256,7 +257,7 @@
   <!-- METRICS -->
   <section>
     <div class="sec-head">
-      <h2>지표별 정확도</h2>
+      <h2>Accuracy by metric</h2>
       <div class="legend"><span class="s"><i></i>Solar Mini4</span><span class="j"><i></i>Jev</span></div>
     </div>
     <div class="bars" id="bars"></div>
@@ -266,13 +267,13 @@
   <!-- WHERE THEY DIFFER -->
   <section>
     <div class="sec-head">
-      <h2>어디서 갈리나</h2>
-      <p>Jev의 26개 오답은 두 패턴에 몰려 있다. Solar의 6개 오답은 대부분 "너무 신중한" 방향이다.</p>
+      <h2>Where they diverge</h2>
+      <p>Jev's 26 misses cluster into two patterns. Solar's 6 misses mostly err on the side of caution.</p>
     </div>
     <div class="grid2">
       <div class="panel">
-        <h3>Jev 패턴 1 · 생명·안전 상황을 낮게 본다</h3>
-        <p class="why">noul 부호 뒤집힘 19건. 판정자가 0.85 이상으로 본 케이스를 0.5 아래로 답함.</p>
+        <h3>Jev pattern 1 · Underrates life-safety situations</h3>
+        <p class="why">19 noul sign flips. Cases the judge rated ≥ 0.85 answered below 0.5.</p>
         <div class="case">
           <div class="st">FNOL: warehouse fire with active flames and injured workers on scene.</div>
           <div class="q">Should catastrophic claims surge protocol be triggered?</div>
@@ -284,21 +285,21 @@
           <div class="vals"><span class="chip g">judge 0.88</span><span class="chip s">Solar 0.93<span class="ok">✓</span></span><span class="chip j">Jev 0.36<span class="no">✗</span></span></div>
         </div>
         <div class="case">
-          <div class="st">백본 라우터 BGP가 다중 피어에서 다운됐다.</div>
-          <div class="q">NOC가 Sev-1을 선언해야 하는가?</div>
+          <div class="st">백본 라우터 BGP가 다중 피어에서 다운됐다. <span class="gloss">(Backbone router BGP down on multiple peers.)</span></div>
+          <div class="q">NOC가 Sev-1을 선언해야 하는가? (Should the NOC declare Sev-1?)</div>
           <div class="vals"><span class="chip g">judge 0.88</span><span class="chip s">Solar 0.95<span class="ok">✓</span></span><span class="chip j">Jev 0.62<span class="no">✗</span></span></div>
         </div>
       </div>
       <div class="panel">
-        <h3>Jev 패턴 2 · 사소한 일을 급하게 본다</h3>
-        <p class="why">score 오답 6건. 오탈자·이모지 같은 cosmetic 작업(판정 0.8)에 urgency 2점대.</p>
+        <h3>Jev pattern 2 · Treats trivial work as urgent</h3>
+        <p class="why">6 score misses. Cosmetic tasks like typos and emoji (judge 0.8) get urgency scores above 2.</p>
         <div class="case">
           <div class="st">Update FAQ emoji on recycling page.</div>
           <div class="q">How urgently must this be handled? (0–4)</div>
           <div class="vals"><span class="chip g">judge 0.8</span><span class="chip s">Solar 1.7<span class="ok">✓</span></span><span class="chip j">Jev 2.38<span class="no">✗</span></span></div>
         </div>
         <div class="case">
-          <div class="st">블로그 오탈자 하나 수정 (시정마을 소식).</div>
+          <div class="st">블로그 오탈자 하나 수정 (시정마을 소식). <span class="gloss">(Fix one typo on a town-news blog post.)</span></div>
           <div class="q">How urgently must this be handled? (0–4)</div>
           <div class="vals"><span class="chip g">judge 0.8</span><span class="chip s">Solar 1.7<span class="ok">✓</span></span><span class="chip j">Jev 2.43<span class="no">✗</span></span></div>
         </div>
@@ -309,8 +310,8 @@
         </div>
       </div>
       <div class="panel" style="grid-column:1/-1">
-        <h3>Solar의 오답 6개는 이렇다</h3>
-        <p class="why">noul 5건은 전부 판정자보다 <em>높게</em> 답한 과잉 신중. 부호가 뒤집힌 건 3건뿐이고, RAG 가드 케이스 1건(2필드)이 나머지다.</p>
+        <h3>Solar's 6 misses, in full</h3>
+        <p class="why">All 5 noul misses answered <em>higher</em> than the judge, i.e. over-cautious. Only 3 flipped sign. The rest is one RAG-guard case (2 fields).</p>
         <div class="grid2" style="gap:0 28px">
           <div class="case">
             <div class="st">Payment webhook for battle-pass purchases failing for all regions 25 minutes.</div>
@@ -323,12 +324,12 @@
             <div class="vals"><span class="chip g">judge 0.10</span><span class="chip s">Solar 0.42<span class="no">✗</span></span><span class="chip j">Jev ✓</span></div>
           </div>
           <div class="case">
-            <div class="st">게임 랭크 매치에서 메모리 핵이 대량 탐지됐다.</div>
-            <div class="q">랭크 큐를 잠그고 제재해야 하는가?</div>
+            <div class="st">게임 랭크 매치에서 메모리 핵이 대량 탐지됐다. <span class="gloss">(Mass memory-hack detection in ranked matches.)</span></div>
+            <div class="q">랭크 큐를 잠그고 제재해야 하는가? (Lock the ranked queue and sanction?)</div>
             <div class="vals"><span class="chip g">judge 0.48</span><span class="chip s">Solar 0.75<span class="no">✗</span></span><span class="chip j">Jev 0.67<span class="no">✗</span></span></div>
           </div>
           <div class="case">
-            <div class="st">RAG guard: "Who chairs the floodplain review board?" — 답변이 문맥에 없는 이름을 지어냄.</div>
+            <div class="st">RAG guard: "Who chairs the floodplain review board?" The answer invented a name not in the context.</div>
             <div class="q">grounded / hallucinated</div>
             <div class="vals"><span class="chip g">judge 0.05 / 0.95</span><span class="chip s">Solar 0.90 / 0.05<span class="no">✗</span></span><span class="chip j">Jev ✓</span></div>
           </div>
@@ -340,13 +341,13 @@
   <!-- LANGUAGE + LATENCY -->
   <section class="grid2">
     <div class="panel">
-      <h3>언어별 정확도</h3>
-      <p class="why">한국어 케이스 70건(82필드), 영어 330건(366필드). 두 언어의 격차가 거의 없다.</p>
+      <h3>Accuracy by language</h3>
+      <p class="why">70 Korean cases (82 fields), 330 English cases (366 fields). Almost no gap between languages.</p>
       <div class="bars" id="langbars"></div>
     </div>
     <div class="panel">
-      <h3>응답 속도 · 이건 Jev가 빠르다</h3>
-      <p class="why">케이스당 평균 지연. Solar는 LLM 호출이라 3.7배 느리다. p95도 1.8초 안이다.</p>
+      <h3>Latency · this one goes to Jev</h3>
+      <p class="why">Mean latency per case. Solar is an LLM call, so it is 3.7× slower. Its p95 still stays under 1.8s.</p>
       <div class="bars" id="latbars"></div>
     </div>
   </section>
@@ -354,12 +355,12 @@
   <!-- SCOREBOARD -->
   <section>
     <div class="sec-head">
-      <h2>전체 스코어보드</h2>
-      <p>임계값: noul |Δ|≤0.25 및 0.5 부호 일치 · choice 정확 일치 · score |Δ|≤1</p>
+      <h2>Full scoreboard</h2>
+      <p>Thresholds: noul |Δ| ≤ 0.25 and same side of 0.5 · choice exact match · score |Δ| ≤ 1</p>
     </div>
     <div class="tbl-wrap">
       <table>
-        <thead><tr><th>지표</th><th>n</th><th>Solar Mini4</th><th>Jev</th><th>결과</th></tr></thead>
+        <thead><tr><th>Metric</th><th>n</th><th>Solar Mini4</th><th>Jev</th><th>Result</th></tr></thead>
         <tbody>
           <tr><td>field accuracy</td><td>448</td><td class="s">98.7%</td><td class="j">94.2%</td><td><span class="w">Solar +4.5pp</span></td></tr>
           <tr><td>noul · |Δ| ≤ 0.25</td><td>248</td><td class="s">97.6%</td><td class="j">95.2%</td><td><span class="w">Solar +2.4pp</span></td></tr>
@@ -378,9 +379,9 @@
   </section>
 
   <div class="method">
-    <span>Gold: <code>bench/gold_grok46_judge_test400.json</code> (Grok 4.6 Judge rubric v1, state+question만 보고 라벨링, Jev 답변 미참조)</span>
-    <span>Solar 예측: <code>bench/results_test400_rerun_260922.jsonl</code> · Jev 예측: <code>bench/gold_jev_test400.json</code> (jev-1.13.0 스냅샷)</span>
-    <span>필드 구성: noul 248 · choice 160 · score 40 (multi 케이스 16건은 noul/choice 필드로 분해) · 요약: <code>bench/summary_grok46_judge_official.json</code></span>
+    <span>Gold: <code>bench/gold_grok46_judge_test400.json</code> (Grok 4.6 Judge rubric v1, labeled from state + question only, without reference to Jev answers)</span>
+    <span>Solar predictions: <code>bench/results_test400_rerun_260922.jsonl</code> · Jev predictions: <code>bench/gold_jev_test400.json</code> (jev-1.13.0 snapshot, jev-latest at run time)</span>
+    <span>Field mix: noul 248 · choice 160 · score 40 (16 multi cases decompose into noul/choice fields) · summary: <code>bench/summary_grok46_judge_official.json</code></span>
     <span>Source: <a href="https://github.com/hunkim/solar-mini4-jev">github.com/hunkim/solar-mini4-jev</a></span>
   </div>
 </div>
@@ -393,8 +394,8 @@
   const solarOnly = [
     ["FNOL: warehouse fire, injured workers","judge 0.92 · Solar 0.74 · Jev 0.44"],
     ["Stadium vibration anomaly under upper deck","judge 0.68 · Solar 0.74 · Jev 0.39"],
-    ["창고 화재 FNOL, 부상자 발생","judge 0.92 · Solar 0.74 · Jev 0.47"],
-    ["백본 라우터 BGP 다중 피어 다운","judge 0.88 · Solar 0.95 · Jev 0.62"],
+    ["창고 화재 FNOL, 부상자 발생 (warehouse fire FNOL, injuries)","judge 0.92 · Solar 0.74 · Jev 0.47"],
+    ["백본 라우터 BGP 다중 피어 다운 (backbone BGP down, multi-peer)","judge 0.88 · Solar 0.95 · Jev 0.62"],
     ["Anti-cheat: wallhack on 5 accounts","judge 0.48 · Solar 0.42 · Jev 0.69"],
     ["Anti-cheat: wallhack on 14 accounts","judge 0.48 · Solar 0.42 · Jev 0.75"],
     ["Anti-cheat: wallhack on 27 accounts","judge 0.48 · Solar 0.42 · Jev 0.76"],
@@ -410,10 +411,10 @@
     ["Archives: vault RH above 70% 14 min","judge 0.64 · Solar 0.74 · Jev 0.46"],
     ["Archives: vault RH above 70% 27 min","judge 0.64 · Solar 0.74 · Jev 0.45"],
     ["Archives: vault RH above 70% 41 min","judge 0.64 · Solar 0.74 · Jev 0.47"],
-    ["severity: 일부 피더만 정전 지도 갱신 느림","judge 2.3 · Solar 3.0 · Jev 1.25"],
+    ["severity: 일부 피더만 정전 지도 갱신 느림 (outage map slow for some feeders)","judge 2.3 · Solar 3.0 · Jev 1.25"],
     ["severity: SCADA read-only for one HMI","judge 3.2 · Solar 4.0 · Jev 1.03"],
     ["urgency: annual-report cover photo crop","judge 0.8 · Solar 1.7 · Jev 2.35"],
-    ["urgency: 블로그 오탈자 하나 수정","judge 0.8 · Solar 1.7 · Jev 2.43"],
+    ["urgency: 블로그 오탈자 하나 수정 (one blog typo)","judge 0.8 · Solar 1.7 · Jev 2.43"],
     ["urgency: firmware cosmetic changelog tidy","judge 0.8 · Solar 1.7 · Jev 1.85"],
     ["urgency: FAQ emoji on recycling page","judge 0.8 · Solar 1.7 · Jev 2.38"],
   ];
@@ -424,14 +425,14 @@
     ["RAG guard · grounded (invented chair name)","judge 0.05 · Solar 0.90 · Jev ✓"],
     ["RAG guard · hallucinated (invented chair name)","judge 0.95 · Solar 0.05 · Jev ✓"],
   ];
-  const neither = [["랭크 매치 메모리 핵 대량 탐지 · 큐 잠금?","judge 0.48 · Solar 0.75 · Jev 0.67"]];
+  const neither = [["랭크 매치 메모리 핵 대량 탐지 (ranked-match memory hack) · lock queue?","judge 0.48 · Solar 0.75 · Jev 0.67"]];
 
   const w = document.getElementById('waffle'), frag = document.createDocumentFragment();
   const add = (cls, title, sub) => { const i=document.createElement('i'); if(cls) i.className=cls; i.dataset.t=title; i.dataset.s=sub; frag.appendChild(i); };
-  for(let k=0;k<417;k++) add('', '둘 다 정답', `field ${k+1} / 417 · Solar ✓ · Jev ✓`);
-  solarOnly.forEach(([t,s])=>add('s', 'Solar만 정답 · '+t, s));
-  jevOnly.forEach(([t,s])=>add('j', 'Jev만 정답 · '+t, s));
-  neither.forEach(([t,s])=>add('x', '둘 다 오답 · '+t, s));
+  for(let k=0;k<417;k++) add('', 'Both right', `field ${k+1} / 417 · Solar ✓ · Jev ✓`);
+  solarOnly.forEach(([t,s])=>add('s', 'Solar only · '+t, s));
+  jevOnly.forEach(([t,s])=>add('j', 'Jev only · '+t, s));
+  neither.forEach(([t,s])=>add('x', 'Both wrong · '+t, s));
   w.appendChild(frag);
 
   // ---- tooltip
@@ -468,8 +469,8 @@
     {l:'score · |Δ| ≤ 1',  n:'n=40',  s:100,  j:85.0},
   ], 100, pct);
   bars(document.getElementById('langbars'), [
-    {l:'한국어 KO', n:'n=82 fields', s:98.8, j:93.9},
-    {l:'영어 EN',   n:'n=366 fields', s:98.6, j:94.3},
+    {l:'Korean (KO)', n:'n=82 fields', s:98.8, j:93.9},
+    {l:'English (EN)', n:'n=366 fields', s:98.6, j:94.3},
   ], 100, pct);
   bars(document.getElementById('latbars'), [
     {l:'avg latency', n:'per case', s:1.41, j:0.38, delta:'<span class="delta jev">Jev 3.7×</span>'},
