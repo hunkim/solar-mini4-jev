@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -15,7 +15,6 @@
     --accent: #6ee7b7;
     --solar: #38bdf8;
     --jev: #5eead4;
-    --warn: #fbbf24;
     --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   }
@@ -34,7 +33,7 @@
     padding: 4px 10px; border-radius: 999px; margin-bottom: 12px;
   }
   h1 { font-size: 1.85rem; margin: 0 0 8px; letter-spacing: -0.02em; }
-  .sub { color: var(--muted); margin: 0 0 16px; max-width: 60ch; }
+  .sub { color: var(--muted); margin: 0 0 16px; max-width: 62ch; }
   .links { display: flex; flex-wrap: wrap; gap: 10px; }
   .btn {
     display: inline-flex; align-items: center; gap: 6px;
@@ -81,19 +80,19 @@
       <div class="badge">BYOK · System One compatible</div>
       <h1>solar-mini4-jev</h1>
       <p class="sub">
-        Jev System One API 형식의 Solar Mini4 래퍼입니다.
-        서버에 키를 두지 않고, 요청마다 Upstage API 키를 넘깁니다.
+        A Jev-compatible System One API powered by Solar Mini4.
+        Bring your own Upstage API key on every request — nothing is stored on the server.
       </p>
       <div class="links">
         <a class="btn primary" href="https://github.com/hunkim/solar-mini4-jev" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">Upstage Console · API Key</a>
-        <a class="btn" href="/infographic.html">벤치 상세</a>
+        <a class="btn" href="/infographic.html">Bench details</a>
         <a class="btn" href="/health">/health</a>
       </div>
     </header>
 
     <section>
-      <h2>성능 한눈에 (test400 · Grok 4.6 Judge)</h2>
+      <h2>Performance at a glance (test400 · Grok 4.6 Judge)</h2>
       <div class="metrics">
         <div class="metric">
           <div class="k">Field accuracy</div>
@@ -101,9 +100,9 @@
           <div class="s">Solar Mini4 · Jev 1.13.0</div>
         </div>
         <div class="metric">
-          <div class="k">Miss (abstain/wrong)</div>
+          <div class="k">Miss (abstain / wrong)</div>
           <div class="v"><span class="solar">7</span> <span style="color:var(--muted);font-size:.9rem">vs</span> <span class="jev">26</span></div>
-          <div class="s">낮을수록 좋음</div>
+          <div class="s">Lower is better</div>
         </div>
         <div class="metric">
           <div class="k">Avg latency</div>
@@ -128,21 +127,21 @@
           </tbody>
         </table>
       </div>
-      <p class="note">정확도는 Solar가 앞서고, 속도는 Jev가 더 빠릅니다. 상세: <a href="/infographic.html">infographic</a> · <a href="https://github.com/hunkim/solar-mini4-jev">README</a></p>
+      <p class="note">Solar leads on accuracy; Jev is faster. More: <a href="/infographic.html">infographic</a> · <a href="https://github.com/hunkim/solar-mini4-jev">README</a></p>
     </section>
 
     <section>
-      <h2>1. Upstage API 키 받기</h2>
+      <h2>1. Get an Upstage API key</h2>
       <ol class="steps">
-        <li><a href="https://console.upstage.ai/" target="_blank" rel="noopener">Upstage Console</a>에 로그인</li>
-        <li><a href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">API Keys</a>에서 키 발급</li>
-        <li>아래 요청 헤더에 넣기 (서버에 저장하지 않음 · BYOK)</li>
+        <li>Sign in to the <a href="https://console.upstage.ai/" target="_blank" rel="noopener">Upstage Console</a></li>
+        <li>Create a key under <a href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">API Keys</a></li>
+        <li>Pass it on each request (BYOK — not stored on this server)</li>
       </ol>
-      <p class="note">헤더 중 하나만 있으면 됩니다: <code>X-Upstage-Api-Key</code> 또는 <code>Authorization: Bearer …</code></p>
+      <p class="note">Use either header: <code>X-Upstage-Api-Key</code> or <code>Authorization: Bearer …</code></p>
     </section>
 
     <section>
-      <h2>2. System One API 호출 예</h2>
+      <h2>2. System One API example</h2>
       <pre>curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
   -H "Content-Type: application/json" \
   -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
@@ -156,39 +155,39 @@
       }
     }
   }'</pre>
-      <p class="note">응답 필드: <code>model</code>, <code>answers</code>, <code>usage</code>, <code>latency_s</code> (Jev System One과 동일 형태)</p>
+      <p class="note">Response fields: <code>model</code>, <code>answers</code>, <code>usage</code>, <code>latency_s</code> (same shape as Jev System One)</p>
     </section>
 
     <section>
-      <h2>3. Bearer 헤더 예</h2>
+      <h2>3. Bearer header example</h2>
       <pre>curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $UPSTAGE_API_KEY" \
   -d '{
     "model": "solar-mini4-jev",
-    "state": "고객이 환불을 세 번 요청했습니다.",
+    "state": "The customer asked for a refund three times.",
     "questions": {
       "refund": {
         "type": "noul",
-        "instructions": "즉시 환불 처리가 필요한가?"
+        "instructions": "Should we refund immediately?"
       },
       "urgency": {
         "type": "score",
-        "instructions": "긴급도 0~1"
+        "instructions": "Urgency from 0 to 1"
       }
     }
   }'</pre>
     </section>
 
     <section>
-      <h2>엔드포인트</h2>
+      <h2>Endpoints</h2>
       <table>
-        <thead><tr><th>Method</th><th>Path</th><th>설명</th></tr></thead>
+        <thead><tr><th>Method</th><th>Path</th><th>Description</th></tr></thead>
         <tbody>
-          <tr><td>GET</td><td><code>/</code></td><td>이 안내 페이지</td></tr>
-          <tr><td>GET</td><td><code>/health</code></td><td>헬스체크</td></tr>
+          <tr><td>GET</td><td><code>/</code></td><td>This guide</td></tr>
+          <tr><td>GET</td><td><code>/health</code></td><td>Health check</td></tr>
           <tr><td>POST</td><td><code>/v1/systemone</code></td><td>System One (BYOK)</td></tr>
-          <tr><td>GET</td><td><code>/openapi.json</code></td><td>OpenAPI 스키마</td></tr>
+          <tr><td>GET</td><td><code>/openapi.json</code></td><td>OpenAPI schema</td></tr>
         </tbody>
       </table>
     </section>
