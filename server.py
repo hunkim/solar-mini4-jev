@@ -18,6 +18,9 @@ app = FastAPI(
         "BYOK: pass your Upstage key per request via "
         "`X-Upstage-Api-Key` or `Authorization: Bearer <key>`."
     ),
+    docs_url="/api-docs",
+    redoc_url="/api-redoc",
+    openapi_url="/openapi.json",
 )
 
 app.add_middleware(
