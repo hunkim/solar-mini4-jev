@@ -16,9 +16,16 @@ POST /v1/systemone
 
 ## Results at a glance
 
-![Grok 4.6 Judge · Solar Mini4 vs Jev](bench/infographic_grok46_judge.png)
+**독립 판정자(Grok 4.6 Judge) 기준, Solar Mini4가 Jev보다 더 자주 맞았다.**
+448개 답변 필드 중 Solar Mini4는 6개, Jev는 26개를 틀렸다. 판정이 갈린 30필드에서는 Solar 25 : Jev 5.
 
-Interactive SVG/HTML: [view on GitHub Pages](https://hunkim.github.io/solar-mini4-jev/) · [source](bench/infographic_grok46_judge.html)
+![Solar Mini4 vs Jev · Grok 4.6 Judge 스코어카드](bench/infographic_grok46_judge.png)
+
+Jev의 오답은 두 패턴(생명·안전 상황 저평가, 사소한 일 과잉 긴급도)에 몰려 있고, Solar의 오답은 대부분 "너무 신중한" 방향이다.
+
+![지표별 정확도와 갈리는 케이스](bench/infographic_grok46_judge_detail.png)
+
+Interactive scorecard: [view on GitHub Pages](https://hunkim.github.io/solar-mini4-jev/) · [source](docs/index.html)
 
 ### test400 @ Grok 4.6 Judge (`solar-mini4` → `solar-mini4-260922`)
 
@@ -69,7 +76,8 @@ print(out["answers"])
 | `bench/gold_grok46_judge_test400.json` | **공식 gold** (Grok 4.6 Judge) |
 | `bench/gold_jev_test400.json` | Jev 응답 스냅샷 (비교 모델) |
 | `bench/results_test400_rerun_260922.jsonl` | Solar Mini4 재채점 결과 |
-| `bench/infographic_grok46_judge.*` | 결과 인포그래픽 |
+| `docs/index.html` | 인터랙티브 스코어카드 (GitHub Pages) |
+| `bench/infographic_grok46_judge*.png` | README용 스코어카드 PNG |
 
 ## License
 
