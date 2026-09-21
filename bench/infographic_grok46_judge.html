@@ -1,232 +1,324 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solar Mini4 vs Jev · Grok 4.6 Judge</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Solar Mini4 vs Jev Scorecard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
   :root{
-    --bg:#070b14; --panel:#0f1626; --panel2:#141e33; --line:#2a3a55;
-    --text:#f2f6ff; --muted:#93a4c3; --solar:#4f8cff; --solarG:#7eb0ff;
-    --jev:#ff8f5c; --jevG:#ffc2a3; --good:#35d399; --judge:#c4b5fd;
+    color-scheme:light;
+    --bg:#f7f7fb; --surface:#ffffff; --surface-2:#eeeef6; --line:#e0e0ec; --line-2:#c6c6d8;
+    --ink:#17162a; --ink-2:#45445c; --muted:#767590;
+    --solar:#5b52ff; --solar-ink:#3d34d9; --solar-soft:#ecebff;
+    --jev:#e0508f; --jev-ink:#b8306c; --jev-soft:#fce6ef;
+    --good:#008300; --good-soft:#e3f2e1; --bad:#17162a;
+    --track:#e6e6f0;
+    --display:"Noto Serif KR", "Apple Myungjo", "Nanum Myeongjo", Georgia, serif;
+    --body:"IBM Plex Sans KR", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --bg:#111120; --surface:#191929; --surface-2:#212134; --line:#2d2d44; --line-2:#44445e;
+      --ink:#eeeef8; --ink-2:#c4c4d8; --muted:#8e8ea8;
+      --solar:#7b74ff; --solar-ink:#b3aeff; --solar-soft:#23204d;
+      --jev:#e05a95; --jev-ink:#f7a3c6; --jev-soft:#3d1a2b;
+      --good:#4caf50; --good-soft:#173a1a; --bad:#f2eee4;
+      --track:#262639;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --bg:#111120; --surface:#191929; --surface-2:#212134; --line:#2d2d44; --line-2:#44445e;
+    --ink:#eeeef8; --ink-2:#c4c4d8; --muted:#8e8ea8;
+    --solar:#7b74ff; --solar-ink:#b3aeff; --solar-soft:#23204d;
+    --jev:#e05a95; --jev-ink:#f7a3c6; --jev-soft:#3d1a2b;
+    --good:#4caf50; --good-soft:#173a1a; --bad:#f2eee4;
+    --track:#262639;
   }
   *{box-sizing:border-box}
+  html,body{margin:0}
   body{
-    margin:0; color:var(--text);
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Pretendard, "Noto Sans KR", sans-serif;
-    background:
-      radial-gradient(900px 420px at 12% -10%, #1b2d55 0%, transparent 60%),
-      radial-gradient(700px 380px at 100% 0%, #2a1848 0%, transparent 55%),
-      var(--bg);
-    padding:28px 16px 48px;
+    background:var(--bg); color:var(--ink); font-family:var(--body);
+    font-size:15px; line-height:1.6; padding-block:36px 64px; padding-inline:20px;
+    -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:1040px;margin:0 auto}
-  .badge{
-    display:inline-flex;align-items:center;gap:8px;
-    background:rgba(196,181,253,.12);border:1px solid rgba(196,181,253,.35);
-    color:var(--judge);font-size:12px;font-weight:700;letter-spacing:.04em;
-    padding:6px 12px;border-radius:999px;text-transform:uppercase;margin-bottom:14px;
+  .wrap{max-width:980px;margin:0 auto}
+  h1,h2,h3{text-wrap:balance;margin:0}
+  h1{font-family:var(--display);font-weight:900;font-size:clamp(28px,4.6vw,46px);line-height:1.22;letter-spacing:-.01em}
+  h1 .s{color:var(--solar-ink)}
+  h2{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.8vw,25px);line-height:1.3}
+  h3{font-size:15px;font-weight:600;color:var(--ink)}
+  p{margin:0}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:18px}
+  .eyebrow b{color:var(--ink-2);font-weight:500}
+  .lede{color:var(--ink-2);font-size:16px;line-height:1.7;max-width:62ch;margin-top:16px}
+  .lede b{color:var(--ink);font-weight:600}
+
+  section{margin-top:52px}
+  .sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;margin-bottom:18px}
+  .sec-head p{color:var(--muted);font-size:14px;max-width:60ch}
+
+  .legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2)}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+  .legend .s i{background:var(--solar)} .legend .j i{background:var(--jev)}
+
+  /* hero */
+  .hero{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .hero > div{background:var(--surface);padding:24px 26px 22px}
+  .hero .who{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.02em}
+  .hero .who i{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .hero .solar .who i{background:var(--solar)} .hero .jev .who i{background:var(--jev)}
+  .hero .big{font-family:var(--display);font-weight:900;letter-spacing:-.02em;line-height:1;font-size:clamp(56px,8.5vw,88px);margin-top:8px;font-variant-numeric:tabular-nums}
+  .hero .solar .big{color:var(--solar-ink)} .hero .jev .big{color:var(--jev-ink)}
+  .hero .cap{color:var(--muted);font-size:13px;margin-top:4px}
+  .hero .sub{display:flex;gap:18px;margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);flex-wrap:wrap}
+  .hero .sub div{font-size:13px;color:var(--muted)} .hero .sub b{display:block;font-size:20px;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+  .hero .solar{border-left:4px solid var(--solar)}
+  .verdict{grid-column:1/-1;background:var(--solar-soft)!important;display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;font-size:14px;color:var(--ink-2);padding:14px 26px!important}
+  .verdict b{color:var(--solar-ink);font-weight:600}
+  .verdict .lead{font-family:var(--display);font-weight:900;font-size:20px;color:var(--ink)}
+
+  /* waffle */
+  .h2h{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.9fr);gap:28px;align-items:start}
+  .waffle{display:grid;grid-template-columns:repeat(32,1fr);gap:3px;max-width:100%}
+  .waffle i{display:block;aspect-ratio:1;border-radius:2px;background:var(--line-2);cursor:default}
+  .waffle i.s{background:var(--solar)} .waffle i.j{background:var(--jev)} .waffle i.x{background:var(--bad)}
+  .waffle i:hover{outline:2px solid var(--ink);outline-offset:1px}
+  .waffle-cap{font-size:12px;color:var(--muted);margin-top:10px}
+  .tally{display:grid;gap:10px}
+  .tally .row{display:grid;grid-template-columns:14px 1fr auto;gap:12px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+  .tally .row i{width:14px;height:14px;border-radius:3px;background:var(--line-2)}
+  .tally .row.s{border-color:var(--solar);background:var(--solar-soft)} .tally .row.s i{background:var(--solar)}
+  .tally .row.j i{background:var(--jev)} .tally .row.x i{background:var(--bad)}
+  .tally .row .n{font-family:var(--display);font-weight:900;font-size:26px;line-height:1;font-variant-numeric:tabular-nums}
+  .tally .row.s .n{color:var(--solar-ink)}
+  .tally .row span{font-size:14px;color:var(--ink-2)}
+  .tally .note{font-size:14px;color:var(--ink-2);padding:6px 2px 0}
+  .tally .note b{color:var(--solar-ink);font-weight:600}
+
+  /* paired bars */
+  .bars{display:grid;gap:14px}
+  .bar-row{display:grid;grid-template-columns:150px 1fr 108px;gap:14px;align-items:center}
+  .bar-row .lbl{font-size:14px;font-weight:600}
+  .bar-row .lbl small{display:block;font-weight:400;color:var(--muted);font-size:12px;font-family:var(--mono)}
+  .pair{display:grid;gap:4px}
+  .pr{display:grid;grid-template-columns:1fr 58px;gap:8px;align-items:center}
+  .pr .v{font-family:var(--mono);font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums;text-align:right}
+  .pr.s .v{color:var(--solar-ink);font-weight:600}
+  .track{position:relative;height:14px;background:var(--track);border-radius:0 4px 4px 0}
+  .track .fill{position:absolute;inset:0 auto 0 0;border-radius:0 4px 4px 0;transition:width .6s cubic-bezier(.2,.7,.2,1)}
+  .track.s .fill{background:var(--solar)} .track.j .fill{background:var(--jev)}
+  .delta{justify-self:end;font-family:var(--mono);font-size:12px;padding:3px 8px;border-radius:999px;background:var(--good-soft);color:var(--good);font-weight:600;white-space:nowrap}
+  .delta.tie{background:var(--surface-2);color:var(--muted)}
+  .delta.jev{background:var(--jev-soft);color:var(--jev-ink)}
+  .axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--muted);margin:6px 188px 0 164px}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .panel{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:20px 22px}
+  .panel h3{margin-bottom:6px}
+  .panel .why{color:var(--muted);font-size:13px;margin-bottom:14px}
+
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+  table{width:100%;border-collapse:collapse;font-size:14px;min-width:560px}
+  th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+  th:first-child,td:first-child{text-align:left}
+  thead th{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--surface-2)}
+  tbody tr:last-child td{border-bottom:0}
+  td.s{color:var(--solar-ink);font-weight:600} td.j{color:var(--jev-ink)}
+  td .w{display:inline-block;font-family:var(--mono);font-size:11px;padding:2px 7px;border-radius:999px;background:var(--good-soft);color:var(--good);font-weight:600}
+  td .w.tie{background:var(--surface-2);color:var(--muted)} td .w.jev{background:var(--jev-soft);color:var(--jev-ink)}
+  td small{color:var(--muted);font-family:var(--mono);font-size:11px;margin-left:4px}
+
+  .method{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;display:grid;gap:6px}
+  .method code{font-family:var(--mono);font-size:12px;background:var(--surface-2);padding:1px 5px;border-radius:4px;color:var(--ink-2)}
+  a{color:var(--jev-ink)}
+
+  .tip{position:fixed;z-index:9;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;line-height:1.45;padding:8px 10px;border-radius:8px;max-width:300px;opacity:0;transform:translateY(4px);transition:opacity .12s}
+  .tip.on{opacity:1;transform:none}
+  .tip b{display:block;font-family:var(--mono);font-weight:500;opacity:.75;margin-bottom:2px}
+
+  @media (max-width:760px){
+    .hero,.h2h,.grid2{grid-template-columns:1fr}
+    .bar-row{grid-template-columns:1fr;gap:6px}
+    .bar-row .delta{justify-self:start}
+    .axis{margin-left:0;margin-right:66px}
+    .waffle{grid-template-columns:repeat(16,1fr)}
   }
-  h1{font-size:34px;line-height:1.15;margin:0 0 8px;letter-spacing:-.03em}
-  .sub{color:var(--muted);font-size:15px;line-height:1.55;margin:0 0 26px;max-width:820px}
-  .sub b{color:var(--judge)}
-  .hero{
-    display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-bottom:16px;
-  }
-  @media(max-width:860px){.hero,.row2,.kpis{grid-template-columns:1fr}}
-  .card{
-    background:linear-gradient(180deg,var(--panel2),var(--panel));
-    border:1px solid var(--line);border-radius:20px;padding:20px 20px 18px;
-    box-shadow:0 18px 40px rgba(0,0,0,.28);
-  }
-  .card h2{margin:0 0 14px;font-size:15px;font-weight:700;color:#dbe7ff}
-  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
-  .kpi{padding:18px 16px}
-  .kpi .v{font-size:34px;font-weight:800;letter-spacing:-.04em;margin-bottom:6px}
-  .kpi .l{font-size:13px;color:var(--muted)}
-  .kpi.s .v{color:var(--solarG)} .kpi.j .v{color:var(--jevG)}
-  .kpi.g .v{color:var(--good)} .kpi.p .v{color:var(--judge)}
-  .headline{
-    font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px;line-height:1.3;
-  }
-  .headline span{color:var(--solarG)}
-  .bullets{margin:0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.7}
-  .bullets b{color:var(--text)}
-  .legend{display:flex;gap:16px;margin:0 0 12px;font-size:13px;color:var(--muted)}
-  .sw{width:12px;height:12px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px}
-  .sw.s{background:var(--solar)} .sw.j{background:var(--jev)}
-  .metric{
-    display:grid;grid-template-columns:130px 1fr 64px 64px;gap:10px;align-items:center;
-    margin:12px 0;
-  }
-  .metric .name{font-size:13px;color:#c9d6ef}
-  .bars{position:relative;height:44px}
-  .bar{
-    position:absolute;left:0;height:16px;border-radius:999px;min-width:8px;
-  }
-  .bar.s{top:2px;background:linear-gradient(90deg,#3b74ff,var(--solarG))}
-  .bar.j{top:24px;background:linear-gradient(90deg,#e86a35,var(--jevG))}
-  .nums{font-variant-numeric:tabular-nums;font-weight:700;font-size:13px}
-  .nums.s{color:var(--solarG)} .nums.j{color:var(--jevG)}
-  .track{
-    position:absolute;left:0;right:0;height:16px;border-radius:999px;background:#1a2740;
-  }
-  .track.s{top:2px} .track.j{top:24px}
-  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-  .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-  .pill{
-    border:1px solid var(--line);background:#0c1424;border-radius:999px;
-    padding:8px 12px;font-size:13px;color:#d7e3ff;
-  }
-  .pill em{font-style:normal;color:var(--good);font-weight:700}
-  .pill.j em{color:var(--jevG)}
-  table{width:100%;border-collapse:collapse;font-size:14px}
-  th,td{padding:10px 8px;border-bottom:1px solid #22324d;text-align:right}
-  th:first-child,td:first-child{text-align:left;color:var(--muted)}
-  th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#7f91b3}
-  td.win{color:var(--good);font-weight:800}
-  footer{margin-top:18px;color:#7b8dad;font-size:12px;line-height:1.5}
+  @media (prefers-reduced-motion: reduce){ .track .fill{transition:none} }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="badge">Official gold · Grok 4.6 Judge</div>
-    <h1>Solar Mini4 beats Jev on judged quality</h1>
-    <p class="sub">
-      test400 · gold = <b>Grok 4.6 Judge</b> (Jev is a peer model, not gold) ·
-      Solar <code>solar-mini4 → solar-mini4-260922 · reasoning_effort=none</code>
-    </p>
+<div class="wrap">
 
-    <div class="kpis">
-      <div class="card kpi s"><div class="v">98.4%</div><div class="l">Solar field accuracy</div></div>
-      <div class="card kpi j"><div class="v">94.2%</div><div class="l">Jev field accuracy</div></div>
-      <div class="card kpi g"><div class="v">+4.2 pp</div><div class="l">Solar lead vs Jev</div></div>
-      <div class="card kpi j"><div class="v">3.2×</div><div class="l">Jev faster (avg latency)</div></div>
-    </div>
-
-    <div class="hero">
-      <div class="card">
-        <h2>Accuracy @ Grok 4.6 Judge</h2>
-        <div class="legend">
-          <span><i class="sw s"></i>Solar Mini4</span>
-          <span><i class="sw j"></i>Jev</span>
-        </div>
-
-        <!-- Each metric: label | dual bars with full track | solar num | jev num -->
-        <div class="metric">
-          <div class="name">noul ≤ 0.25</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:97.2%"></div>
-            <div class="track j"></div><div class="bar j" style="width:95.2%"></div>
-          </div>
-          <div class="nums s">97.2%</div>
-          <div class="nums j">95.2%</div>
-        </div>
-        <div class="metric">
-          <div class="name">sign @ 0.5</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:98.8%"></div>
-            <div class="track j"></div><div class="bar j" style="width:92.3%"></div>
-          </div>
-          <div class="nums s">98.8%</div>
-          <div class="nums j">92.3%</div>
-        </div>
-        <div class="metric">
-          <div class="name">choice exact</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:100%"></div>
-            <div class="track j"></div><div class="bar j" style="width:100%"></div>
-          </div>
-          <div class="nums s">100%</div>
-          <div class="nums j">100%</div>
-        </div>
-        <div class="metric">
-          <div class="name">score ≤ 1</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:100%"></div>
-            <div class="track j"></div><div class="bar j" style="width:85%"></div>
-          </div>
-          <div class="nums s">100%</div>
-          <div class="nums j">85.0%</div>
-        </div>
-
-        <div class="pillrow">
-          <div class="pill">miss fields <em>Solar 7</em></div>
-          <div class="pill j">miss fields <em>Jev 26</em></div>
-          <div class="pill">choice <em>tie @ 100%</em></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <p class="headline"><span>Solar Mini4</span> matches the judge more often — especially on score &amp; noul sign.</p>
-        <ul class="bullets">
-          <li><b>7 misses</b> vs Jev’s <b>26</b> under the same gold</li>
-          <li><b>score ≤1: 100%</b> vs Jev 85% — calibration win</li>
-          <li><b>KO 98.8%</b> · <b>EN 98.6%</b> field accuracy</li>
-          <li>Tradeoff: Jev still ~<b>3.2× faster</b> (0.38s vs 1.21s)</li>
-        </ul>
-        <div style="margin-top:18px">
-          <svg viewBox="0 0 360 120" width="100%" aria-label="latency">
-            <text x="0" y="22" fill="#93a4c3" font-size="13">Average latency</text>
-            <rect x="0" y="36" width="280" height="22" rx="11" fill="#1a2740"/>
-            <rect x="0" y="36" width="280" height="22" rx="11" fill="url(#sg)"/>
-            <text x="290" y="52" fill="#7eb0ff" font-size="14" font-weight="700">1.21s</text>
-            <rect x="0" y="72" width="76" height="22" rx="11" fill="#1a2740"/>
-            <rect x="0" y="72" width="76" height="22" rx="11" fill="#ff8f5c"/>
-            <text x="90" y="88" fill="#ffc2a3" font-size="14" font-weight="700">0.38s</text>
-            <defs>
-              <linearGradient id="sg" x1="0" x2="1">
-                <stop offset="0%" stop-color="#3b74ff"/><stop offset="100%" stop-color="#7eb0ff"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="row2">
-      <div class="card">
-        <h2>Language field accuracy</h2>
-        <div class="legend"><span><i class="sw s"></i>Solar</span><span><i class="sw j"></i>Jev</span></div>
-        <div class="metric">
-          <div class="name">KO · n=70</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:98.8%"></div>
-            <div class="track j"></div><div class="bar j" style="width:93.9%"></div>
-          </div>
-          <div class="nums s">98.8%</div>
-          <div class="nums j">93.9%</div>
-        </div>
-        <div class="metric">
-          <div class="name">EN · n=330</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:98.4%"></div>
-            <div class="track j"></div><div class="bar j" style="width:94.3%"></div>
-          </div>
-          <div class="nums s">98.4%</div>
-          <div class="nums j">94.3%</div>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Scoreboard</h2>
-        <table>
-          <thead><tr><th>axis</th><th>Solar</th><th>Jev</th><th>winner</th></tr></thead>
-          <tbody>
-            <tr><td>field accuracy</td><td>98.4%</td><td>94.2%</td><td class="win">Solar</td></tr>
-            <tr><td>noul / score</td><td>97.2 / 100</td><td>95.2 / 85</td><td class="win">Solar</td></tr>
-            <tr><td>choice</td><td>100%</td><td>100%</td><td class="win">tie</td></tr>
-            <tr><td>KO / EN</td><td>98.8 / 98.4</td><td>93.9 / 94.3</td><td class="win">Solar</td></tr>
-            <tr><td>avg latency</td><td>1.21s</td><td>0.38s</td><td class="win">Jev</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <footer>
-      Official gold: <code>bench/gold_grok46_judge_test400.json</code> ·
-      Solar results: <code>results_test400_rerun_260922.jsonl</code> ·
-      Pages: <code>/docs</code>
-    </footer>
+  <div class="eyebrow">
+    <span>test400 · 447 fields</span>
+    <span>gold <b>Grok 4.6 Judge</b></span>
+    <span>solar-mini4-260922 <b>reasoning_effort=none</b></span>
+    <span>jev-1.13.0</span>
   </div>
+
+  <h1>Judged by an independent grader, <span class="s">Solar Mini4</span> is right more often than Jev.</h1>
+  <p class="lede">
+    400 cases and 447 answer fields, scored against <b>Grok 4.6 Judge</b> rubric labels.
+    Jev is not the gold standard here. It is <b>a peer model taking the same test</b>.
+    Solar Mini4 missed <b>7</b> fields. Jev missed <b>26</b>.
+  </p>
+
+  <div class="hero">
+    <div class="solar">
+      <div class="who"><i></i>Solar Mini4</div>
+      <div class="big">98.4<span style="font-size:.5em">%</span></div>
+      <div class="cap">field accuracy · 440 / 447 correct</div>
+      <div class="sub">
+        <div>miss<b>7</b></div>
+        <div>noul MAE<b>0.076</b></div>
+        <div>score MAE<b>0.44</b></div>
+      </div>
+    </div>
+    <div class="jev">
+      <div class="who"><i></i>Jev 1.13.0</div>
+      <div class="big">94.2<span style="font-size:.5em">%</span></div>
+      <div class="cap">field accuracy · 421 / 447 correct</div>
+      <div class="sub">
+        <div>miss<b>26</b></div>
+        <div>noul MAE<b>0.084</b></div>
+        <div>score MAE<b>0.51</b></div>
+      </div>
+    </div>
+    <div class="verdict">
+      <span class="lead">Solar +4.2pp</span>
+      <span><b>3.7× fewer misses</b> (7 vs 26)</span>
+      <span>Of 31 fields where they disagree, <b>Solar is right on 25</b></span>
+      <span><b>98%+</b> in both Korean and English</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="sec-head">
+      <h2>447 fields: who got it right</h2>
+      <p>One cell per answer field. Grey when both models got the same verdict; a model's color when only that model was right.</p>
+    </div>
+    <div class="h2h">
+      <div>
+        <div class="waffle" id="waffle" aria-label="447 fields head-to-head"></div>
+        <div class="waffle-cap">Order: both right → Solar only → Jev only → both wrong.</div>
+      </div>
+      <div class="tally">
+        <div class="row both"><i></i><span>Both right</span><span class="n">415</span></div>
+        <div class="row s"><i></i><span>Solar only</span><span class="n">25</span></div>
+        <div class="row j"><i></i><span>Jev only</span><span class="n">6</span></div>
+        <div class="row x"><i></i><span>Both wrong</span><span class="n">1</span></div>
+        <p class="note">On the 31 fields where they disagree: <b>Solar 25 : Jev 6</b>. That gap is the 4.2pp.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Accuracy by metric</h2>
+      <div class="legend"><span class="s"><i></i>Solar Mini4</span><span class="j"><i></i>Jev</span></div>
+    </div>
+    <div class="bars" id="bars"></div>
+    <div class="axis"><span>0%</span><span>50%</span><span>100%</span></div>
+  </section>
+
+  <section class="grid2">
+    <div class="panel">
+      <h3>Accuracy by language</h3>
+      <p class="why">70 Korean cases (82 fields), 330 English cases (365 fields). Almost no gap between languages.</p>
+      <div class="bars" id="langbars"></div>
+    </div>
+    <div class="panel">
+      <h3>Latency · this one goes to Jev</h3>
+      <p class="why">Mean latency per case. Solar is an LLM call, so it is 3.2× slower. With reasoning off, its p95 stays under 1.6s and 22% of calls finish under 1s.</p>
+      <div class="bars" id="latbars"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Full scoreboard</h2>
+      <p>Thresholds: noul |Δ| ≤ 0.25 and same side of 0.5 · choice exact match · score |Δ| ≤ 1</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Metric</th><th>n</th><th>Solar Mini4</th><th>Jev</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>field accuracy</td><td>447</td><td class="s">98.4%</td><td class="j">94.2%</td><td><span class="w">Solar +4.2pp</span></td></tr>
+          <tr><td>noul · |Δ| ≤ 0.25</td><td>247</td><td class="s">97.2%</td><td class="j">95.1%</td><td><span class="w">Solar +2.1pp</span></td></tr>
+          <tr><td>noul · sign @ 0.5</td><td>247</td><td class="s">98.8%</td><td class="j">92.3%</td><td><span class="w">Solar +6.5pp</span></td></tr>
+          <tr><td>noul · MAE<small>lower=better</small></td><td>247</td><td class="s">0.076</td><td class="j">0.084</td><td><span class="w">Solar</span></td></tr>
+          <tr><td>choice · exact</td><td>160</td><td class="s">100%</td><td class="j">100%</td><td><span class="w tie">tie</span></td></tr>
+          <tr><td>score · |Δ| ≤ 1</td><td>40</td><td class="s">100%</td><td class="j">85.0%</td><td><span class="w">Solar +15pp</span></td></tr>
+          <tr><td>score · MAE<small>lower=better</small></td><td>40</td><td class="s">0.44</td><td class="j">0.51</td><td><span class="w">Solar</span></td></tr>
+          <tr><td>KO field accuracy</td><td>82</td><td class="s">98.8%</td><td class="j">93.9%</td><td><span class="w">Solar +4.9pp</span></td></tr>
+          <tr><td>EN field accuracy</td><td>365</td><td class="s">98.4%</td><td class="j">94.2%</td><td><span class="w">Solar +4.2pp</span></td></tr>
+          <tr><td>miss fields</td><td>447</td><td class="s">7</td><td class="j">26</td><td><span class="w">Solar 3.7×↓</span></td></tr>
+          <tr><td>avg latency<small>p50 / p95</small></td><td>399</td><td class="s">1.21s<small>1.17 / 1.57</small></td><td class="j">0.38s<small>0.37 / 0.47</small></td><td><span class="w jev">Jev 3.2×</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="method">
+    <span>Gold: <code>bench/gold_grok46_judge_test400.json</code> (Grok 4.6 Judge rubric v1, labeled from state + question only, without reference to Jev answers)</span>
+    <span>Solar predictions: <code>bench/results_test400_reasoning_none.jsonl</code> (solar-mini4-260922, reasoning_effort=none; 1 of 400 cases dropped on a malformed response) · Jev predictions: <code>bench/gold_jev_test400.json</code> (jev-1.13.0 snapshot, jev-latest at run time)</span>
+    <span>Field mix: noul 247 · choice 160 · score 40 · summary: <code>bench/summary_official_reasoning_none.json</code> · per-case misses: <code>bench/COMPARISON_GROK46_JUDGE.md</code></span>
+    <span>Source: <a href="https://github.com/hunkim/solar-mini4-jev">github.com/hunkim/solar-mini4-jev</a></span>
+  </div>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<script>
+(function(){
+  const w = document.getElementById('waffle'), frag = document.createDocumentFragment();
+  const add = (cls, t, n) => { const i=document.createElement('i'); if(cls) i.className=cls; i.dataset.t=t; i.dataset.s=n; frag.appendChild(i); };
+  for(let k=0;k<415;k++) add('', 'Both right', `field ${k+1} / 415`);
+  for(let k=0;k<25;k++)  add('s', 'Solar right, Jev wrong', `field ${k+1} / 25`);
+  for(let k=0;k<6;k++)   add('j', 'Jev right, Solar wrong', `field ${k+1} / 6`);
+  add('x', 'Both wrong', 'field 1 / 1');
+  w.appendChild(frag);
+
+  const tip = document.getElementById('tip');
+  document.addEventListener('mousemove', e => {
+    const el = e.target.closest('[data-t]');
+    if(!el){ tip.classList.remove('on'); return; }
+    tip.innerHTML = `<b>${el.dataset.s}</b>${el.dataset.t}`;
+    tip.style.left = Math.min(e.clientX+14, window.innerWidth-316)+'px'; tip.style.top = (e.clientY+16)+'px'; tip.classList.add('on');
+  });
+
+  function bars(host, rows, max, fmt){
+    host.innerHTML = rows.map(r=>{
+      const ws=(r.s/max*100).toFixed(1), wj=(r.j/max*100).toFixed(1);
+      const d = r.delta!==undefined ? r.delta : (Math.abs(r.s-r.j)<0.05 ? '<span class="delta tie">tie</span>' : `<span class="delta">Solar +${(r.s-r.j).toFixed(1)}pp</span>`);
+      return `<div class="bar-row"><div class="lbl">${r.l}<small>${r.n}</small></div><div class="pair">
+        <div class="pr s"><div class="track s" data-t="Solar Mini4 · ${r.l}" data-s="${fmt(r.s)}"><div class="fill" style="width:${ws}%"></div></div><span class="v">${fmt(r.s)}</span></div>
+        <div class="pr j"><div class="track j" data-t="Jev · ${r.l}" data-s="${fmt(r.j)}"><div class="fill" style="width:${wj}%"></div></div><span class="v">${fmt(r.j)}</span></div>
+      </div>${d}</div>`;
+    }).join('');
+  }
+  const pct = v => v.toFixed(1)+'%';
+  bars(document.getElementById('bars'), [
+    {l:'noul · |Δ| ≤ 0.25', n:'n=247', s:97.2, j:95.1},
+    {l:'noul · sign @ 0.5', n:'n=247', s:98.8, j:92.3},
+    {l:'choice · exact',   n:'n=160', s:100,  j:100},
+    {l:'score · |Δ| ≤ 1',  n:'n=40',  s:100,  j:85.0},
+  ], 100, pct);
+  bars(document.getElementById('langbars'), [
+    {l:'Korean (KO)',  n:'n=82 fields',  s:98.8, j:93.9},
+    {l:'English (EN)', n:'n=365 fields', s:98.4, j:94.2},
+  ], 100, pct);
+  bars(document.getElementById('latbars'), [
+    {l:'avg latency', n:'per case', s:1.21, j:0.38, delta:'<span class="delta jev">Jev 3.2×</span>'},
+    {l:'p95 latency', n:'per case', s:1.57, j:0.47, delta:'<span class="delta jev">Jev 3.3×</span>'},
+  ], 2.0, v=>v.toFixed(2)+'s');
+})();
+</script>
 </body>
 </html>

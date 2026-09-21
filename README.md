@@ -17,15 +17,15 @@ The official scoring reference is the **Grok 4.6 Judge** rubric labels (`bench/g
 ## Results at a glance
 
 **Judged by an independent grader (Grok 4.6 Judge), Solar Mini4 is right more often than Jev.**
-Out of 447 scored answer fields (`reasoning_effort=none`), Solar Mini4 missed **7** and Jev missed **26**. Solar still leads on judged quality; pinning `none` also cuts average latency to **1.21s**.
+Out of 447 scored answer fields, Solar Mini4 missed **7** and Jev missed **26**. On the 31 fields where the two disagree, Solar is right on 25 and Jev on 6.
 
-![Solar Mini4 vs Jev · Grok 4.6 Judge scorecard](bench/infographic_grok46_judge.png)
+![Solar Mini4 98.4% vs Jev 94.2% field accuracy, with a 447-field head-to-head grid](bench/infographic_grok46_judge.png)
 
-Jev's misses cluster into two patterns (underrating life-safety situations, treating trivial work as urgent). Solar's misses mostly err on the side of caution.
+Solar leads or ties on every accuracy metric, in both Korean and English. Jev keeps the speed edge at 0.38s per call against 1.21s with `reasoning_effort=none`.
 
-![Accuracy by metric and diverging cases](bench/infographic_grok46_judge_detail.png)
+![Accuracy by metric and by language, plus latency](bench/infographic_grok46_judge_detail.png)
 
-Interactive scorecard: [view on GitHub Pages](https://hunkim.github.io/solar-mini4-jev/) · [source](docs/index.html)
+Interactive scorecard: [view on GitHub Pages](https://hunkim.github.io/solar-mini4-jev/) · [source](docs/index.html) · per-case misses: [COMPARISON_GROK46_JUDGE.md](bench/COMPARISON_GROK46_JUDGE.md)
 
 ### test400 @ Grok 4.6 Judge (`solar-mini4` → `solar-mini4-260922`, `reasoning_effort=none`)
 
