@@ -45,6 +45,31 @@ Field accuracy by language:
 
 
 
+
+## Try the live API (Vercel)
+
+Hosted BYOK endpoint — no deploy needed to try it:
+
+- API: https://solar-mini4-jev.vercel.app
+- Health: https://solar-mini4-jev.vercel.app/health
+- Docs / examples: https://hunkim.github.io/solar-mini4-jev/
+- LLM reference: https://hunkim.github.io/solar-mini4-jev/llms.txt
+
+```bash
+curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Payment success rate dropped to 12%.",
+    "questions": {
+      "urgent": {"type": "noul", "instructions": "Should on-call be paged immediately?"}
+    }
+  }'
+```
+
+Bring your own [Upstage API key](https://console.upstage.ai/api-keys). The server does not store it.
+
 ## For LLMs
 
 Machine-readable API reference: [`llms.txt`](https://hunkim.github.io/solar-mini4-jev/llms.txt)
@@ -60,7 +85,7 @@ The live API is **Bring Your Own Key**. The server never stores your Upstage key
 uvicorn server:app --host 0.0.0.0 --port 8092
 
 # call (System One shape)
-curl -s https://YOUR_DEPLOYMENT.vercel.app/v1/systemone \
+curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
   -H "Content-Type: application/json" \
   -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
   -d '{
