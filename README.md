@@ -9,6 +9,30 @@ POST /v1/systemone
 
 Supported question types: `noul` | `choice` | `score` (same schema as Jev).
 
+## Try the live API (Vercel)
+
+Hosted BYOK endpoint — no deploy needed to try it:
+
+- API: https://solar-mini4-jev.vercel.app
+- Health: https://solar-mini4-jev.vercel.app/health
+- Docs / examples: https://hunkim.github.io/solar-mini4-jev/
+- LLM reference: https://hunkim.github.io/solar-mini4-jev/llms.txt
+
+```bash
+curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Payment success rate dropped to 12%.",
+    "questions": {
+      "urgent": {"type": "noul", "instructions": "Should on-call be paged immediately?"}
+    }
+  }'
+```
+
+Bring your own [Upstage API key](https://console.upstage.ai/api-keys). The server does not store it.
+
 ## Official gold: Grok 4.6 Judge
 
 **Jev is not the gold standard.** Jev is a peer model under comparison.
@@ -42,33 +66,6 @@ Field accuracy by language:
 | Jev | 93.9% | 94.3% |
 
 **Takeaway:** Solar Mini4 wins on judged quality (`none`). Jev wins on speed (~3.2×). p50 latency 1.17s; ~22% of Solar calls are sub-1s.
-
-
-
-
-## Try the live API (Vercel)
-
-Hosted BYOK endpoint — no deploy needed to try it:
-
-- API: https://solar-mini4-jev.vercel.app
-- Health: https://solar-mini4-jev.vercel.app/health
-- Docs / examples: https://hunkim.github.io/solar-mini4-jev/
-- LLM reference: https://hunkim.github.io/solar-mini4-jev/llms.txt
-
-```bash
-curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
-  -H "Content-Type: application/json" \
-  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
-  -d '{
-    "model": "solar-mini4-jev",
-    "state": "Payment success rate dropped to 12%.",
-    "questions": {
-      "urgent": {"type": "noul", "instructions": "Should on-call be paged immediately?"}
-    }
-  }'
-```
-
-Bring your own [Upstage API key](https://console.upstage.ai/api-keys). The server does not store it.
 
 ## For LLMs
 
