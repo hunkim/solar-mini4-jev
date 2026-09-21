@@ -1,0 +1,3 @@
+{"idx": 1, "id": "test_noul_yes_1", "ok": true, "http": 200, "wall_s": 1.0813, "server_latency_s": 0.848, "usage": {"input_tokens": 836, "output_tokens": 20}, "n_questions": 1}
+{"idx": 2, "id": "test_noul_yes_2", "ok": true, "http": 200, "wall_s": 0.978, "server_latency_s": 0.7883, "usage": {"input_tokens": 833, "output_tokens": 19}, "n_questions": 1}
+{"idx": 3, "id": "test_noul_yes_3", "ok": true, "http": 200, "wall_s": 2.5931, "server_latency_s": 0.8103, "usage": {"input_tokens": 832, "output_tokens": 19}, "n_questions": 1}
