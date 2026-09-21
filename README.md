@@ -18,7 +18,7 @@ POST /v1/systemone
 
 ![Grok 4.6 Judge · Solar Mini4 vs Jev](bench/infographic_grok46_judge.png)
 
-Interactive SVG/HTML: [`bench/infographic_grok46_judge.html`](bench/infographic_grok46_judge.html)
+Interactive SVG/HTML: [view on GitHub Pages](https://hunkim.github.io/solar-mini4-jev/) · [source](bench/infographic_grok46_judge.html)
 
 ### test400 @ Grok 4.6 Judge (`solar-mini4` → `solar-mini4-260922`)
 

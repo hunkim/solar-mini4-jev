@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Grok 4.6 Judge · Solar Mini4 vs Jev</title>
+<style>
+  :root {
+    --bg:#0b1220; --card:#121a2b; --line:#243044; --text:#e8eef8; --muted:#8b9bb4;
+    --solar:#5b8cff; --solar2:#8eb6ff; --jev:#ff8a5b; --jev2:#ffc2a8; --good:#3dd68c; --judge:#a78bfa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Pretendard,Apple SD Gothic Neo,Noto Sans KR,system-ui,sans-serif;
+    background:radial-gradient(1100px 500px at 8% -8%,#1a2744 0%,var(--bg) 55%);color:var(--text);padding:28px 18px 40px}
+  .wrap{max-width:1080px;margin:0 auto}
+  .pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:4px 10px;border-radius:999px;
+    background:#241b3d;color:var(--judge);margin-bottom:10px;text-transform:uppercase}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 22px}
+  .grid{display:grid;gap:14px}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .g2{grid-template-columns:1.15fr .85fr}
+  @media(max-width:900px){.g4,.g2{grid-template-columns:1fr}}
+  .card{background:linear-gradient(180deg,#152038 0%,var(--card) 100%);border:1px solid var(--line);
+    border-radius:16px;padding:16px;box-shadow:0 10px 28px rgba(0,0,0,.25)}
+  .card h2{font-size:14px;margin:0 0 12px}
+  .kpi .v{font-size:28px;font-weight:800;letter-spacing:-.03em}
+  .kpi .l{font-size:12px;color:var(--muted);margin-top:4px}
+  .s .v{color:var(--solar2)} .j .v{color:var(--jev2)} .g .v{color:var(--good)} .p .v{color:var(--judge)}
+  .legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-bottom:8px}
+  .dot{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:6px}
+  .dot.s{background:var(--solar)} .dot.j{background:var(--jev)}
+  .note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.45}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:8px 6px;text-align:right;border-bottom:1px solid #1e2a3f}
+  th:first-child,td:first-child{text-align:left;color:var(--muted)}
+  th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  td.win{color:var(--good);font-weight:700}
+  footer{margin-top:18px;color:var(--muted);font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="pill">Official gold · Grok 4.6 Judge</div>
+  <h1>Solar Mini4 vs Jev — accuracy &amp; speed</h1>
+  <p class="sub">
+    test400 · gold = <b style="color:var(--judge)">Grok 4.6 Judge</b> (not Jev) ·
+    Solar backend <code>solar-mini4 → solar-mini4-260922</code><br/>
+    Thresholds: noul ≤0.25 &amp; sign@0.5 · choice exact · score ≤1 · Jev is a competing model, not gold.
+  </p>
+
+  <div class="grid g4" style="margin-bottom:14px">
+    <div class="card kpi s"><div class="v">98.7%</div><div class="l">Solar field_acc</div></div>
+    <div class="card kpi j"><div class="v">94.2%</div><div class="l">Jev field_acc</div></div>
+    <div class="card kpi g"><div class="v">+4.5 pp</div><div class="l">Solar accuracy lead</div></div>
+    <div class="card kpi j"><div class="v">3.7×</div><div class="l">Jev faster (avg)</div></div>
+  </div>
+
+  <div class="grid g2" style="margin-bottom:14px">
+    <div class="card">
+      <h2>Accuracy @ Grok 4.6 Judge</h2>
+      <div class="legend"><span><i class="dot s"></i>Solar Mini4</span><span><i class="dot j"></i>Jev</span></div>
+      <svg viewBox="0 0 640 210" width="100%" role="img" aria-label="accuracy">
+        <line x1="150" y1="20" x2="150" y2="190" stroke="#2a3a55"/>
+        <line x1="150" y1="190" x2="620" y2="190" stroke="#2a3a55"/>
+        <!-- noul tol 97.6 / 95.2 -->
+        <text x="140" y="48" fill="#c5d0e2" font-size="12" text-anchor="end">noul≤0.25</text>
+        <rect x="160" y="34" width="468" height="15" rx="4" fill="#5b8cff"/>
+        <rect x="160" y="54" width="457" height="15" rx="4" fill="#ff8a5b"/>
+        <text x="632" y="46" fill="#8eb6ff" font-size="11">97.6</text>
+        <text x="632" y="66" fill="#ffc2a8" font-size="11">95.2</text>
+        <!-- sign 98.8 / 92.3 -->
+        <text x="140" y="98" fill="#c5d0e2" font-size="12" text-anchor="end">sign@0.5</text>
+        <rect x="160" y="84" width="474" height="15" rx="4" fill="#5b8cff"/>
+        <rect x="160" y="104" width="443" height="15" rx="4" fill="#ff8a5b"/>
+        <text x="632" y="96" fill="#8eb6ff" font-size="11">98.8</text>
+        <text x="632" y="116" fill="#ffc2a8" font-size="11">92.3</text>
+        <!-- choice 100 / 100 -->
+        <text x="140" y="148" fill="#c5d0e2" font-size="12" text-anchor="end">choice</text>
+        <rect x="160" y="134" width="480" height="15" rx="4" fill="#5b8cff"/>
+        <rect x="160" y="154" width="480" height="15" rx="4" fill="#ff8a5b"/>
+        <text x="632" y="146" fill="#8eb6ff" font-size="11">100</text>
+        <text x="632" y="166" fill="#ffc2a8" font-size="11">100</text>
+      </svg>
+      <div class="note">score≤1: Solar <b style="color:var(--good)">100%</b> · Jev 85.0% · miss fields Solar <b>6</b> vs Jev <b>26</b></div>
+    </div>
+
+    <div class="card">
+      <h2>Latency (test400)</h2>
+      <div class="legend"><span><i class="dot s"></i>Solar</span><span><i class="dot j"></i>Jev</span></div>
+      <svg viewBox="0 0 420 200" width="100%" role="img" aria-label="latency">
+        <text x="16" y="36" fill="#c5d0e2" font-size="13">avg</text>
+        <rect x="70" y="22" width="282" height="26" rx="6" fill="#5b8cff"/>
+        <rect x="70" y="56" width="76" height="26" rx="6" fill="#ff8a5b"/>
+        <text x="360" y="40" fill="#8eb6ff" font-size="12">1.41s</text>
+        <text x="154" y="74" fill="#ffc2a8" font-size="12">0.38s</text>
+        <text x="16" y="130" fill="#c5d0e2" font-size="13">tradeoff</text>
+        <text x="70" y="130" fill="#8b9bb4" font-size="12">Judge quality → Solar · raw speed → Jev</text>
+        <text x="70" y="156" fill="#8b9bb4" font-size="12">Solar ~3.7× slower, +4.5 pp field_acc</text>
+      </svg>
+      <div class="note">Backend remapped: <code>solar-mini4</code> → <code>solar-mini4-260922</code></div>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-bottom:14px">
+    <div class="card">
+      <h2>Language field_acc</h2>
+      <svg viewBox="0 0 520 170" width="100%">
+        <text x="24" y="28" fill="#8b9bb4" font-size="12">KO (n=70)</text>
+        <rect x="24" y="40" width="412" height="20" rx="5" fill="#5b8cff"/>
+        <rect x="24" y="66" width="392" height="20" rx="5" fill="#ff8a5b"/>
+        <text x="444" y="55" fill="#8eb6ff" font-size="12">98.8%</text>
+        <text x="424" y="81" fill="#ffc2a8" font-size="12">93.9%</text>
+        <text x="24" y="118" fill="#8b9bb4" font-size="12">EN (n=330)</text>
+        <rect x="24" y="130" width="411" height="20" rx="5" fill="#5b8cff"/>
+        <rect x="24" y="156" width="393" height="20" rx="5" fill="#ff8a5b"/>
+        <text x="442" y="145" fill="#8eb6ff" font-size="12">98.6%</text>
+        <text x="424" y="171" fill="#ffc2a8" font-size="12">94.3%</text>
+      </svg>
+    </div>
+    <div class="card">
+      <h2>Who wins where</h2>
+      <table>
+        <thead><tr><th>axis</th><th>Solar</th><th>Jev</th><th>winner</th></tr></thead>
+        <tbody>
+          <tr><td>field_acc</td><td>98.7%</td><td>94.2%</td><td class="win">Solar</td></tr>
+          <tr><td>noul / score</td><td>97.6 / 100</td><td>95.2 / 85</td><td class="win">Solar</td></tr>
+          <tr><td>choice</td><td>100%</td><td>100%</td><td class="win">tie</td></tr>
+          <tr><td>KO / EN</td><td>98.8 / 98.6</td><td>93.9 / 94.3</td><td class="win">Solar</td></tr>
+          <tr><td>avg latency</td><td>1.41s</td><td>0.38s</td><td class="win">Jev</td></tr>
+        </tbody>
+      </table>
+      <div class="note"><b style="color:#e8eef8">Takeaway:</b> Grok 4.6 Judge gold 기준 품질은 Solar Mini4, 속도는 Jev.</div>
+    </div>
+  </div>
+
+  <footer>
+    Official gold: bench/gold_grok46_judge_test400.json · Solar results: results_test400_rerun_260922.jsonl · 2026-09-21
+  </footer>
+</div>
+</body>
+</html>
