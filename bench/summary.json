@@ -1,0 +1,28 @@
+{
+  "n_cases": 200,
+  "errors": 0,
+  "latency": {
+    "jev_avg_s": 0.368,
+    "solar_avg_s": 1.3511,
+    "jev_p50_s": 0.3585,
+    "solar_p50_s": 1.2733,
+    "speedup_jev_over_solar": 3.67
+  },
+  "noul": {
+    "n": 124,
+    "mae": 0.0573,
+    "agree_within_0.25": 0.9597,
+    "agree_sign_at_0.5": 0.9839
+  },
+  "choice": {
+    "n": 80,
+    "exact_match": 0.975
+  },
+  "score": {
+    "n": 20,
+    "mae": 0.7935,
+    "agree_within_1": 0.85
+  },
+  "gold": "TypeSafe Jev (jev-latest)",
+  "pred": "solar-mini4-jev wrapper"
+}

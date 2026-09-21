@@ -1,0 +1,346 @@
+{
+  "n_cases": 400,
+  "errors": 1,
+  "latency": {
+    "solar_avg_s": 1.5567
+  },
+  "noul": {
+    "n": 248,
+    "mae": 0.0923,
+    "agree_within_0.25": 0.9073,
+    "agree_sign_at_0.5": 0.9798
+  },
+  "choice": {
+    "n": 160,
+    "exact_match": 0.9938
+  },
+  "score": {
+    "n": 39,
+    "mae": 0.4205,
+    "agree_within_1": 0.9231
+  },
+  "misses": [
+    {
+      "id": "train_noul_yes_4",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.46,
+        "pred": 0.85,
+        "abs_err": 0.38999999999999996,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_yes_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.63,
+        "pred": 0.95,
+        "abs_err": 0.31999999999999995,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_8",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.66,
+        "pred": 0.95,
+        "abs_err": 0.2899999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_10",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.5,
+        "pred": 0.95,
+        "abs_err": 0.44999999999999996,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_11",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.44,
+        "pred": 0.95,
+        "abs_err": 0.51,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_yes_20",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.68,
+        "pred": 0.95,
+        "abs_err": 0.2699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_31",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.63,
+        "pred": 0.95,
+        "abs_err": 0.31999999999999995,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_36",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.6,
+        "pred": 0.95,
+        "abs_err": 0.35,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_ko_4",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.5,
+        "pred": 0.95,
+        "abs_err": 0.44999999999999996,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_5_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.65,
+        "pred": 0.95,
+        "abs_err": 0.29999999999999993,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_5_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.68,
+        "pred": 0.95,
+        "abs_err": 0.2699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.57,
+        "pred": 0.95,
+        "abs_err": 0.38,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.58,
+        "pred": 0.95,
+        "abs_err": 0.37,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_27",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.53,
+        "pred": 0.95,
+        "abs_err": 0.41999999999999993,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_41",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.58,
+        "pred": 0.95,
+        "abs_err": 0.37,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_4",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.65,
+        "pred": 0.95,
+        "abs_err": 0.29999999999999993,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.64,
+        "pred": 0.95,
+        "abs_err": 0.30999999999999994,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_10",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.81,
+        "pred": 0.05,
+        "abs_err": 0.76,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_20",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.68,
+        "pred": 0.95,
+        "abs_err": 0.2699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_21",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.66,
+        "pred": 0.95,
+        "abs_err": 0.2899999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_25",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.69,
+        "pred": 0.95,
+        "abs_err": 0.26,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_26",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.82,
+        "pred": 0.05,
+        "abs_err": 0.7699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_choice_sev_2",
+      "field": "severity",
+      "detail": {
+        "type": "choice",
+        "gold": "sev3",
+        "pred": "sev2",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_score_sev_11",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 0.16,
+        "pred": 2.0,
+        "abs_err": 1.84,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_sev_15",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 1.28,
+        "pred": 3.0,
+        "abs_err": 1.72,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_3",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 2.45,
+        "pred": 3.8,
+        "abs_err": 1.3499999999999996,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_multi_guard_7",
+      "field": "grounded",
+      "detail": {
+        "type": "noul",
+        "gold": 0.97,
+        "pred": 0.1,
+        "abs_err": 0.87,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    }
+  ],
+  "gold": "frozen Jev from gold_jev_train400.json",
+  "pred": "solar-mini4-jev tuned-v2",
+  "perfect_on_thresholds": false
+}

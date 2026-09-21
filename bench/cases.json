@@ -1,0 +1,3110 @@
+[
+  {
+    "id": "noul_yes_1",
+    "kind": "noul",
+    "state": "The password reset email bounced and the user cannot log in for 2 hours.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an authentication outage worth paging on-call?"
+      }
+    },
+    "idx": 1
+  },
+  {
+    "id": "noul_yes_2",
+    "kind": "noul",
+    "state": "A production payment webhook has failed for 40 minutes; money is not settling.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is immediate engineering escalation required?"
+      }
+    },
+    "idx": 2
+  },
+  {
+    "id": "noul_yes_3",
+    "kind": "noul",
+    "state": "Customer says their card was charged twice and shows two bank lines.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is a refund investigation warranted?"
+      }
+    },
+    "idx": 3
+  },
+  {
+    "id": "noul_yes_4",
+    "kind": "noul",
+    "state": "Server CPU is at 98% for 15 minutes and error rate jumped 10x.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we page the SRE team now?"
+      }
+    },
+    "idx": 4
+  },
+  {
+    "id": "noul_yes_5",
+    "kind": "noul",
+    "state": "User pasted an API secret in a public GitHub issue.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we rotate the secret immediately?"
+      }
+    },
+    "idx": 5
+  },
+  {
+    "id": "noul_no_1",
+    "kind": "noul",
+    "state": "User asks how to change their profile picture color.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this a P0 production incident?"
+      }
+    },
+    "idx": 6
+  },
+  {
+    "id": "noul_no_2",
+    "kind": "noul",
+    "state": "Newsletter subscriber wants to update their email address.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we escalate to the CEO?"
+      }
+    },
+    "idx": 7
+  },
+  {
+    "id": "noul_no_3",
+    "kind": "noul",
+    "state": "Customer asks for documentation link for the SDK.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is a security incident response needed?"
+      }
+    },
+    "idx": 8
+  },
+  {
+    "id": "noul_no_4",
+    "kind": "noul",
+    "state": "A blog comment says the product logo looks outdated.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should engineering stop the release train?"
+      }
+    },
+    "idx": 9
+  },
+  {
+    "id": "noul_no_5",
+    "kind": "noul",
+    "state": "User likes a tweet about our product.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is legal action required?"
+      }
+    },
+    "idx": 10
+  },
+  {
+    "id": "noul_ko_1",
+    "kind": "noul",
+    "state": "고객이 같은 주문에 두 번 결제됐다고 항의하며 오늘 환불을 요구한다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "지금 상담원을 즉시 에스컬레이션해야 하는가?"
+      }
+    },
+    "idx": 11
+  },
+  {
+    "id": "noul_ko_2",
+    "kind": "noul",
+    "state": "사용자가 비밀번호를 잊었다고 문의했다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "보안 사고 대응팀을 호출해야 하는가?"
+      }
+    },
+    "idx": 12
+  },
+  {
+    "id": "noul_ko_3",
+    "kind": "noul",
+    "state": "프로덕션 DB 디스크가 5분 내 가득 찰 예정이다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "즉시 장애 대응이 필요한가?"
+      }
+    },
+    "idx": 13
+  },
+  {
+    "id": "noul_ko_4",
+    "kind": "noul",
+    "state": "마케팅 팀이 새 배너 색상을 바꾸고 싶어한다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "법적 검토가 즉시 필요한가?"
+      }
+    },
+    "idx": 14
+  },
+  {
+    "id": "noul_ko_5",
+    "kind": "noul",
+    "state": "공개 채널에 AWS 키가 노출된 것이 확인됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "키를 즉시 폐기·재발급해야 하는가?"
+      }
+    },
+    "idx": 15
+  },
+  {
+    "id": "noul_ko_6",
+    "kind": "noul",
+    "state": "고객이 FAQ 링크를 요청했다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "CTO에게 즉시 보고해야 하는가?"
+      }
+    },
+    "idx": 16
+  },
+  {
+    "id": "noul_ko_7",
+    "kind": "noul",
+    "state": "결제 성공률이 정상 99%에서 12%로 떨어졌다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "페이먼트 온콜을 호출해야 하는가?"
+      }
+    },
+    "idx": 17
+  },
+  {
+    "id": "noul_ko_8",
+    "kind": "noul",
+    "state": "앱 아이콘을 약간 더 둥글게 바꾸고 싶다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "핫픽스 배포가 필요한가?"
+      }
+    },
+    "idx": 18
+  },
+  {
+    "id": "noul_ko_9",
+    "kind": "noul",
+    "state": "랜섬웨어 협박 메일이 운영 메일로 왔다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "보안 인시던트로 분류해야 하는가?"
+      }
+    },
+    "idx": 19
+  },
+  {
+    "id": "noul_ko_10",
+    "kind": "noul",
+    "state": "사용자가 다크모드 지원 여부를 물었다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "데이터센터를 차단해야 하는가?"
+      }
+    },
+    "idx": 20
+  },
+  {
+    "id": "noul_syn_yes_1_3",
+    "kind": "noul",
+    "state": "API latency p99 exceeded 5s for 3 minutes with rising 5xx.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 21
+  },
+  {
+    "id": "noul_syn_yes_1_12",
+    "kind": "noul",
+    "state": "API latency p99 exceeded 5s for 12 minutes with rising 5xx.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 22
+  },
+  {
+    "id": "noul_syn_yes_1_30",
+    "kind": "noul",
+    "state": "API latency p99 exceeded 5s for 30 minutes with rising 5xx.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 23
+  },
+  {
+    "id": "noul_syn_yes_2_3",
+    "kind": "noul",
+    "state": "Data pipeline stopped writing for 3 minutes; dashboards are stale.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 24
+  },
+  {
+    "id": "noul_syn_yes_2_12",
+    "kind": "noul",
+    "state": "Data pipeline stopped writing for 12 minutes; dashboards are stale.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 25
+  },
+  {
+    "id": "noul_syn_yes_2_30",
+    "kind": "noul",
+    "state": "Data pipeline stopped writing for 30 minutes; dashboards are stale.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 26
+  },
+  {
+    "id": "noul_syn_yes_3_3",
+    "kind": "noul",
+    "state": "Fraud model flagged 3 suspicious refunds in 10 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 27
+  },
+  {
+    "id": "noul_syn_yes_3_12",
+    "kind": "noul",
+    "state": "Fraud model flagged 12 suspicious refunds in 10 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 28
+  },
+  {
+    "id": "noul_syn_yes_3_30",
+    "kind": "noul",
+    "state": "Fraud model flagged 30 suspicious refunds in 10 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 29
+  },
+  {
+    "id": "noul_syn_yes_4_3",
+    "kind": "noul",
+    "state": "Kubernetes node NotReady count rose to 3; pods are pending.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 30
+  },
+  {
+    "id": "noul_syn_yes_4_12",
+    "kind": "noul",
+    "state": "Kubernetes node NotReady count rose to 12; pods are pending.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 31
+  },
+  {
+    "id": "noul_syn_yes_4_30",
+    "kind": "noul",
+    "state": "Kubernetes node NotReady count rose to 30; pods are pending.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 32
+  },
+  {
+    "id": "noul_syn_yes_5_3",
+    "kind": "noul",
+    "state": "SSL certificate expires in 3 hours on the public domain.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 33
+  },
+  {
+    "id": "noul_syn_yes_5_12",
+    "kind": "noul",
+    "state": "SSL certificate expires in 12 hours on the public domain.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 34
+  },
+  {
+    "id": "noul_syn_yes_5_30",
+    "kind": "noul",
+    "state": "SSL certificate expires in 30 hours on the public domain.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 35
+  },
+  {
+    "id": "noul_syn_no_1_1",
+    "kind": "noul",
+    "state": "Intern asks how to set up local docker for day 1.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 36
+  },
+  {
+    "id": "noul_syn_no_1_7",
+    "kind": "noul",
+    "state": "Intern asks how to set up local docker for day 7.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 37
+  },
+  {
+    "id": "noul_syn_no_1_42",
+    "kind": "noul",
+    "state": "Intern asks how to set up local docker for day 42.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 38
+  },
+  {
+    "id": "noul_syn_no_2_1",
+    "kind": "noul",
+    "state": "Design wants to A/B test button copy for experiment #1.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 39
+  },
+  {
+    "id": "noul_syn_no_2_7",
+    "kind": "noul",
+    "state": "Design wants to A/B test button copy for experiment #7.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 40
+  },
+  {
+    "id": "noul_syn_no_2_42",
+    "kind": "noul",
+    "state": "Design wants to A/B test button copy for experiment #42.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 41
+  },
+  {
+    "id": "noul_syn_no_3_1",
+    "kind": "noul",
+    "state": "Sales asks for one-pager PDF version 1.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 42
+  },
+  {
+    "id": "noul_syn_no_3_7",
+    "kind": "noul",
+    "state": "Sales asks for one-pager PDF version 7.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 43
+  },
+  {
+    "id": "noul_syn_no_3_42",
+    "kind": "noul",
+    "state": "Sales asks for one-pager PDF version 42.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 44
+  },
+  {
+    "id": "noul_syn_no_4_1",
+    "kind": "noul",
+    "state": "User requests feature upvote on idea #1.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 45
+  },
+  {
+    "id": "noul_syn_no_4_7",
+    "kind": "noul",
+    "state": "User requests feature upvote on idea #7.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 46
+  },
+  {
+    "id": "noul_syn_no_4_42",
+    "kind": "noul",
+    "state": "User requests feature upvote on idea #42.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 47
+  },
+  {
+    "id": "noul_syn_no_5_1",
+    "kind": "noul",
+    "state": "Someone thanked support agent #1 in chat.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 48
+  },
+  {
+    "id": "noul_syn_no_5_7",
+    "kind": "noul",
+    "state": "Someone thanked support agent #7 in chat.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 49
+  },
+  {
+    "id": "noul_syn_no_5_42",
+    "kind": "noul",
+    "state": "Someone thanked support agent #42 in chat.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 50
+  },
+  {
+    "id": "choice_route_1",
+    "kind": "choice",
+    "state": "I was charged twice this month on Visa.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 51
+  },
+  {
+    "id": "choice_route_2",
+    "kind": "choice",
+    "state": "The /v1/search endpoint returns 500 intermittently.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 52
+  },
+  {
+    "id": "choice_route_3",
+    "kind": "choice",
+    "state": "We want an enterprise plan for 200 seats.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 53
+  },
+  {
+    "id": "choice_route_4",
+    "kind": "choice",
+    "state": "I cannot reset my password; emails never arrive.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 54
+  },
+  {
+    "id": "choice_route_5",
+    "kind": "choice",
+    "state": "App freezes on iOS when opening settings.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 55
+  },
+  {
+    "id": "choice_route_6",
+    "kind": "choice",
+    "state": "Please refund the accidental Pro upgrade.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 56
+  },
+  {
+    "id": "choice_route_7",
+    "kind": "choice",
+    "state": "What discounts do you offer for annual billing?",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 57
+  },
+  {
+    "id": "choice_route_8",
+    "kind": "choice",
+    "state": "Enable MFA for my workspace admin.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 58
+  },
+  {
+    "id": "choice_route_9",
+    "kind": "choice",
+    "state": "Invoice PDF is missing VAT ID.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 59
+  },
+  {
+    "id": "choice_route_10",
+    "kind": "choice",
+    "state": "SDK throws timeout after 30s on file upload.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 60
+  },
+  {
+    "id": "choice_route_11",
+    "kind": "choice",
+    "state": "두 번 결제됐어요. 환불해주세요.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 61
+  },
+  {
+    "id": "choice_route_12",
+    "kind": "choice",
+    "state": "로그인이 안 되고 인증 메일이 안 와요.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 62
+  },
+  {
+    "id": "choice_route_13",
+    "kind": "choice",
+    "state": "엔터프라이즈 견적 가능할까요?",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 63
+  },
+  {
+    "id": "choice_route_14",
+    "kind": "choice",
+    "state": "API가 간헐적으로 502를 냅니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 64
+  },
+  {
+    "id": "choice_route_15",
+    "kind": "choice",
+    "state": "요금제 업그레이드 비용이 궁금합니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 65
+  },
+  {
+    "id": "choice_lang_1",
+    "kind": "choice",
+    "state": "안녕하세요, 환불 문의드립니다.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 66
+  },
+  {
+    "id": "choice_lang_2",
+    "kind": "choice",
+    "state": "Hello, I need a refund please.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 67
+  },
+  {
+    "id": "choice_lang_3",
+    "kind": "choice",
+    "state": "こんにちは、返金をお願いします。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 68
+  },
+  {
+    "id": "choice_lang_4",
+    "kind": "choice",
+    "state": "你好，我想申请退款。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 69
+  },
+  {
+    "id": "choice_lang_5",
+    "kind": "choice",
+    "state": "결제 영수증 좀 보내주세요.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 70
+  },
+  {
+    "id": "choice_lang_6",
+    "kind": "choice",
+    "state": "Can you resend the invoice?",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 71
+  },
+  {
+    "id": "choice_lang_7",
+    "kind": "choice",
+    "state": "안녕하세요, 환불 문의드립니다.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 72
+  },
+  {
+    "id": "choice_lang_8",
+    "kind": "choice",
+    "state": "Hello, I need a refund please.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 73
+  },
+  {
+    "id": "choice_lang_9",
+    "kind": "choice",
+    "state": "こんにちは、返金をお願いします。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 74
+  },
+  {
+    "id": "choice_lang_10",
+    "kind": "choice",
+    "state": "你好，我想申请退款。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 75
+  },
+  {
+    "id": "choice_lang_11",
+    "kind": "choice",
+    "state": "결제 영수증 좀 보내주세요.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 76
+  },
+  {
+    "id": "choice_lang_12",
+    "kind": "choice",
+    "state": "Can you resend the invoice?",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 77
+  },
+  {
+    "id": "choice_lang_13",
+    "kind": "choice",
+    "state": "안녕하세요, 환불 문의드립니다.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 78
+  },
+  {
+    "id": "choice_lang_14",
+    "kind": "choice",
+    "state": "Hello, I need a refund please.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 79
+  },
+  {
+    "id": "choice_lang_15",
+    "kind": "choice",
+    "state": "こんにちは、返金をお願いします。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 80
+  },
+  {
+    "id": "choice_lang_16",
+    "kind": "choice",
+    "state": "你好，我想申请退款。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 81
+  },
+  {
+    "id": "choice_lang_17",
+    "kind": "choice",
+    "state": "결제 영수증 좀 보내주세요.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 82
+  },
+  {
+    "id": "choice_lang_18",
+    "kind": "choice",
+    "state": "Can you resend the invoice?",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 83
+  },
+  {
+    "id": "choice_intent_1",
+    "kind": "choice",
+    "state": "This is the third outage this month. I'm canceling.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 84
+  },
+  {
+    "id": "choice_intent_2",
+    "kind": "choice",
+    "state": "How do I rotate an API key?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 85
+  },
+  {
+    "id": "choice_intent_3",
+    "kind": "choice",
+    "state": "Love the new UI, great work!",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 86
+  },
+  {
+    "id": "choice_intent_4",
+    "kind": "choice",
+    "state": "Your support is useless. Moving to a competitor.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 87
+  },
+  {
+    "id": "choice_intent_5",
+    "kind": "choice",
+    "state": "Where is the Python SDK docs?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 88
+  },
+  {
+    "id": "choice_intent_6",
+    "kind": "choice",
+    "state": "Thanks for fixing the bug so quickly!",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 89
+  },
+  {
+    "id": "choice_intent_7",
+    "kind": "choice",
+    "state": "앱이 또 죽었어요. 해지할 겁니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 90
+  },
+  {
+    "id": "choice_intent_8",
+    "kind": "choice",
+    "state": "파일 업로드 제한이 얼마인가요?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 91
+  },
+  {
+    "id": "choice_intent_9",
+    "kind": "choice",
+    "state": "정말 빠른 대응 감사해요!",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 92
+  },
+  {
+    "id": "choice_intent_10",
+    "kind": "choice",
+    "state": "환불이 안 돼서 너무 화가 납니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "complaint": "unhappy, refund, broken, angry",
+          "question": "how to, what is, where, docs",
+          "praise": "thanks, love, great, awesome",
+          "churn_risk": "cancel, switching, leaving forever"
+        }
+      }
+    },
+    "idx": 93
+  },
+  {
+    "id": "score_sev_1",
+    "kind": "score",
+    "state": "Typo in footer copyright year.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 94
+  },
+  {
+    "id": "score_sev_2",
+    "kind": "score",
+    "state": "Search results slightly reordered for 2% of users.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 95
+  },
+  {
+    "id": "score_sev_3",
+    "kind": "score",
+    "state": "Image CDN slow; pages load in 8s for APAC.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 96
+  },
+  {
+    "id": "score_sev_4",
+    "kind": "score",
+    "state": "Checkout button does nothing for all users.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 97
+  },
+  {
+    "id": "score_sev_5",
+    "kind": "score",
+    "state": "Primary database is down; writes fail globally.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 98
+  },
+  {
+    "id": "score_sev_6",
+    "kind": "score",
+    "state": "푸터 오탈자 하나.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 99
+  },
+  {
+    "id": "score_sev_7",
+    "kind": "score",
+    "state": "일부 사용자 검색이 느림.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 100
+  },
+  {
+    "id": "score_sev_8",
+    "kind": "score",
+    "state": "결제 버튼이 전원에게 동작하지 않음.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 101
+  },
+  {
+    "id": "score_sev_9",
+    "kind": "score",
+    "state": "메인 DB 장애로 쓰기 실패.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 102
+  },
+  {
+    "id": "score_sev_10",
+    "kind": "score",
+    "state": "다크모드 아이콘 색이 조금 연함.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 103
+  },
+  {
+    "id": "score_urg_1",
+    "kind": "score",
+    "state": "Update README badges.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 104
+  },
+  {
+    "id": "score_urg_2",
+    "kind": "score",
+    "state": "Sales wants pricing sheet before Friday demo.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 105
+  },
+  {
+    "id": "score_urg_3",
+    "kind": "score",
+    "state": "CEO keynote demo fails tomorrow morning.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 106
+  },
+  {
+    "id": "score_urg_4",
+    "kind": "score",
+    "state": "Active data exfiltration alert firing.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 107
+  },
+  {
+    "id": "score_urg_5",
+    "kind": "score",
+    "state": "Customer asks for logo PNG.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 108
+  },
+  {
+    "id": "score_urg_6",
+    "kind": "score",
+    "state": "결제 웹훅 장애 진행 중.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 109
+  },
+  {
+    "id": "score_urg_7",
+    "kind": "score",
+    "state": "블로그 오탈자 수정.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 110
+  },
+  {
+    "id": "score_urg_8",
+    "kind": "score",
+    "state": "랜섬웨어 탐지 알람.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 111
+  },
+  {
+    "id": "score_urg_9",
+    "kind": "score",
+    "state": "다음 주 컨퍼런스 슬라이드 색 변경.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 112
+  },
+  {
+    "id": "score_urg_10",
+    "kind": "score",
+    "state": "프로덕션 인증 전면 실패.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 113
+  },
+  {
+    "id": "multi_guard_1",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat is the GPU allocation per company in year 1?\n\nRETRIEVED CONTEXT:\nYear 1 provides B200 256 or 128 GPUs per selected company. 2 or 3 companies may be selected.\n\nMODEL ANSWER:\nEach selected company gets B200 256 or 128 GPUs in year 1.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 114
+  },
+  {
+    "id": "multi_guard_2",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat is the exact matching fund ratio?\n\nRETRIEVED CONTEXT:\nSelf-funding match is required. Details are in the full guide. Exact percentage is not listed in this excerpt.\n\nMODEL ANSWER:\nThe matching fund ratio is exactly 30%.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 115
+  },
+  {
+    "id": "multi_guard_3",
+    "kind": "multi",
+    "state": "QUESTION:\nWho is the named evaluation committee chair?\n\nRETRIEVED CONTEXT:\nEvaluation includes written and presentation rounds. Committee member names are not disclosed in this document.\n\nMODEL ANSWER:\nThe committee chair is Dr. Kim Min-soo.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 116
+  },
+  {
+    "id": "multi_guard_4",
+    "kind": "multi",
+    "state": "QUESTION:\nCan sole proprietors apply?\n\nRETRIEVED CONTEXT:\nOnly corporate business entities may apply. Individual (sole proprietor) businesses cannot apply.\n\nMODEL ANSWER:\nNo. Only corporations may apply; sole proprietors are not eligible.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 117
+  },
+  {
+    "id": "multi_guard_5",
+    "kind": "multi",
+    "state": "QUESTION:\nIs parking reimbursed for the briefing?\n\nRETRIEVED CONTEXT:\nParking fee is not supported. Please use public transit.\n\nMODEL ANSWER:\nNo, parking is not reimbursed.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 118
+  },
+  {
+    "id": "multi_guard_6",
+    "kind": "multi",
+    "state": "QUESTION:\nMust the free chatbot remain free forever?\n\nRETRIEVED CONTEXT:\nA free general-purpose AI chatbot for the public must launch within the year. Later monetization details are not specified.\n\nMODEL ANSWER:\nYes, it must remain free forever with no exceptions.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 119
+  },
+  {
+    "id": "multi_guard_7",
+    "kind": "multi",
+    "state": "QUESTION:\n신청 마감일은?\n\nRETRIEVED CONTEXT:\n전산 접수 마감: 2026. 8. 11.(화) 17:00. 접수 시작: 2026. 7. 13.(월) 17:00.\n\nMODEL ANSWER:\n2026년 8월 11일 화요일 17시까지입니다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 120
+  },
+  {
+    "id": "multi_guard_8",
+    "kind": "multi",
+    "state": "QUESTION:\n총 사업예산은 얼마인가?\n\nRETRIEVED CONTEXT:\n본 발췌에는 총 사업예산 금액이 명시되어 있지 않다.\n\nMODEL ANSWER:\n총 예산은 1,200억 원이다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 121
+  },
+  {
+    "id": "pad_122",
+    "kind": "noul",
+    "state": "The password reset email bounced and the user cannot log in for 2 hours.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an authentication outage worth paging on-call?"
+      }
+    },
+    "idx": 122
+  },
+  {
+    "id": "pad_123",
+    "kind": "noul",
+    "state": "A production payment webhook has failed for 40 minutes; money is not settling.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is immediate engineering escalation required?"
+      }
+    },
+    "idx": 123
+  },
+  {
+    "id": "pad_124",
+    "kind": "noul",
+    "state": "Customer says their card was charged twice and shows two bank lines.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is a refund investigation warranted?"
+      }
+    },
+    "idx": 124
+  },
+  {
+    "id": "pad_125",
+    "kind": "noul",
+    "state": "Server CPU is at 98% for 15 minutes and error rate jumped 10x.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we page the SRE team now?"
+      }
+    },
+    "idx": 125
+  },
+  {
+    "id": "pad_126",
+    "kind": "noul",
+    "state": "User pasted an API secret in a public GitHub issue.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we rotate the secret immediately?"
+      }
+    },
+    "idx": 126
+  },
+  {
+    "id": "pad_127",
+    "kind": "noul",
+    "state": "User asks how to change their profile picture color.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this a P0 production incident?"
+      }
+    },
+    "idx": 127
+  },
+  {
+    "id": "pad_128",
+    "kind": "noul",
+    "state": "Newsletter subscriber wants to update their email address.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we escalate to the CEO?"
+      }
+    },
+    "idx": 128
+  },
+  {
+    "id": "pad_129",
+    "kind": "noul",
+    "state": "Customer asks for documentation link for the SDK.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is a security incident response needed?"
+      }
+    },
+    "idx": 129
+  },
+  {
+    "id": "pad_130",
+    "kind": "noul",
+    "state": "A blog comment says the product logo looks outdated.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should engineering stop the release train?"
+      }
+    },
+    "idx": 130
+  },
+  {
+    "id": "pad_131",
+    "kind": "noul",
+    "state": "User likes a tweet about our product.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is legal action required?"
+      }
+    },
+    "idx": 131
+  },
+  {
+    "id": "pad_132",
+    "kind": "noul",
+    "state": "고객이 같은 주문에 두 번 결제됐다고 항의하며 오늘 환불을 요구한다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "지금 상담원을 즉시 에스컬레이션해야 하는가?"
+      }
+    },
+    "idx": 132
+  },
+  {
+    "id": "pad_133",
+    "kind": "noul",
+    "state": "사용자가 비밀번호를 잊었다고 문의했다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "보안 사고 대응팀을 호출해야 하는가?"
+      }
+    },
+    "idx": 133
+  },
+  {
+    "id": "pad_134",
+    "kind": "noul",
+    "state": "프로덕션 DB 디스크가 5분 내 가득 찰 예정이다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "즉시 장애 대응이 필요한가?"
+      }
+    },
+    "idx": 134
+  },
+  {
+    "id": "pad_135",
+    "kind": "noul",
+    "state": "마케팅 팀이 새 배너 색상을 바꾸고 싶어한다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "법적 검토가 즉시 필요한가?"
+      }
+    },
+    "idx": 135
+  },
+  {
+    "id": "pad_136",
+    "kind": "noul",
+    "state": "공개 채널에 AWS 키가 노출된 것이 확인됐다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "키를 즉시 폐기·재발급해야 하는가?"
+      }
+    },
+    "idx": 136
+  },
+  {
+    "id": "pad_137",
+    "kind": "noul",
+    "state": "고객이 FAQ 링크를 요청했다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "CTO에게 즉시 보고해야 하는가?"
+      }
+    },
+    "idx": 137
+  },
+  {
+    "id": "pad_138",
+    "kind": "noul",
+    "state": "결제 성공률이 정상 99%에서 12%로 떨어졌다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "페이먼트 온콜을 호출해야 하는가?"
+      }
+    },
+    "idx": 138
+  },
+  {
+    "id": "pad_139",
+    "kind": "noul",
+    "state": "앱 아이콘을 약간 더 둥글게 바꾸고 싶다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "핫픽스 배포가 필요한가?"
+      }
+    },
+    "idx": 139
+  },
+  {
+    "id": "pad_140",
+    "kind": "noul",
+    "state": "랜섬웨어 협박 메일이 운영 메일로 왔다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "보안 인시던트로 분류해야 하는가?"
+      }
+    },
+    "idx": 140
+  },
+  {
+    "id": "pad_141",
+    "kind": "noul",
+    "state": "사용자가 다크모드 지원 여부를 물었다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "데이터센터를 차단해야 하는가?"
+      }
+    },
+    "idx": 141
+  },
+  {
+    "id": "pad_142",
+    "kind": "noul",
+    "state": "API latency p99 exceeded 5s for 3 minutes with rising 5xx.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 142
+  },
+  {
+    "id": "pad_143",
+    "kind": "noul",
+    "state": "API latency p99 exceeded 5s for 12 minutes with rising 5xx.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 143
+  },
+  {
+    "id": "pad_144",
+    "kind": "noul",
+    "state": "API latency p99 exceeded 5s for 30 minutes with rising 5xx.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 144
+  },
+  {
+    "id": "pad_145",
+    "kind": "noul",
+    "state": "Data pipeline stopped writing for 3 minutes; dashboards are stale.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 145
+  },
+  {
+    "id": "pad_146",
+    "kind": "noul",
+    "state": "Data pipeline stopped writing for 12 minutes; dashboards are stale.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 146
+  },
+  {
+    "id": "pad_147",
+    "kind": "noul",
+    "state": "Data pipeline stopped writing for 30 minutes; dashboards are stale.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 147
+  },
+  {
+    "id": "pad_148",
+    "kind": "noul",
+    "state": "Fraud model flagged 3 suspicious refunds in 10 minutes.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 148
+  },
+  {
+    "id": "pad_149",
+    "kind": "noul",
+    "state": "Fraud model flagged 12 suspicious refunds in 10 minutes.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 149
+  },
+  {
+    "id": "pad_150",
+    "kind": "noul",
+    "state": "Fraud model flagged 30 suspicious refunds in 10 minutes.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 150
+  },
+  {
+    "id": "pad_151",
+    "kind": "noul",
+    "state": "Kubernetes node NotReady count rose to 3; pods are pending.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 151
+  },
+  {
+    "id": "pad_152",
+    "kind": "noul",
+    "state": "Kubernetes node NotReady count rose to 12; pods are pending.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 152
+  },
+  {
+    "id": "pad_153",
+    "kind": "noul",
+    "state": "Kubernetes node NotReady count rose to 30; pods are pending.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 153
+  },
+  {
+    "id": "pad_154",
+    "kind": "noul",
+    "state": "SSL certificate expires in 3 hours on the public domain.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 154
+  },
+  {
+    "id": "pad_155",
+    "kind": "noul",
+    "state": "SSL certificate expires in 12 hours on the public domain.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 155
+  },
+  {
+    "id": "pad_156",
+    "kind": "noul",
+    "state": "SSL certificate expires in 30 hours on the public domain.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 156
+  },
+  {
+    "id": "pad_157",
+    "kind": "noul",
+    "state": "Intern asks how to set up local docker for day 1.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 157
+  },
+  {
+    "id": "pad_158",
+    "kind": "noul",
+    "state": "Intern asks how to set up local docker for day 7.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 158
+  },
+  {
+    "id": "pad_159",
+    "kind": "noul",
+    "state": "Intern asks how to set up local docker for day 42.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 159
+  },
+  {
+    "id": "pad_160",
+    "kind": "noul",
+    "state": "Design wants to A/B test button copy for experiment #1.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 160
+  },
+  {
+    "id": "pad_161",
+    "kind": "noul",
+    "state": "Design wants to A/B test button copy for experiment #7.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 161
+  },
+  {
+    "id": "pad_162",
+    "kind": "noul",
+    "state": "Design wants to A/B test button copy for experiment #42.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 162
+  },
+  {
+    "id": "pad_163",
+    "kind": "noul",
+    "state": "Sales asks for one-pager PDF version 1.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 163
+  },
+  {
+    "id": "pad_164",
+    "kind": "noul",
+    "state": "Sales asks for one-pager PDF version 7.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 164
+  },
+  {
+    "id": "pad_165",
+    "kind": "noul",
+    "state": "Sales asks for one-pager PDF version 42.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 165
+  },
+  {
+    "id": "pad_166",
+    "kind": "noul",
+    "state": "User requests feature upvote on idea #1.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 166
+  },
+  {
+    "id": "pad_167",
+    "kind": "noul",
+    "state": "User requests feature upvote on idea #7.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 167
+  },
+  {
+    "id": "pad_168",
+    "kind": "noul",
+    "state": "User requests feature upvote on idea #42.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 168
+  },
+  {
+    "id": "pad_169",
+    "kind": "noul",
+    "state": "Someone thanked support agent #1 in chat.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 169
+  },
+  {
+    "id": "pad_170",
+    "kind": "noul",
+    "state": "Someone thanked support agent #7 in chat.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 170
+  },
+  {
+    "id": "pad_171",
+    "kind": "noul",
+    "state": "Someone thanked support agent #42 in chat.\n\n(Evaluate carefully.)",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an urgent production issue requiring immediate action?"
+      }
+    },
+    "idx": 171
+  },
+  {
+    "id": "pad_172",
+    "kind": "choice",
+    "state": "I was charged twice this month on Visa.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 172
+  },
+  {
+    "id": "pad_173",
+    "kind": "choice",
+    "state": "The /v1/search endpoint returns 500 intermittently.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 173
+  },
+  {
+    "id": "pad_174",
+    "kind": "choice",
+    "state": "We want an enterprise plan for 200 seats.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 174
+  },
+  {
+    "id": "pad_175",
+    "kind": "choice",
+    "state": "I cannot reset my password; emails never arrive.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 175
+  },
+  {
+    "id": "pad_176",
+    "kind": "choice",
+    "state": "App freezes on iOS when opening settings.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 176
+  },
+  {
+    "id": "pad_177",
+    "kind": "choice",
+    "state": "Please refund the accidental Pro upgrade.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 177
+  },
+  {
+    "id": "pad_178",
+    "kind": "choice",
+    "state": "What discounts do you offer for annual billing?\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 178
+  },
+  {
+    "id": "pad_179",
+    "kind": "choice",
+    "state": "Enable MFA for my workspace admin.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 179
+  },
+  {
+    "id": "pad_180",
+    "kind": "choice",
+    "state": "Invoice PDF is missing VAT ID.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 180
+  },
+  {
+    "id": "pad_181",
+    "kind": "choice",
+    "state": "SDK throws timeout after 30s on file upload.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 181
+  },
+  {
+    "id": "pad_182",
+    "kind": "choice",
+    "state": "두 번 결제됐어요. 환불해주세요.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 182
+  },
+  {
+    "id": "pad_183",
+    "kind": "choice",
+    "state": "로그인이 안 되고 인증 메일이 안 와요.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 183
+  },
+  {
+    "id": "pad_184",
+    "kind": "choice",
+    "state": "엔터프라이즈 견적 가능할까요?\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 184
+  },
+  {
+    "id": "pad_185",
+    "kind": "choice",
+    "state": "API가 간헐적으로 502를 냅니다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 185
+  },
+  {
+    "id": "pad_186",
+    "kind": "choice",
+    "state": "요금제 업그레이드 비용이 궁금합니다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which support team should handle this ticket?",
+        "criteria": {
+          "billing": "payments, invoices, refunds, charges",
+          "technical": "bugs, crashes, API errors, performance",
+          "sales": "pricing, upgrades, enterprise quotes",
+          "account": "login, password, email change, MFA"
+        }
+      }
+    },
+    "idx": 186
+  },
+  {
+    "id": "pad_187",
+    "kind": "choice",
+    "state": "안녕하세요, 환불 문의드립니다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 187
+  },
+  {
+    "id": "pad_188",
+    "kind": "choice",
+    "state": "Hello, I need a refund please.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 188
+  },
+  {
+    "id": "pad_189",
+    "kind": "choice",
+    "state": "こんにちは、返金をお願いします。\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 189
+  },
+  {
+    "id": "pad_190",
+    "kind": "choice",
+    "state": "你好，我想申请退款。\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 190
+  },
+  {
+    "id": "pad_191",
+    "kind": "choice",
+    "state": "결제 영수증 좀 보내주세요.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 191
+  },
+  {
+    "id": "pad_192",
+    "kind": "choice",
+    "state": "Can you resend the invoice?\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 192
+  },
+  {
+    "id": "pad_193",
+    "kind": "choice",
+    "state": "안녕하세요, 환불 문의드립니다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 193
+  },
+  {
+    "id": "pad_194",
+    "kind": "choice",
+    "state": "Hello, I need a refund please.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 194
+  },
+  {
+    "id": "pad_195",
+    "kind": "choice",
+    "state": "こんにちは、返金をお願いします。\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 195
+  },
+  {
+    "id": "pad_196",
+    "kind": "choice",
+    "state": "你好，我想申请退款。\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 196
+  },
+  {
+    "id": "pad_197",
+    "kind": "choice",
+    "state": "결제 영수증 좀 보내주세요.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 197
+  },
+  {
+    "id": "pad_198",
+    "kind": "choice",
+    "state": "Can you resend the invoice?\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 198
+  },
+  {
+    "id": "pad_199",
+    "kind": "choice",
+    "state": "안녕하세요, 환불 문의드립니다.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 199
+  },
+  {
+    "id": "pad_200",
+    "kind": "choice",
+    "state": "Hello, I need a refund please.\n\n(Evaluate carefully.)",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 200
+  }
+]

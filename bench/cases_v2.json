@@ -1,0 +1,3110 @@
+[
+  {
+    "id": "holdout_noul_yes_1",
+    "kind": "noul",
+    "state": "ER triage: patient SpO2 82% and cyanotic after asthma attack.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should a rapid-response airway team be activated now?"
+      }
+    },
+    "idx": 1
+  },
+  {
+    "id": "holdout_noul_yes_2",
+    "kind": "noul",
+    "state": "Inbound flight reports smoke in cabin at FL310; oxygen masks deployed.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this an airborne emergency requiring priority landing?"
+      }
+    },
+    "idx": 2
+  },
+  {
+    "id": "holdout_noul_yes_3",
+    "kind": "noul",
+    "state": "Fraud system: 47 chargebacks from one BIN in 8 minutes and stolen-card signatures.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we freeze the merchant MID immediately?"
+      }
+    },
+    "idx": 3
+  },
+  {
+    "id": "holdout_noul_yes_4",
+    "kind": "noul",
+    "state": "Student portal leaked midterm answer keys to a public Discord.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should academic integrity + IT security respond urgently?"
+      }
+    },
+    "idx": 4
+  },
+  {
+    "id": "holdout_noul_yes_5",
+    "kind": "noul",
+    "state": "Opposing counsel filed a TRO hearing for tomorrow 9am; we have no brief yet.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is same-day legal war-room staffing required?"
+      }
+    },
+    "idx": 5
+  },
+  {
+    "id": "holdout_noul_yes_6",
+    "kind": "noul",
+    "state": "Prod k8s: CrashLoopBackOff on payment-ingress; checkout 5xx at 94%.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should SRE page the payments on-call right now?"
+      }
+    },
+    "idx": 6
+  },
+  {
+    "id": "holdout_noul_yes_7",
+    "kind": "noul",
+    "state": "Moderation queue: livestream showing real-world doxxing of a minor.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must this stream be taken down immediately?"
+      }
+    },
+    "idx": 7
+  },
+  {
+    "id": "holdout_noul_yes_8",
+    "kind": "noul",
+    "state": "Employee reports workplace violence threat from a terminated coworker on-site.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should security lock down the floor and call authorities?"
+      }
+    },
+    "idx": 8
+  },
+  {
+    "id": "holdout_noul_yes_9",
+    "kind": "noul",
+    "state": "Cold-chain truck temp rose to 18C for 90 minutes on vaccine shipment.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this a product-quarantine event requiring QA hold?"
+      }
+    },
+    "idx": 9
+  },
+  {
+    "id": "holdout_noul_yes_10",
+    "kind": "noul",
+    "state": "KYC: newly onboarded account wired $2.4M to a sanctioned jurisdiction shell.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should compliance freeze the account and file SAR review?"
+      }
+    },
+    "idx": 10
+  },
+  {
+    "id": "holdout_noul_no_1",
+    "kind": "noul",
+    "state": "Clinic patient asks to reschedule a routine dental cleaning next month.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is a Code Blue medical emergency declaration required?"
+      }
+    },
+    "idx": 11
+  },
+  {
+    "id": "holdout_noul_no_2",
+    "kind": "noul",
+    "state": "Passenger wants a window seat change on a non-delayed domestic hop.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should ATC declare an aircraft emergency?"
+      }
+    },
+    "idx": 12
+  },
+  {
+    "id": "holdout_noul_no_3",
+    "kind": "noul",
+    "state": "Shopper asks if free shipping applies to a $12 mug.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we freeze all card rails company-wide?"
+      }
+    },
+    "idx": 13
+  },
+  {
+    "id": "holdout_noul_no_4",
+    "kind": "noul",
+    "state": "Student wants office hours to discuss a B+ grade on homework 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must campus police open a criminal investigation?"
+      }
+    },
+    "idx": 14
+  },
+  {
+    "id": "holdout_noul_no_5",
+    "kind": "noul",
+    "state": "Client asks for a PDF of our standard NDA template.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is an emergency TRO response needed tonight?"
+      }
+    },
+    "idx": 15
+  },
+  {
+    "id": "holdout_noul_no_6",
+    "kind": "noul",
+    "state": "Dev wants prettier colors on the staging Grafana dashboard.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we page the CEO for a production outage?"
+      }
+    },
+    "idx": 16
+  },
+  {
+    "id": "holdout_noul_no_7",
+    "kind": "noul",
+    "state": "User reports a mildly annoying typo in a blog comment section.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we permanently ban the entire platform?"
+      }
+    },
+    "idx": 17
+  },
+  {
+    "id": "holdout_noul_no_8",
+    "kind": "noul",
+    "state": "Employee requests one extra PTO day for a cousin's wedding.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we activate workplace violence protocols?"
+      }
+    },
+    "idx": 18
+  },
+  {
+    "id": "holdout_noul_no_9",
+    "kind": "noul",
+    "state": "Warehouse picker asks where spare barcode scanners are stored.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is a FDA product recall mandatory this hour?"
+      }
+    },
+    "idx": 19
+  },
+  {
+    "id": "holdout_noul_no_10",
+    "kind": "noul",
+    "state": "Applicant uploaded a slightly blurry selfie for ID verification retry.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we file a sanctions SAR immediately?"
+      }
+    },
+    "idx": 20
+  },
+  {
+    "id": "holdout_noul_ko_1",
+    "kind": "noul",
+    "state": "응급실 환자 혈압이 70/40이고 의식 저하가 진행 중이다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "트래우마 팀 활성화를 즉시 해야 하는가?"
+      }
+    },
+    "idx": 21
+  },
+  {
+    "id": "holdout_noul_ko_2",
+    "kind": "noul",
+    "state": "승객이 기내식 메뉴를 비건으로 바꾸고 싶어한다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "비상착륙을 선언해야 하는가?"
+      }
+    },
+    "idx": 22
+  },
+  {
+    "id": "holdout_noul_ko_3",
+    "kind": "noul",
+    "state": "동일 카드로 분당 30건의 해외 고액 결제가 발생했다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "사기 탐지팀이 계좌를 즉시 정지해야 하는가?"
+      }
+    },
+    "idx": 23
+  },
+  {
+    "id": "holdout_noul_ko_4",
+    "kind": "noul",
+    "state": "학생이 출석 확인 방법을 문의했다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "학교 전체를 봉쇄해야 하는가?"
+      }
+    },
+    "idx": 24
+  },
+  {
+    "id": "holdout_noul_ko_5",
+    "kind": "noul",
+    "state": "소송 상대가 증거인멸 정황을 이메일로 보냈다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "변호사에게 즉시 보고해야 하는가?"
+      }
+    },
+    "idx": 25
+  },
+  {
+    "id": "holdout_noul_ko_6",
+    "kind": "noul",
+    "state": "스테이징 서버 로그 포맷을 JSON으로 바꾸고 싶다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "프로덕션을 즉시 롤백해야 하는가?"
+      }
+    },
+    "idx": 26
+  },
+  {
+    "id": "holdout_noul_ko_7",
+    "kind": "noul",
+    "state": "아동 성착취 이미지가 업로드된 것이 자동 탐지됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "콘텐츠를 즉시 차단하고 신고해야 하는가?"
+      }
+    },
+    "idx": 27
+  },
+  {
+    "id": "holdout_noul_ko_8",
+    "kind": "noul",
+    "state": "직원이 육아휴직 서류 작성법을 물었다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "보안팀을 호출해야 하는가?"
+      }
+    },
+    "idx": 28
+  },
+  {
+    "id": "holdout_noul_ko_9",
+    "kind": "noul",
+    "state": "냉장 배송 상자가 공항에서 분실됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "고객과 QA에 즉시 알려 리콜 검토를 시작해야 하는가?"
+      }
+    },
+    "idx": 29
+  },
+  {
+    "id": "holdout_noul_ko_10",
+    "kind": "noul",
+    "state": "신규 가입자가 이름 철자 오타를 수정해 달라고 했다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "자금세탁 신고를 즉시 제출해야 하는가?"
+      }
+    },
+    "idx": 30
+  },
+  {
+    "id": "holdout_noul_syn_yes_1_4",
+    "kind": "noul",
+    "state": "ICU ventilator alarm silenced incorrectly for 4 minutes on bed 4.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 31
+  },
+  {
+    "id": "holdout_noul_syn_yes_1_15",
+    "kind": "noul",
+    "state": "ICU ventilator alarm silenced incorrectly for 15 minutes on bed 4.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 32
+  },
+  {
+    "id": "holdout_noul_syn_yes_1_28",
+    "kind": "noul",
+    "state": "ICU ventilator alarm silenced incorrectly for 28 minutes on bed 4.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 33
+  },
+  {
+    "id": "holdout_noul_syn_yes_2_4",
+    "kind": "noul",
+    "state": "Airline ops: gate agent reports unattended bag for 4 minutes near jetway.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 34
+  },
+  {
+    "id": "holdout_noul_syn_yes_2_15",
+    "kind": "noul",
+    "state": "Airline ops: gate agent reports unattended bag for 15 minutes near jetway.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 35
+  },
+  {
+    "id": "holdout_noul_syn_yes_2_28",
+    "kind": "noul",
+    "state": "Airline ops: gate agent reports unattended bag for 28 minutes near jetway.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 36
+  },
+  {
+    "id": "holdout_noul_syn_yes_3_4",
+    "kind": "noul",
+    "state": "Fraud graph linked 4 mule accounts sharing one device fingerprint today.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 37
+  },
+  {
+    "id": "holdout_noul_syn_yes_3_15",
+    "kind": "noul",
+    "state": "Fraud graph linked 15 mule accounts sharing one device fingerprint today.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 38
+  },
+  {
+    "id": "holdout_noul_syn_yes_3_28",
+    "kind": "noul",
+    "state": "Fraud graph linked 28 mule accounts sharing one device fingerprint today.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 39
+  },
+  {
+    "id": "holdout_noul_syn_yes_4_4",
+    "kind": "noul",
+    "state": "LMS outage: exam submissions failing for 4 minutes during finals week.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 40
+  },
+  {
+    "id": "holdout_noul_syn_yes_4_15",
+    "kind": "noul",
+    "state": "LMS outage: exam submissions failing for 15 minutes during finals week.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 41
+  },
+  {
+    "id": "holdout_noul_syn_yes_4_28",
+    "kind": "noul",
+    "state": "LMS outage: exam submissions failing for 28 minutes during finals week.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 42
+  },
+  {
+    "id": "holdout_noul_syn_yes_5_4",
+    "kind": "noul",
+    "state": "Privilege escalation CVE actively exploited on bastion for 4 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 43
+  },
+  {
+    "id": "holdout_noul_syn_yes_5_15",
+    "kind": "noul",
+    "state": "Privilege escalation CVE actively exploited on bastion for 15 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 44
+  },
+  {
+    "id": "holdout_noul_syn_yes_5_28",
+    "kind": "noul",
+    "state": "Privilege escalation CVE actively exploited on bastion for 28 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 45
+  },
+  {
+    "id": "holdout_noul_syn_yes_6_4",
+    "kind": "noul",
+    "state": "Hate-raid bot farm posting slurs at 4 msgs/sec in a teen community.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 46
+  },
+  {
+    "id": "holdout_noul_syn_yes_6_15",
+    "kind": "noul",
+    "state": "Hate-raid bot farm posting slurs at 15 msgs/sec in a teen community.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 47
+  },
+  {
+    "id": "holdout_noul_syn_yes_6_28",
+    "kind": "noul",
+    "state": "Hate-raid bot farm posting slurs at 28 msgs/sec in a teen community.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 48
+  },
+  {
+    "id": "holdout_noul_syn_yes_7_4",
+    "kind": "noul",
+    "state": "HR: anonymous tip alleges pay discrimination spanning 4 departments.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 49
+  },
+  {
+    "id": "holdout_noul_syn_yes_7_15",
+    "kind": "noul",
+    "state": "HR: anonymous tip alleges pay discrimination spanning 15 departments.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 50
+  },
+  {
+    "id": "holdout_noul_syn_yes_7_28",
+    "kind": "noul",
+    "state": "HR: anonymous tip alleges pay discrimination spanning 28 departments.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 51
+  },
+  {
+    "id": "holdout_noul_syn_yes_8_4",
+    "kind": "noul",
+    "state": "Last-mile courier GPS went dark for 4 minutes on high-value pharma parcel.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 52
+  },
+  {
+    "id": "holdout_noul_syn_yes_8_15",
+    "kind": "noul",
+    "state": "Last-mile courier GPS went dark for 15 minutes on high-value pharma parcel.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 53
+  },
+  {
+    "id": "holdout_noul_syn_yes_8_28",
+    "kind": "noul",
+    "state": "Last-mile courier GPS went dark for 28 minutes on high-value pharma parcel.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 54
+  },
+  {
+    "id": "holdout_noul_syn_yes_9_4",
+    "kind": "noul",
+    "state": "KYC liveness check bypassed via deepfake in 4 consecutive attempts.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 55
+  },
+  {
+    "id": "holdout_noul_syn_yes_9_15",
+    "kind": "noul",
+    "state": "KYC liveness check bypassed via deepfake in 15 consecutive attempts.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 56
+  },
+  {
+    "id": "holdout_noul_syn_yes_9_28",
+    "kind": "noul",
+    "state": "KYC liveness check bypassed via deepfake in 28 consecutive attempts.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 57
+  },
+  {
+    "id": "holdout_noul_syn_yes_10_4",
+    "kind": "noul",
+    "state": "Legal hold mailbox retention job failed for 4 minutes during discovery.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 58
+  },
+  {
+    "id": "holdout_noul_syn_yes_10_15",
+    "kind": "noul",
+    "state": "Legal hold mailbox retention job failed for 15 minutes during discovery.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 59
+  },
+  {
+    "id": "holdout_noul_syn_yes_10_28",
+    "kind": "noul",
+    "state": "Legal hold mailbox retention job failed for 28 minutes during discovery.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 60
+  },
+  {
+    "id": "holdout_noul_syn_no_1_2",
+    "kind": "noul",
+    "state": "Nurse asks where extra blankets are stored on ward day 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 61
+  },
+  {
+    "id": "holdout_noul_syn_no_1_9",
+    "kind": "noul",
+    "state": "Nurse asks where extra blankets are stored on ward day 9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 62
+  },
+  {
+    "id": "holdout_noul_syn_no_1_33",
+    "kind": "noul",
+    "state": "Nurse asks where extra blankets are stored on ward day 33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 63
+  },
+  {
+    "id": "holdout_noul_syn_no_2_2",
+    "kind": "noul",
+    "state": "Flyer wants Miles status match FAQ link version 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 64
+  },
+  {
+    "id": "holdout_noul_syn_no_2_9",
+    "kind": "noul",
+    "state": "Flyer wants Miles status match FAQ link version 9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 65
+  },
+  {
+    "id": "holdout_noul_syn_no_2_33",
+    "kind": "noul",
+    "state": "Flyer wants Miles status match FAQ link version 33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 66
+  },
+  {
+    "id": "holdout_noul_syn_no_3_2",
+    "kind": "noul",
+    "state": "Buyer asks if gift wrap is available for SKU-2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 67
+  },
+  {
+    "id": "holdout_noul_syn_no_3_9",
+    "kind": "noul",
+    "state": "Buyer asks if gift wrap is available for SKU-9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 68
+  },
+  {
+    "id": "holdout_noul_syn_no_3_33",
+    "kind": "noul",
+    "state": "Buyer asks if gift wrap is available for SKU-33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 69
+  },
+  {
+    "id": "holdout_noul_syn_no_4_2",
+    "kind": "noul",
+    "state": "TA wants to rename homework set #2 in the syllabus PDF.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 70
+  },
+  {
+    "id": "holdout_noul_syn_no_4_9",
+    "kind": "noul",
+    "state": "TA wants to rename homework set #9 in the syllabus PDF.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 71
+  },
+  {
+    "id": "holdout_noul_syn_no_4_33",
+    "kind": "noul",
+    "state": "TA wants to rename homework set #33 in the syllabus PDF.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 72
+  },
+  {
+    "id": "holdout_noul_syn_no_5_2",
+    "kind": "noul",
+    "state": "Intern reformats runbook markdown heading level 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 73
+  },
+  {
+    "id": "holdout_noul_syn_no_5_9",
+    "kind": "noul",
+    "state": "Intern reformats runbook markdown heading level 9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 74
+  },
+  {
+    "id": "holdout_noul_syn_no_5_33",
+    "kind": "noul",
+    "state": "Intern reformats runbook markdown heading level 33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 75
+  },
+  {
+    "id": "holdout_noul_syn_no_6_2",
+    "kind": "noul",
+    "state": "Creator asks how to enable creator-fund tip jar option 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 76
+  },
+  {
+    "id": "holdout_noul_syn_no_6_9",
+    "kind": "noul",
+    "state": "Creator asks how to enable creator-fund tip jar option 9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 77
+  },
+  {
+    "id": "holdout_noul_syn_no_6_33",
+    "kind": "noul",
+    "state": "Creator asks how to enable creator-fund tip jar option 33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 78
+  },
+  {
+    "id": "holdout_noul_syn_no_7_2",
+    "kind": "noul",
+    "state": "Manager wants team lunch catering menu option #2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 79
+  },
+  {
+    "id": "holdout_noul_syn_no_7_9",
+    "kind": "noul",
+    "state": "Manager wants team lunch catering menu option #9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 80
+  },
+  {
+    "id": "holdout_noul_syn_no_7_33",
+    "kind": "noul",
+    "state": "Manager wants team lunch catering menu option #33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 81
+  },
+  {
+    "id": "holdout_noul_syn_no_8_2",
+    "kind": "noul",
+    "state": "Dispatcher asks for warehouse aisle map revision 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 82
+  },
+  {
+    "id": "holdout_noul_syn_no_8_9",
+    "kind": "noul",
+    "state": "Dispatcher asks for warehouse aisle map revision 9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 83
+  },
+  {
+    "id": "holdout_noul_syn_no_8_33",
+    "kind": "noul",
+    "state": "Dispatcher asks for warehouse aisle map revision 33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 84
+  },
+  {
+    "id": "holdout_noul_syn_no_9_2",
+    "kind": "noul",
+    "state": "Applicant asks whether middle name is required on form page 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 85
+  },
+  {
+    "id": "holdout_noul_syn_no_9_9",
+    "kind": "noul",
+    "state": "Applicant asks whether middle name is required on form page 9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 86
+  },
+  {
+    "id": "holdout_noul_syn_no_9_33",
+    "kind": "noul",
+    "state": "Applicant asks whether middle name is required on form page 33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 87
+  },
+  {
+    "id": "holdout_noul_syn_no_10_2",
+    "kind": "noul",
+    "state": "Paralegal wants blue binder tabs for exhibit set 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 88
+  },
+  {
+    "id": "holdout_noul_syn_no_10_9",
+    "kind": "noul",
+    "state": "Paralegal wants blue binder tabs for exhibit set 9.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 89
+  },
+  {
+    "id": "holdout_noul_syn_no_10_33",
+    "kind": "noul",
+    "state": "Paralegal wants blue binder tabs for exhibit set 33.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 90
+  },
+  {
+    "id": "holdout_choice_hc_1",
+    "kind": "choice",
+    "state": "Chest pain radiating to left arm, BP 90/60.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 91
+  },
+  {
+    "id": "holdout_choice_hc_2",
+    "kind": "choice",
+    "state": "Need a 90-day refill on atorvastatin 20mg.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 92
+  },
+  {
+    "id": "holdout_choice_hc_3",
+    "kind": "choice",
+    "state": "Insurance denied claim #88421 for MRI.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 93
+  },
+  {
+    "id": "holdout_choice_hc_4",
+    "kind": "choice",
+    "state": "Please send my last 2 years of visit notes.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 94
+  },
+  {
+    "id": "holdout_choice_hc_5",
+    "kind": "choice",
+    "state": "Sudden confusion and facial droop started 10 minutes ago.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 95
+  },
+  {
+    "id": "holdout_choice_hc_6",
+    "kind": "choice",
+    "state": "Does this antibiotic interact with warfarin?",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 96
+  },
+  {
+    "id": "holdout_choice_hc_7",
+    "kind": "choice",
+    "state": "Copay charged twice for yesterday's visit.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 97
+  },
+  {
+    "id": "holdout_choice_hc_8",
+    "kind": "choice",
+    "state": "I need a HIPAA release form for my specialist.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 98
+  },
+  {
+    "id": "holdout_choice_hc_9",
+    "kind": "choice",
+    "state": "숨이 차고 산소포화도가 떨어집니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 99
+  },
+  {
+    "id": "holdout_choice_hc_10",
+    "kind": "choice",
+    "state": "처방전 재발급이 필요합니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 100
+  },
+  {
+    "id": "holdout_choice_hc_11",
+    "kind": "choice",
+    "state": "실손보험 청구가 거절됐어요.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 101
+  },
+  {
+    "id": "holdout_choice_hc_12",
+    "kind": "choice",
+    "state": "진료기록 사본을 받고 싶습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which hospital desk should handle this?",
+        "criteria": {
+          "triage": "vitals, acuity, ER queue, chief complaint",
+          "pharmacy": "meds, refill, dose, interaction",
+          "billing_hc": "insurance, claim, copay, invoice",
+          "records": "records request, ROI, chart copy"
+        }
+      }
+    },
+    "idx": 102
+  },
+  {
+    "id": "holdout_choice_air_1",
+    "kind": "choice",
+    "state": "Flight 442 will time out crew legality in 35 minutes.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 103
+  },
+  {
+    "id": "holdout_choice_air_2",
+    "kind": "choice",
+    "state": "My suitcase never arrived in NRT; tag is JE123456.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 104
+  },
+  {
+    "id": "holdout_choice_air_3",
+    "kind": "choice",
+    "state": "Please reinstate my Gold status after partner credit.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 105
+  },
+  {
+    "id": "holdout_choice_air_4",
+    "kind": "choice",
+    "state": "Passenger passed out mid-cabin; CPR in progress.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 106
+  },
+  {
+    "id": "holdout_choice_air_5",
+    "kind": "choice",
+    "state": "Weather diversion to alternate; fuel critical.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 107
+  },
+  {
+    "id": "holdout_choice_air_6",
+    "kind": "choice",
+    "state": "Wheel broke off checked bag on carousel 3.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 108
+  },
+  {
+    "id": "holdout_choice_air_7",
+    "kind": "choice",
+    "state": "Can I transfer 20k miles to my spouse?",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 109
+  },
+  {
+    "id": "holdout_choice_air_8",
+    "kind": "choice",
+    "state": "Unattended backpack in lavatory with wires visible.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 110
+  },
+  {
+    "id": "holdout_choice_air_9",
+    "kind": "choice",
+    "state": "게이트 지연으로 승무원 근무시간이 초과됩니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 111
+  },
+  {
+    "id": "holdout_choice_air_10",
+    "kind": "choice",
+    "state": "위탁수하물이 안 왔어요.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 112
+  },
+  {
+    "id": "holdout_choice_air_11",
+    "kind": "choice",
+    "state": "마일리지 적립이 누락됐습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 113
+  },
+  {
+    "id": "holdout_choice_air_12",
+    "kind": "choice",
+    "state": "기내에서 연기가 납니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which airline team should own this?",
+        "criteria": {
+          "ops": "delay, diversion, MEL, crew timeout, gate",
+          "baggage": "lost bag, damaged luggage, PIR",
+          "loyalty": "miles, status, companion pass",
+          "safety": "smoke, medical, security threat, turbulence injury"
+        }
+      }
+    },
+    "idx": 114
+  },
+  {
+    "id": "holdout_choice_ecom_1",
+    "kind": "choice",
+    "state": "10 high-value phones bought with mismatched AVS and VPN.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 115
+  },
+  {
+    "id": "holdout_choice_ecom_2",
+    "kind": "choice",
+    "state": "Order #9912 says shipped but tracking never moved.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 116
+  },
+  {
+    "id": "holdout_choice_ecom_3",
+    "kind": "choice",
+    "state": "Shoes arrived wrong size; need free exchange.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 117
+  },
+  {
+    "id": "holdout_choice_ecom_4",
+    "kind": "choice",
+    "state": "New seller uploaded counterfeit luxury handbags.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 118
+  },
+  {
+    "id": "holdout_choice_ecom_5",
+    "kind": "choice",
+    "state": "Password reset then $3k gift-card drain in 2 minutes.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 119
+  },
+  {
+    "id": "holdout_choice_ecom_6",
+    "kind": "choice",
+    "state": "Warehouse sent blue mug instead of red kettle.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 120
+  },
+  {
+    "id": "holdout_choice_ecom_7",
+    "kind": "choice",
+    "state": "I want a refund; item unused in original box.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 121
+  },
+  {
+    "id": "holdout_choice_ecom_8",
+    "kind": "choice",
+    "state": "Seller tax ID failed TIN match three times.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 122
+  },
+  {
+    "id": "holdout_choice_ecom_9",
+    "kind": "choice",
+    "state": "도난 카드로 의심되는 결제가 있습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 123
+  },
+  {
+    "id": "holdout_choice_ecom_10",
+    "kind": "choice",
+    "state": "배송이 일주째 멈춰 있어요.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 124
+  },
+  {
+    "id": "holdout_choice_ecom_11",
+    "kind": "choice",
+    "state": "반품 접수하고 환불해주세요.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 125
+  },
+  {
+    "id": "holdout_choice_ecom_12",
+    "kind": "choice",
+    "state": "판매자 계정이 위조품을 올리고 있습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which ecommerce ops team?",
+        "criteria": {
+          "fraud": "stolen card, ATO, chargeback ring, mule",
+          "fulfillment": "ship delay, wrong item, inventory",
+          "returns": "RMA, refund, exchange",
+          "seller": "marketplace seller KYC, listing policy"
+        }
+      }
+    },
+    "idx": 126
+  },
+  {
+    "id": "holdout_choice_lang_1",
+    "kind": "choice",
+    "state": "내일 진료 예약 변경하고 싶어요.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 127
+  },
+  {
+    "id": "holdout_choice_lang_2",
+    "kind": "choice",
+    "state": "Please rebook my connecting flight to Osaka.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 128
+  },
+  {
+    "id": "holdout_choice_lang_3",
+    "kind": "choice",
+    "state": "荷物が届きません。確認してください。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 129
+  },
+  {
+    "id": "holdout_choice_lang_4",
+    "kind": "choice",
+    "state": "我想取消这张保险理赔单。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 130
+  },
+  {
+    "id": "holdout_choice_lang_5",
+    "kind": "choice",
+    "state": "출석 인정 기준이 어떻게 되나요?",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 131
+  },
+  {
+    "id": "holdout_choice_lang_6",
+    "kind": "choice",
+    "state": "Can you escalate this KYC review?",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 132
+  },
+  {
+    "id": "holdout_choice_lang_7",
+    "kind": "choice",
+    "state": "返品ラベルを再送してください。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 133
+  },
+  {
+    "id": "holdout_choice_lang_8",
+    "kind": "choice",
+    "state": "请帮我重置商户后台密码。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 134
+  },
+  {
+    "id": "holdout_choice_lang_9",
+    "kind": "choice",
+    "state": "연차 잔여일수 확인 부탁드립니다.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 135
+  },
+  {
+    "id": "holdout_choice_lang_10",
+    "kind": "choice",
+    "state": "The cold-chain logger alarm keeps beeping.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 136
+  },
+  {
+    "id": "holdout_choice_lang_11",
+    "kind": "choice",
+    "state": "モデレーションポリシーを教えてください。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 137
+  },
+  {
+    "id": "holdout_choice_lang_12",
+    "kind": "choice",
+    "state": "这个包裹需要冷链运输吗？",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 138
+  },
+  {
+    "id": "holdout_choice_intent_1",
+    "kind": "choice",
+    "state": "Someone collapsed in gate B12; not breathing.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 139
+  },
+  {
+    "id": "holdout_choice_intent_2",
+    "kind": "choice",
+    "state": "What documents are required for student leave of absence?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 140
+  },
+  {
+    "id": "holdout_choice_intent_3",
+    "kind": "choice",
+    "state": "Your courier smashed my pharma cooler. Unacceptable.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 141
+  },
+  {
+    "id": "holdout_choice_intent_4",
+    "kind": "choice",
+    "state": "Brilliant bedside manner from Dr. Park today—thank you!",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 142
+  },
+  {
+    "id": "holdout_choice_intent_5",
+    "kind": "choice",
+    "state": "Active shooter reported near the west loading dock.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 143
+  },
+  {
+    "id": "holdout_choice_intent_6",
+    "kind": "choice",
+    "state": "How do I appeal a content strike under adult-content rules?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 144
+  },
+  {
+    "id": "holdout_choice_intent_7",
+    "kind": "choice",
+    "state": "KYC took 3 weeks and still rejected with no reason. Furious.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 145
+  },
+  {
+    "id": "holdout_choice_intent_8",
+    "kind": "choice",
+    "state": "Love the new logistics tracking UI—so clear!",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 146
+  },
+  {
+    "id": "holdout_choice_intent_9",
+    "kind": "choice",
+    "state": "기내에 연기 냄새와 Sparks가 납니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 147
+  },
+  {
+    "id": "holdout_choice_intent_10",
+    "kind": "choice",
+    "state": "육아휴직 신청 서류는 어디서 받나요?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 148
+  },
+  {
+    "id": "holdout_choice_intent_11",
+    "kind": "choice",
+    "state": "위조 상품 환불이 안 돼서 정말 화가 납니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 149
+  },
+  {
+    "id": "holdout_choice_intent_12",
+    "kind": "choice",
+    "state": "상담원 응대가 너무 친절해서 감동입니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, smoke, assault, cardiac, active threat",
+          "policy_question": "how to, what is allowed, docs, eligibility",
+          "complaint": "angry, refund, unfair, broken promise",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 150
+  },
+  {
+    "id": "holdout_choice_sev_1",
+    "kind": "choice",
+    "state": "Primary auth IdP down; all logins failing globally.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 151
+  },
+  {
+    "id": "holdout_choice_sev_2",
+    "kind": "choice",
+    "state": "Search latency elevated for EU region only; cache miss spike.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 152
+  },
+  {
+    "id": "holdout_choice_sev_3",
+    "kind": "choice",
+    "state": "One secondary replica lagging 30s; reads still succeed.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 153
+  },
+  {
+    "id": "holdout_choice_sev_4",
+    "kind": "choice",
+    "state": "Docs typo in runbook step numbering.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 154
+  },
+  {
+    "id": "holdout_choice_sev_5",
+    "kind": "choice",
+    "state": "Ransomware encryption progressing on file servers.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 155
+  },
+  {
+    "id": "holdout_choice_sev_6",
+    "kind": "choice",
+    "state": "Checkout A/B flag flipped wrong variant for 8% users.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 156
+  },
+  {
+    "id": "holdout_choice_sev_7",
+    "kind": "choice",
+    "state": "Canary pod OOM once; auto-restarted healthy.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 157
+  },
+  {
+    "id": "holdout_choice_sev_8",
+    "kind": "choice",
+    "state": "Changelog date format inconsistent.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 158
+  },
+  {
+    "id": "holdout_choice_sev_9",
+    "kind": "choice",
+    "state": "결제 DB 마스터 장애로 전체 쓰기 실패.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 159
+  },
+  {
+    "id": "holdout_choice_sev_10",
+    "kind": "choice",
+    "state": "푸터 저작권 연도 오타.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 160
+  },
+  {
+    "id": "holdout_choice_sev_11",
+    "kind": "choice",
+    "state": "알림 이메일이 일부 지연되지만 앱은 정상.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 161
+  },
+  {
+    "id": "holdout_choice_sev_12",
+    "kind": "choice",
+    "state": "모바일 푸시가 전 세계적으로 전송 실패.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or data loss in progress",
+          "sev2": "major feature degraded for many users",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 162
+  },
+  {
+    "id": "holdout_score_sev_1",
+    "kind": "score",
+    "state": "Misaligned icon on HR leave calendar widget.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 163
+  },
+  {
+    "id": "holdout_score_sev_2",
+    "kind": "score",
+    "state": "Airline app shows wrong gate for 0.5% of domestic flights.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 164
+  },
+  {
+    "id": "holdout_score_sev_3",
+    "kind": "score",
+    "state": "Hospital patient portal login succeeds but labs page times out for most users.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 165
+  },
+  {
+    "id": "holdout_score_sev_4",
+    "kind": "score",
+    "state": "Ecommerce checkout refuses all cards after payment gateway cutover.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 166
+  },
+  {
+    "id": "holdout_score_sev_5",
+    "kind": "score",
+    "state": "Fintech ledger double-writes balances; reconciliation diverging.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 167
+  },
+  {
+    "id": "holdout_score_sev_6",
+    "kind": "score",
+    "state": "물류 대시보드 아이콘 색이 조금 연함.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 168
+  },
+  {
+    "id": "holdout_score_sev_7",
+    "kind": "score",
+    "state": "일부 학생만 성적 PDF 다운로드가 느림.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 169
+  },
+  {
+    "id": "holdout_score_sev_8",
+    "kind": "score",
+    "state": "콘텐츠 신고 버튼이 모든 사용자에게 동작하지 않음.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 170
+  },
+  {
+    "id": "holdout_score_sev_9",
+    "kind": "score",
+    "state": "전자의무기록 쓰기 전면 실패.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 171
+  },
+  {
+    "id": "holdout_score_sev_10",
+    "kind": "score",
+    "state": "법률 포털 로고 정렬이 1px 어긋남.",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss risk"
+        ]
+      }
+    },
+    "idx": 172
+  },
+  {
+    "id": "holdout_score_urg_1",
+    "kind": "score",
+    "state": "Update employee handbook PDF cover photo.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 173
+  },
+  {
+    "id": "holdout_score_urg_2",
+    "kind": "score",
+    "state": "Airline needs new meal-preference sheet before Friday charter.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 174
+  },
+  {
+    "id": "holdout_score_urg_3",
+    "kind": "score",
+    "state": "CEO hospital board demo of triage UI fails tomorrow morning.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 175
+  },
+  {
+    "id": "holdout_score_urg_4",
+    "kind": "score",
+    "state": "Active KYC deepfake bypass draining customer wallets.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 176
+  },
+  {
+    "id": "holdout_score_urg_5",
+    "kind": "score",
+    "state": "Creator asks for pastel theme on moderation queue.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 177
+  },
+  {
+    "id": "holdout_score_urg_6",
+    "kind": "score",
+    "state": "백신 콜드체인 알람 진행 중.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 178
+  },
+  {
+    "id": "holdout_score_urg_7",
+    "kind": "score",
+    "state": "블로그 오탈자 하나 수정.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 179
+  },
+  {
+    "id": "holdout_score_urg_8",
+    "kind": "score",
+    "state": "법정 제출 마감 2시간 전 증거 파일 손상.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 180
+  },
+  {
+    "id": "holdout_score_urg_9",
+    "kind": "score",
+    "state": "다음 주 학회 포스터 색상 변경.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 181
+  },
+  {
+    "id": "holdout_score_urg_10",
+    "kind": "score",
+    "state": "응급실 EMR 전면 다운.",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 182
+  },
+  {
+    "id": "holdout_multi_guard_1",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat is the maximum cold-chain excursion allowed for VaxNova vials?\n\nRETRIEVED CONTEXT:\nVaxNova vials may remain between 2C and 8C. Excursions above 8C for up to 30 minutes are allowed once per shipment if logged. Excursions above 15C require quarantine.\n\nMODEL ANSWER:\nExcursions above 8C for up to 30 minutes are allowed once per shipment if logged.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 183
+  },
+  {
+    "id": "holdout_multi_guard_2",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat is the exact airline crew duty extension limit under Policy AR-9?\n\nRETRIEVED CONTEXT:\nPolicy AR-9 discusses fatigue reporting. The numeric duty extension limit is not stated in this excerpt.\n\nMODEL ANSWER:\nCrew may extend duty by exactly 4.5 hours under AR-9.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 184
+  },
+  {
+    "id": "holdout_multi_guard_3",
+    "kind": "multi",
+    "state": "QUESTION:\nWho chairs the university academic integrity board?\n\nRETRIEVED CONTEXT:\nThe board reviews plagiarism cases within 10 business days. Member names are confidential and not listed here.\n\nMODEL ANSWER:\nProfessor Elena Vargas chairs the academic integrity board.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 185
+  },
+  {
+    "id": "holdout_multi_guard_4",
+    "kind": "multi",
+    "state": "QUESTION:\nAre sole traders eligible for FinPay KYC tier-3 limits?\n\nRETRIEVED CONTEXT:\nTier-3 limits require a registered corporation with two directors. Sole traders are limited to tier-1.\n\nMODEL ANSWER:\nNo. Sole traders cannot obtain tier-3; they are capped at tier-1.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 186
+  },
+  {
+    "id": "holdout_multi_guard_5",
+    "kind": "multi",
+    "state": "QUESTION:\nIs parking reimbursed for the legal intake clinic?\n\nRETRIEVED CONTEXT:\nParking is not reimbursed. Use the metro stop at Courthouse Square.\n\nMODEL ANSWER:\nNo, parking is not reimbursed.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 187
+  },
+  {
+    "id": "holdout_multi_guard_6",
+    "kind": "multi",
+    "state": "QUESTION:\nMust the moderated teen community ban all political speech forever?\n\nRETRIEVED CONTEXT:\nHate speech and doxxing are prohibited. Ordinary political discussion is allowed if civil. Lifetime ban rules are not specified for politics alone.\n\nMODEL ANSWER:\nYes, all political speech must be permanently banned with no exceptions.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 188
+  },
+  {
+    "id": "holdout_multi_guard_7",
+    "kind": "multi",
+    "state": "QUESTION:\n육아휴직 최소 근속 요건은?\n\nRETRIEVED CONTEXT:\n연속 근속 6개월 이상인 정규직에 한해 육아휴직을 신청할 수 있다. 수습 기간은 제외한다.\n\nMODEL ANSWER:\n연속 근속 6개월 이상 정규직이어야 하며 수습 기간은 제외됩니다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 189
+  },
+  {
+    "id": "holdout_multi_guard_8",
+    "kind": "multi",
+    "state": "QUESTION:\n물류 허브 H7의 일일 처리 용량은?\n\nRETRIEVED CONTEXT:\n본 발췌에는 허브 H7의 일일 처리 용량 수치가 없다. 다른 허브 예시만 언급된다.\n\nMODEL ANSWER:\n허브 H7은 하루 12만 건을 처리합니다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 190
+  },
+  {
+    "id": "holdout_pad_hr_1",
+    "kind": "noul",
+    "state": "Manager asks whether Juneteenth is a paid holiday this year for remote staff.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this a workplace violence emergency?"
+      }
+    },
+    "idx": 191
+  },
+  {
+    "id": "holdout_pad_log_1",
+    "kind": "noul",
+    "state": "Dispatcher notes pallet jack squeaks in aisle C; maintenance ticket filed.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is FDA recall action required immediately?"
+      }
+    },
+    "idx": 192
+  },
+  {
+    "id": "holdout_pad_edu_1",
+    "kind": "noul",
+    "state": "Librarian wants quieter LED bulbs in study room 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should campus lockdown begin now?"
+      }
+    },
+    "idx": 193
+  },
+  {
+    "id": "holdout_pad_fin_1",
+    "kind": "noul",
+    "state": "Analyst wants a prettier color for the AML dashboard chart series.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we freeze all customer wires globally?"
+      }
+    },
+    "idx": 194
+  },
+  {
+    "id": "holdout_pad_mod_1",
+    "kind": "noul",
+    "state": "Moderator asks how to pin community guidelines to channel top.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we call law enforcement for this tip?"
+      }
+    },
+    "idx": 195
+  },
+  {
+    "id": "holdout_pad_legal_1",
+    "kind": "noul",
+    "state": "Paralegal wants blue sticky flags for deposition binders.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is an emergency TRO hearing required tonight?"
+      }
+    },
+    "idx": 196
+  },
+  {
+    "id": "holdout_pad_air_1",
+    "kind": "noul",
+    "state": "Passenger asks if pretzel snacks are still complimentary in economy.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should ATC declare an airborne emergency?"
+      }
+    },
+    "idx": 197
+  },
+  {
+    "id": "holdout_pad_hc_1",
+    "kind": "noul",
+    "state": "Outpatient asks where the cafeteria is on floor 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should a Code Blue be called?"
+      }
+    },
+    "idx": 198
+  },
+  {
+    "id": "holdout_pad_dev_1",
+    "kind": "noul",
+    "state": "Engineer wants to rename a staging feature flag for clarity.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is this a Sev-1 production outage?"
+      }
+    },
+    "idx": 199
+  },
+  {
+    "id": "holdout_pad_ecom_1",
+    "kind": "noul",
+    "state": "Shopper asks whether gift receipts omit prices.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we freeze the merchant MID for fraud?"
+      }
+    },
+    "idx": 200
+  }
+]

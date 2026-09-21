@@ -1,0 +1,807 @@
+{
+  "n_cases": 400,
+  "errors": 0,
+  "latency": {
+    "solar_avg_s": 1.3968
+  },
+  "noul": {
+    "n": 248,
+    "mae": 0.1541,
+    "agree_within_0.25": 0.8266,
+    "agree_sign_at_0.5": 0.8589
+  },
+  "choice": {
+    "n": 160,
+    "exact_match": 0.9313
+  },
+  "score": {
+    "n": 40,
+    "mae": 0.878,
+    "agree_within_1": 0.65
+  },
+  "misses": [
+    {
+      "id": "train_noul_yes_4",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.46,
+        "pred": 0.85,
+        "abs_err": 0.38999999999999996,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_yes_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.63,
+        "pred": 0.05,
+        "abs_err": 0.58,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_yes_10",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.5,
+        "pred": 0.95,
+        "abs_err": 0.44999999999999996,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_11",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.44,
+        "pred": 0.05,
+        "abs_err": 0.39,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_20",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.68,
+        "pred": 0.95,
+        "abs_err": 0.2699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_27",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.7,
+        "pred": 0.05,
+        "abs_err": 0.6499999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_yes_29",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.76,
+        "pred": 0.05,
+        "abs_err": 0.71,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_yes_31",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.63,
+        "pred": 0.95,
+        "abs_err": 0.31999999999999995,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_yes_33",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.79,
+        "pred": 0.05,
+        "abs_err": 0.74,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_yes_36",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.6,
+        "pred": 0.05,
+        "abs_err": 0.5499999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_ko_4",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.5,
+        "pred": 0.95,
+        "abs_err": 0.44999999999999996,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_ko_10",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.86,
+        "pred": 0.05,
+        "abs_err": 0.8099999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_3_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.93,
+        "pred": 0.05,
+        "abs_err": 0.88,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_3_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.93,
+        "pred": 0.05,
+        "abs_err": 0.88,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_4_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.72,
+        "pred": 0.05,
+        "abs_err": 0.6699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_4_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.8,
+        "pred": 0.05,
+        "abs_err": 0.75,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_4_27",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.82,
+        "pred": 0.05,
+        "abs_err": 0.7699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_4_41",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.84,
+        "pred": 0.05,
+        "abs_err": 0.7899999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_5_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.65,
+        "pred": 0.15,
+        "abs_err": 0.5,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_5_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.68,
+        "pred": 0.15,
+        "abs_err": 0.53,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_5_41",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.79,
+        "pred": 0.05,
+        "abs_err": 0.74,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_6_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.7,
+        "pred": 0.35,
+        "abs_err": 0.35,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_7_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.85,
+        "pred": 0.15,
+        "abs_err": 0.7,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_8_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.94,
+        "pred": 0.05,
+        "abs_err": 0.8899999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_8_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.94,
+        "pred": 0.05,
+        "abs_err": 0.8899999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_8_27",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.94,
+        "pred": 0.05,
+        "abs_err": 0.8899999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_8_41",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.93,
+        "pred": 0.05,
+        "abs_err": 0.88,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.57,
+        "pred": 0.05,
+        "abs_err": 0.5199999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.58,
+        "pred": 0.05,
+        "abs_err": 0.5299999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_27",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.53,
+        "pred": 0.05,
+        "abs_err": 0.48000000000000004,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_10_41",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.58,
+        "pred": 0.05,
+        "abs_err": 0.5299999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_4",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.65,
+        "pred": 0.95,
+        "abs_err": 0.29999999999999993,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.64,
+        "pred": 0.35,
+        "abs_err": 0.29000000000000004,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_8",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.81,
+        "pred": 0.05,
+        "abs_err": 0.76,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_10",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.81,
+        "pred": 0.05,
+        "abs_err": 0.76,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_11",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.89,
+        "pred": 0.05,
+        "abs_err": 0.84,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_18",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.78,
+        "pred": 0.05,
+        "abs_err": 0.73,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_20",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.68,
+        "pred": 0.95,
+        "abs_err": 0.2699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_24",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.81,
+        "pred": 0.05,
+        "abs_err": 0.76,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_25",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.69,
+        "pred": 0.95,
+        "abs_err": 0.26,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_pad_26",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.82,
+        "pred": 0.05,
+        "abs_err": 0.7699999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_pad_27",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.89,
+        "pred": 0.05,
+        "abs_err": 0.84,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_choice_ins_3",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "cat",
+        "pred": "fnol",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_ins_6",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "siu",
+        "pred": "fnol",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_ins_7",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "cat",
+        "pred": "fnol",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_ins_11",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "cat",
+        "pred": "fnol",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_intent_5",
+      "field": "intent",
+      "detail": {
+        "type": "choice",
+        "gold": "emergency",
+        "pred": "complaint",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_sev_7",
+      "field": "severity",
+      "detail": {
+        "type": "choice",
+        "gold": "sev3",
+        "pred": "sev4",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_food_3",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "labeling",
+        "pred": "qa_hold",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_food_4",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "shipping",
+        "pred": "qa_hold",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_choice_food_8",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "shipping",
+        "pred": "qa_hold",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_score_sev_2",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 1.53,
+        "pred": 3.0,
+        "abs_err": 1.47,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_sev_6",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 0.55,
+        "pred": 3.0,
+        "abs_err": 2.45,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_sev_19",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 1.54,
+        "pred": 0.0,
+        "abs_err": 1.54,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_1",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 2.46,
+        "pred": 4.0,
+        "abs_err": 1.54,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_2",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 1.64,
+        "pred": 3.0,
+        "abs_err": 1.36,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_3",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 2.45,
+        "pred": 4.0,
+        "abs_err": 1.5499999999999998,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_5",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 1.56,
+        "pred": 4.0,
+        "abs_err": 2.44,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_7",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 2.35,
+        "pred": 0.2,
+        "abs_err": 2.15,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_9",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 1.64,
+        "pred": 0.0,
+        "abs_err": 1.64,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_11",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 1.29,
+        "pred": 4.0,
+        "abs_err": 2.71,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_12",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 1.89,
+        "pred": 4.0,
+        "abs_err": 2.1100000000000003,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_15",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 1.87,
+        "pred": 4.0,
+        "abs_err": 2.13,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_17",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 2.23,
+        "pred": 4.0,
+        "abs_err": 1.77,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_urg_19",
+      "field": "urgency",
+      "detail": {
+        "type": "score",
+        "gold": 1.38,
+        "pred": 0.2,
+        "abs_err": 1.18,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_multi_guard_6",
+      "field": "decision",
+      "detail": {
+        "type": "choice",
+        "gold": "block",
+        "pred": "rewrite",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_multi_guard_7",
+      "field": "grounded",
+      "detail": {
+        "type": "noul",
+        "gold": 0.97,
+        "pred": 0.1,
+        "abs_err": 0.87,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_multi_guard_16",
+      "field": "decision",
+      "detail": {
+        "type": "choice",
+        "gold": "block",
+        "pred": "rewrite",
+        "agree": false
+      }
+    }
+  ],
+  "gold": "frozen Jev from gold_jev_train400.json",
+  "pred": "solar-mini4-jev baseline",
+  "perfect_on_thresholds": false
+}

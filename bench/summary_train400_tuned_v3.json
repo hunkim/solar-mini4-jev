@@ -1,0 +1,154 @@
+{
+  "n_cases": 400,
+  "errors": 1,
+  "latency": {
+    "solar_avg_s": 1.5832
+  },
+  "noul": {
+    "n": 247,
+    "mae": 0.0729,
+    "agree_within_0.25": 0.9717,
+    "agree_sign_at_0.5": 0.9757
+  },
+  "choice": {
+    "n": 160,
+    "exact_match": 0.9938
+  },
+  "score": {
+    "n": 40,
+    "mae": 0.3765,
+    "agree_within_1": 0.925
+  },
+  "misses": [
+    {
+      "id": "train_noul_no_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.04,
+        "pred": 0.42,
+        "abs_err": 0.38,
+        "agree_tol0.25": false,
+        "agree_sign0.5": true
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_2_5",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.88,
+        "pred": 0.42,
+        "abs_err": 0.46,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_2_14",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.89,
+        "pred": 0.42,
+        "abs_err": 0.47000000000000003,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_2_27",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.88,
+        "pred": 0.42,
+        "abs_err": 0.46,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_noul_syn_yes_2_41",
+      "field": "yes",
+      "detail": {
+        "type": "noul",
+        "gold": 0.88,
+        "pred": 0.42,
+        "abs_err": 0.46,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_choice_game_4",
+      "field": "team",
+      "detail": {
+        "type": "choice",
+        "gold": "community",
+        "pred": "anticheat",
+        "agree": false
+      }
+    },
+    {
+      "id": "train_score_sev_5",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 2.92,
+        "pred": 4.0,
+        "abs_err": 1.08,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_sev_14",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 1.04,
+        "pred": 3.0,
+        "abs_err": 1.96,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_score_sev_19",
+      "field": "severity",
+      "detail": {
+        "type": "score",
+        "gold": 1.54,
+        "pred": 3.0,
+        "abs_err": 1.46,
+        "agree_tol1": false
+      }
+    },
+    {
+      "id": "train_multi_guard_3",
+      "field": "grounded",
+      "detail": {
+        "type": "noul",
+        "gold": 0.02,
+        "pred": 0.9,
+        "abs_err": 0.88,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    },
+    {
+      "id": "train_multi_guard_3",
+      "field": "hallucinated",
+      "detail": {
+        "type": "noul",
+        "gold": 0.98,
+        "pred": 0.05,
+        "abs_err": 0.9299999999999999,
+        "agree_tol0.25": false,
+        "agree_sign0.5": false
+      }
+    }
+  ],
+  "gold": "frozen Jev from gold_jev_train400.json",
+  "pred": "solar-mini4-jev tuned-v3",
+  "perfect_on_thresholds": false
+}

@@ -1,0 +1,4354 @@
+{
+  "1": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "2": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "3": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "4": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "latency_s": 0
+  },
+  "5": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.65
+      }
+    },
+    "latency_s": 0
+  },
+  "6": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.65
+      }
+    },
+    "latency_s": 0
+  },
+  "7": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "8": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "9": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "10": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "11": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "latency_s": 0
+  },
+  "12": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "13": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "14": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "15": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "16": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "17": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "18": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.78
+      }
+    },
+    "latency_s": 0
+  },
+  "19": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "latency_s": 0
+  },
+  "20": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "21": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "latency_s": 0
+  },
+  "22": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "23": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "24": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "25": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "26": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.7
+      }
+    },
+    "latency_s": 0
+  },
+  "27": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "28": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "29": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "30": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.7
+      }
+    },
+    "latency_s": 0
+  },
+  "31": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "32": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "33": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "34": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "35": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.82
+      }
+    },
+    "latency_s": 0
+  },
+  "36": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "37": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "38": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "39": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "40": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "41": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "42": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "43": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "44": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "45": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "46": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "47": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "48": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "49": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "50": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "51": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "52": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "53": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "54": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "55": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "56": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "57": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "58": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "latency_s": 0
+  },
+  "59": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "60": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "61": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "62": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "63": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "latency_s": 0
+  },
+  "64": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "65": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.7
+      }
+    },
+    "latency_s": 0
+  },
+  "66": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "67": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "68": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "69": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "70": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "71": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "72": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "73": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "74": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "75": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "76": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "77": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "78": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "79": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "80": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "81": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "latency_s": 0
+  },
+  "82": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "latency_s": 0
+  },
+  "83": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "latency_s": 0
+  },
+  "84": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "latency_s": 0
+  },
+  "85": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "86": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "87": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "88": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "latency_s": 0
+  },
+  "89": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "90": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "91": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "92": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "93": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "94": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "95": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "96": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "97": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "98": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "99": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "100": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "latency_s": 0
+  },
+  "101": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "102": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "103": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "104": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "105": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.78
+      }
+    },
+    "latency_s": 0
+  },
+  "106": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.78
+      }
+    },
+    "latency_s": 0
+  },
+  "107": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.78
+      }
+    },
+    "latency_s": 0
+  },
+  "108": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.78
+      }
+    },
+    "latency_s": 0
+  },
+  "109": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "110": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "111": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "112": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "113": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "114": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "115": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "116": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "117": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "118": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "119": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "120": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "121": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.82
+      }
+    },
+    "latency_s": 0
+  },
+  "122": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.82
+      }
+    },
+    "latency_s": 0
+  },
+  "123": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.82
+      }
+    },
+    "latency_s": 0
+  },
+  "124": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.82
+      }
+    },
+    "latency_s": 0
+  },
+  "125": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "126": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "127": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "128": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "129": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "130": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "131": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "132": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "133": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "134": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "135": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "136": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "137": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "138": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "139": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "140": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "141": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "142": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "143": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "144": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "145": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "146": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "147": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "148": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "149": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "150": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "151": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "152": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "153": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "154": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "155": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "156": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "157": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "158": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "159": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "160": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "161": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "162": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "163": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "164": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "165": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "166": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "167": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "168": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "169": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "170": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "171": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "172": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "173": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "174": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "175": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "176": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "177": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "178": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "179": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "latency_s": 0
+  },
+  "180": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "181": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "182": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "183": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "184": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "185": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "186": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "187": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "188": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "latency_s": 0
+  },
+  "189": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "190": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "191": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "192": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "193": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "latency_s": 0
+  },
+  "194": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.68
+      }
+    },
+    "latency_s": 0
+  },
+  "195": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "latency_s": 0
+  },
+  "196": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "latency_s": 0
+  },
+  "197": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "latency_s": 0
+  },
+  "198": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "latency_s": 0
+  },
+  "199": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "200": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "yes": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "latency_s": 0
+  },
+  "201": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "transmission",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "202": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "distribution",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "203": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "der",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "204": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "market",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "205": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "transmission",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "206": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "distribution",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "207": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "der",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "208": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "market",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "209": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "transmission",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "210": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "distribution",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "211": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "der",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "212": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "market",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "213": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "anticheat",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "214": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "liveops",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "215": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "payments",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "216": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "community",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "217": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "anticheat",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "218": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "liveops",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "219": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "payments",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "220": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "anticheat",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "221": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "anticheat",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "222": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "liveops",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "223": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "payments",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "224": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "community",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "225": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "utilities",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "226": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "streets",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "227": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "sanitation",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "228": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "parks",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "229": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "utilities",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "230": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "streets",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "231": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "sanitation",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "232": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "parks",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "233": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "utilities",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "234": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "streets",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "235": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "sanitation",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "236": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "parks",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "237": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "fnol",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "238": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "siu",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "239": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "cat",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "240": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "policy",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "241": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "fnol",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "242": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "siu",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "243": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "cat",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "244": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "policy",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "245": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "fnol",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "246": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "siu",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "247": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "cat",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "248": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "policy",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "249": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "biosafety",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "250": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "qa",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "251": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "facilities",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "252": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "informatics",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "253": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "biosafety",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "254": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "qa",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "255": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "facilities",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "256": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "informatics",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "257": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "biosafety",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "258": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "qa",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "259": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "facilities",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "260": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "informatics",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "261": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ipcore",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "262": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "access",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "263": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "voice",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "264": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "field",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "265": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ipcore",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "266": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "access",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "267": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "voice",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "268": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "field",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "269": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ipcore",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "270": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "access",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "271": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "voice",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "272": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "field",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "273": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ko",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "274": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "en",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "275": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ja",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "276": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "zh",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "277": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ko",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "278": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "en",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "279": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ja",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "280": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "zh",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "281": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ko",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "282": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "en",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "283": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ja",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "284": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "zh",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "285": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ko",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "286": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "en",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "287": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "ja",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "288": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "lang": {
+        "type": "choice",
+        "choice": "zh",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "289": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "emergency",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "290": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "policy_question",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "291": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "complaint",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "292": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "praise",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "293": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "emergency",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "294": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "policy_question",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "295": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "complaint",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "296": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "praise",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "297": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "emergency",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "298": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "policy_question",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "299": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "complaint",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "300": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "intent": {
+        "type": "choice",
+        "choice": "praise",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "301": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev1",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "302": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev3",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "303": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev3",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "304": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev4",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "305": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev1",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "306": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev3",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "307": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev3",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "308": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev4",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "309": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev1",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "310": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev4",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "311": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev3",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "312": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "choice",
+        "choice": "sev1",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "313": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "qa_hold",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "314": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "sanitation",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "315": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "labeling",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "316": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "shipping",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "317": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "qa_hold",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "318": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "sanitation",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "319": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "labeling",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "320": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "shipping",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "321": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "322": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "323": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "324": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "325": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "326": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "327": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "328": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "329": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "330": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "331": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "332": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "333": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "334": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "335": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "336": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "337": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "338": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "339": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "340": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "341": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "342": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "343": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "344": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "team": {
+        "type": "choice",
+        "choice": "ticketing",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "345": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "346": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 2.3
+      }
+    },
+    "latency_s": 0
+  },
+  "347": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.2
+      }
+    },
+    "latency_s": 0
+  },
+  "348": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "349": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.2
+      }
+    },
+    "latency_s": 0
+  },
+  "350": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "351": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 2.3
+      }
+    },
+    "latency_s": 0
+  },
+  "352": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "353": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.2
+      }
+    },
+    "latency_s": 0
+  },
+  "354": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "355": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "356": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "357": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "358": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 1.3
+      }
+    },
+    "latency_s": 0
+  },
+  "359": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 1.3
+      }
+    },
+    "latency_s": 0
+  },
+  "360": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "361": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "362": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "363": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 3.2
+      }
+    },
+    "latency_s": 0
+  },
+  "364": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "severity": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "365": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "366": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "367": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 2.3
+      }
+    },
+    "latency_s": 0
+  },
+  "368": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "369": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "370": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "371": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "372": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "373": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "374": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "375": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "376": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "377": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "378": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "379": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 1.3
+      }
+    },
+    "latency_s": 0
+  },
+  "380": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "381": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "382": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "383": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 0.8
+      }
+    },
+    "latency_s": 0
+  },
+  "384": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "urgency": {
+        "type": "score",
+        "score": 3.9
+      }
+    },
+    "latency_s": 0
+  },
+  "385": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "386": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "387": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "388": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.9
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "pass",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "389": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.9
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "pass",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "390": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "391": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.9
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "pass",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "392": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "393": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "394": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.9
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "pass",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "395": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "396": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "397": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.9
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "pass",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "398": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "399": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.9
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "pass",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  },
+  "400": {
+    "model": "hanna-rubric-v1",
+    "answers": {
+      "grounded": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hallucinated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "abstain": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "block",
+        "confidence": 0.85
+      }
+    },
+    "latency_s": 0
+  }
+}

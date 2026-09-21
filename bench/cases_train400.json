@@ -1,0 +1,6218 @@
+[
+  {
+    "id": "train_noul_yes_1",
+    "kind": "noul",
+    "state": "Substation B7 reports cascading feeder trips; 42k customers dark in Zone 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should grid ops declare a major outage and page the transmission desk now?"
+      }
+    },
+    "idx": 1
+  },
+  {
+    "id": "train_noul_yes_2",
+    "kind": "noul",
+    "state": "SCADA shows transformer oil temp at 118C with gas relay alarm on Unit 4.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is immediate de-energization review required?"
+      }
+    },
+    "idx": 2
+  },
+  {
+    "id": "train_noul_yes_3",
+    "kind": "noul",
+    "state": "Wildfire smoke reduced line rating; load forecast exceeds N-1 margin in 20 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should operators shed non-critical load under emergency protocol?"
+      }
+    },
+    "idx": 3
+  },
+  {
+    "id": "train_noul_yes_4",
+    "kind": "noul",
+    "state": "Anti-cheat flagged a memory injector affecting 3.2k concurrent ranked matches.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we mass-ban the involved accounts and lock ranked queues?"
+      }
+    },
+    "idx": 4
+  },
+  {
+    "id": "train_noul_yes_5",
+    "kind": "noul",
+    "state": "Live esports final: spectator overlay leaked unreleased champion kit mid-match.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must broadcast halt and integrity ops be activated immediately?"
+      }
+    },
+    "idx": 5
+  },
+  {
+    "id": "train_noul_yes_6",
+    "kind": "noul",
+    "state": "Payment webhook for battle-pass purchases failing for all regions 25 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent payments on-call escalation required?"
+      }
+    },
+    "idx": 6
+  },
+  {
+    "id": "train_noul_yes_7",
+    "kind": "noul",
+    "state": "Gas odor reports from 14 addresses on Maple Ave within 8 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should 911/utility emergency dispatch be activated now?"
+      }
+    },
+    "idx": 7
+  },
+  {
+    "id": "train_noul_yes_8",
+    "kind": "noul",
+    "state": "Bridge strain gauges exceeded red threshold after overnight freeze-thaw.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must public works close the span pending inspection?"
+      }
+    },
+    "idx": 8
+  },
+  {
+    "id": "train_noul_yes_9",
+    "kind": "noul",
+    "state": "Water main break flooding two intersections with sinkhole risk.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is immediate street closure and utility response required?"
+      }
+    },
+    "idx": 9
+  },
+  {
+    "id": "train_noul_yes_10",
+    "kind": "noul",
+    "state": "FNOL: warehouse fire with active flames and injured workers on scene.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should catastrophic claims surge protocol be triggered?"
+      }
+    },
+    "idx": 10
+  },
+  {
+    "id": "train_noul_yes_11",
+    "kind": "noul",
+    "state": "SIU: 37 identical soft-tissue claims from one clinic in 48 hours.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must special investigations freeze payouts immediately?"
+      }
+    },
+    "idx": 11
+  },
+  {
+    "id": "train_noul_yes_12",
+    "kind": "noul",
+    "state": "Storm surge maps show 900 policies in newly flooded zip with no adjusters assigned.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is emergency CAT desk staffing required tonight?"
+      }
+    },
+    "idx": 12
+  },
+  {
+    "id": "train_noul_yes_13",
+    "kind": "noul",
+    "state": "BSL-2 freezer alarm: -20C samples rose to +4C for 55 minutes unnoticed.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should QA quarantine the affected lots and notify PI now?"
+      }
+    },
+    "idx": 13
+  },
+  {
+    "id": "train_noul_yes_14",
+    "kind": "noul",
+    "state": "Autoclave interlock failed; door opened mid-cycle with biohazard load.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is lab lockdown and biosafety officer paging required?"
+      }
+    },
+    "idx": 14
+  },
+  {
+    "id": "train_noul_yes_15",
+    "kind": "noul",
+    "state": "Sequencer coolant leak dripping onto high-voltage rack in wet lab.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must facilities + EHS shut power and evacuate bay?"
+      }
+    },
+    "idx": 15
+  },
+  {
+    "id": "train_noul_yes_16",
+    "kind": "noul",
+    "state": "Core router flap: BGP sessions down to three peering partners; packet loss 40%.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should NOC declare Sev-1 and open bridge immediately?"
+      }
+    },
+    "idx": 16
+  },
+  {
+    "id": "train_noul_yes_17",
+    "kind": "noul",
+    "state": "Fiber cut on metro ring; dual-homed enterprise customers losing voice+data.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent field splice crew dispatch required?"
+      }
+    },
+    "idx": 17
+  },
+  {
+    "id": "train_noul_yes_18",
+    "kind": "noul",
+    "state": "SS7 signaling storm from compromised interconnect flooding STP CPUs.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must signaling firewall scrub mode be enabled now?"
+      }
+    },
+    "idx": 18
+  },
+  {
+    "id": "train_noul_yes_19",
+    "kind": "noul",
+    "state": "Listeria PCR positive on ready-to-eat line swab after sanitation.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should production halt and product hold begin immediately?"
+      }
+    },
+    "idx": 19
+  },
+  {
+    "id": "train_noul_yes_20",
+    "kind": "noul",
+    "state": "Cold room #3 at 12C for 70 minutes on fresh poultry shipment.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is USDA-style hold and QA recall assessment required?"
+      }
+    },
+    "idx": 20
+  },
+  {
+    "id": "train_noul_yes_21",
+    "kind": "noul",
+    "state": "Allergen mislabel: peanut oil used in 'nut-free' SKU batch 8841.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we initiate consumer recall protocol?"
+      }
+    },
+    "idx": 21
+  },
+  {
+    "id": "train_noul_yes_22",
+    "kind": "noul",
+    "state": "Tower crane load cell fault while lifting 8-ton panel over sidewalk.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should work stop and exclusion zone be enforced now?"
+      }
+    },
+    "idx": 22
+  },
+  {
+    "id": "train_noul_yes_23",
+    "kind": "noul",
+    "state": "Confined-space O2 at 16% during tank entry; attendant alarming.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is emergency rescue activation required?"
+      }
+    },
+    "idx": 23
+  },
+  {
+    "id": "train_noul_yes_24",
+    "kind": "noul",
+    "state": "Scaffold tie-in failed on floor 18; planks shifting in wind.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must crews evacuate the elevation immediately?"
+      }
+    },
+    "idx": 24
+  },
+  {
+    "id": "train_noul_yes_25",
+    "kind": "noul",
+    "state": "Flood sensor network: river stage 1.2m above berm with rise rate accelerating.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should emergency management issue evacuation alerts?"
+      }
+    },
+    "idx": 25
+  },
+  {
+    "id": "train_noul_yes_26",
+    "kind": "noul",
+    "state": "Air-quality PM2.5 spiked to 380 ug/m3 near school zone after industrial release.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must public health shelter-in-place guidance go out now?"
+      }
+    },
+    "idx": 26
+  },
+  {
+    "id": "train_noul_yes_27",
+    "kind": "noul",
+    "state": "Landslide inclinometer crossed red after 40mm overnight rain.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is highway closure for the canyon route required?"
+      }
+    },
+    "idx": 27
+  },
+  {
+    "id": "train_noul_yes_28",
+    "kind": "noul",
+    "state": "Rare manuscript vault humidity hit 78% RH; mold risk on parchment collection.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should conservators initiate emergency climate response?"
+      }
+    },
+    "idx": 28
+  },
+  {
+    "id": "train_noul_yes_29",
+    "kind": "noul",
+    "state": "Sprinkler false trip soaking newspaper microfilm cabinets on floor B2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must archives disaster recovery be activated?"
+      }
+    },
+    "idx": 29
+  },
+  {
+    "id": "train_noul_yes_30",
+    "kind": "noul",
+    "state": "Ransomware encrypting digital repository nodes; backups unverified for 6h.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is cyber incident response for cultural heritage systems required?"
+      }
+    },
+    "idx": 30
+  },
+  {
+    "id": "train_noul_yes_31",
+    "kind": "noul",
+    "state": "Stadium structural sensor: vibration anomaly under north upper deck mid-game.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should ops pause play and begin controlled egress assessment?"
+      }
+    },
+    "idx": 31
+  },
+  {
+    "id": "train_noul_yes_32",
+    "kind": "noul",
+    "state": "Player collapsed with no pulse during warmups; AED deployed.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is medical emergency protocol and EMS confirmation required?"
+      }
+    },
+    "idx": 32
+  },
+  {
+    "id": "train_noul_yes_33",
+    "kind": "noul",
+    "state": "Pyrotechnics misfire ignited banner above visiting supporters section.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must fire response and section evacuation start now?"
+      }
+    },
+    "idx": 33
+  },
+  {
+    "id": "train_noul_yes_34",
+    "kind": "noul",
+    "state": "Grant portal exposed SSN/EIN files via misconfigured S3 for 3 hours.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should privacy breach response and funder notification begin immediately?"
+      }
+    },
+    "idx": 34
+  },
+  {
+    "id": "train_noul_yes_35",
+    "kind": "noul",
+    "state": "Wire of $1.8M subaward redirected after phishing of finance director.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is fraud freeze and bank recall action required now?"
+      }
+    },
+    "idx": 35
+  },
+  {
+    "id": "train_noul_yes_36",
+    "kind": "noul",
+    "state": "Background check vendor breach included unaccompanied-minor caseworker data.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must program pause high-risk placements pending legal review?"
+      }
+    },
+    "idx": 36
+  },
+  {
+    "id": "train_noul_no_1",
+    "kind": "noul",
+    "state": "Grid planner asks for prettier colors on the load-forecast dashboard legend.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we shed 40k customers under emergency load protocol?"
+      }
+    },
+    "idx": 37
+  },
+  {
+    "id": "train_noul_no_2",
+    "kind": "noul",
+    "state": "Gamer wants a new emote color for their battle-pass skin.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we lock all ranked queues company-wide?"
+      }
+    },
+    "idx": 38
+  },
+  {
+    "id": "train_noul_no_3",
+    "kind": "noul",
+    "state": "Resident asks when bulk trash pickup is next Tuesday.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should 911 declare a citywide disaster?"
+      }
+    },
+    "idx": 39
+  },
+  {
+    "id": "train_noul_no_4",
+    "kind": "noul",
+    "state": "Policyholder asks how to download their declarations page PDF.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must CAT surge claims protocol activate tonight?"
+      }
+    },
+    "idx": 40
+  },
+  {
+    "id": "train_noul_no_5",
+    "kind": "noul",
+    "state": "Lab intern asks where spare pipette tips are stored on shelf B.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we evacuate the entire BSL campus?"
+      }
+    },
+    "idx": 41
+  },
+  {
+    "id": "train_noul_no_6",
+    "kind": "noul",
+    "state": "NOC analyst wants a darker theme for the Grafana night shift view.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is Sev-1 fiber-cut response required?"
+      }
+    },
+    "idx": 42
+  },
+  {
+    "id": "train_noul_no_7",
+    "kind": "noul",
+    "state": "Kitchen staff asks if cilantro can be substituted in staff meals.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we initiate a nationwide food recall?"
+      }
+    },
+    "idx": 43
+  },
+  {
+    "id": "train_noul_no_8",
+    "kind": "noul",
+    "state": "Site admin asks for a quieter radio channel for lunch orders.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should tower crane exclusion zones go citywide?"
+      }
+    },
+    "idx": 44
+  },
+  {
+    "id": "train_noul_no_9",
+    "kind": "noul",
+    "state": "Intern wants to rename a climate dashboard widget title.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we issue county evacuation alerts?"
+      }
+    },
+    "idx": 45
+  },
+  {
+    "id": "train_noul_no_10",
+    "kind": "noul",
+    "state": "Patron asks if the library has larger-print editions of mysteries.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should archives disaster recovery activate?"
+      }
+    },
+    "idx": 46
+  },
+  {
+    "id": "train_noul_no_11",
+    "kind": "noul",
+    "state": "Fan asks whether stadium nachos contain jalapeños.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is structural deck evacuation required mid-game?"
+      }
+    },
+    "idx": 47
+  },
+  {
+    "id": "train_noul_no_12",
+    "kind": "noul",
+    "state": "Volunteer asks for a PDF of last year's annual report cover.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we freeze all nonprofit wires globally?"
+      }
+    },
+    "idx": 48
+  },
+  {
+    "id": "train_noul_no_13",
+    "kind": "noul",
+    "state": "Energy marketing wants a new icon for the green-power FAQ page.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should transmission desk declare cascading blackout?"
+      }
+    },
+    "idx": 49
+  },
+  {
+    "id": "train_noul_no_14",
+    "kind": "noul",
+    "state": "Anti-cheat designer tweaks splash-screen font weight.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must we mass-ban every account in the region?"
+      }
+    },
+    "idx": 50
+  },
+  {
+    "id": "train_noul_no_15",
+    "kind": "noul",
+    "state": "311 app user likes the new pothole map filters.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is bridge closure for structural failure needed?"
+      }
+    },
+    "idx": 51
+  },
+  {
+    "id": "train_noul_no_16",
+    "kind": "noul",
+    "state": "Adjuster asks where spare sticky notes are in the claims office.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should SIU freeze all payouts nationwide?"
+      }
+    },
+    "idx": 52
+  },
+  {
+    "id": "train_noul_no_17",
+    "kind": "noul",
+    "state": "Biotech receptionist schedules a visitor badge for tomorrow.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must autoclave emergency lockdown begin?"
+      }
+    },
+    "idx": 53
+  },
+  {
+    "id": "train_noul_no_18",
+    "kind": "noul",
+    "state": "Telecom intern renames a staging feature flag for clarity.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is SS7 scrub-mode enablement mandatory now?"
+      }
+    },
+    "idx": 54
+  },
+  {
+    "id": "train_noul_no_19",
+    "kind": "noul",
+    "state": "Cafeteria wants pastel trays for the salad bar.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should Listeria production halt start immediately?"
+      }
+    },
+    "idx": 55
+  },
+  {
+    "id": "train_noul_no_20",
+    "kind": "noul",
+    "state": "Foreman asks for updated coffee order for the trailer.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must confined-space rescue teams deploy?"
+      }
+    },
+    "idx": 56
+  },
+  {
+    "id": "train_noul_ko_1",
+    "kind": "noul",
+    "state": "변전소 과열로 인근 3개 피더가 동시에 차단됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "계통운영 비상대응을 즉시 해야 하는가?"
+      }
+    },
+    "idx": 57
+  },
+  {
+    "id": "train_noul_ko_2",
+    "kind": "noul",
+    "state": "게임 랭크 매치에서 메모리 핵이 대량 탐지됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "랭크 큐를 잠그고 제재해야 하는가?"
+      }
+    },
+    "idx": 58
+  },
+  {
+    "id": "train_noul_ko_3",
+    "kind": "noul",
+    "state": "가스 냄새 신고가 같은 골목에서 10건 연속 들어왔다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "긴급 유틸리티 출동을 해야 하는가?"
+      }
+    },
+    "idx": 59
+  },
+  {
+    "id": "train_noul_ko_4",
+    "kind": "noul",
+    "state": "창고 화재 FNOL에 부상자 발생이 보고됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "대형재해 클레임 프로토콜을 가동해야 하는가?"
+      }
+    },
+    "idx": 60
+  },
+  {
+    "id": "train_noul_ko_5",
+    "kind": "noul",
+    "state": "BSL 냉동고 온도가 한 시간 넘게 상승했다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "시료를 격리하고 QA에 즉시 알려야 하는가?"
+      }
+    },
+    "idx": 61
+  },
+  {
+    "id": "train_noul_ko_6",
+    "kind": "noul",
+    "state": "백본 라우터 BGP가 다중 피어에서 다운됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "NOC가 Sev-1을 선언해야 하는가?"
+      }
+    },
+    "idx": 62
+  },
+  {
+    "id": "train_noul_ko_7",
+    "kind": "noul",
+    "state": "RTE 라인 스왑에서 리스테리아 PCR 양성이 나왔다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "생산을 멈추고 홀드해야 하는가?"
+      }
+    },
+    "idx": 63
+  },
+  {
+    "id": "train_noul_ko_8",
+    "kind": "noul",
+    "state": "밀폐공간 산소농도가 16%로 떨어졌다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "구조팀을 즉시 호출해야 하는가?"
+      }
+    },
+    "idx": 64
+  },
+  {
+    "id": "train_noul_ko_9",
+    "kind": "noul",
+    "state": "하천 수위가 제방보다 빠르게 상승 중이다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "주민 대피 경보를 발령해야 하는가?"
+      }
+    },
+    "idx": 65
+  },
+  {
+    "id": "train_noul_ko_10",
+    "kind": "noul",
+    "state": "희귀본 서고 습도가 위험 수준이다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "보존팀 비상 대응이 필요한가?"
+      }
+    },
+    "idx": 66
+  },
+  {
+    "id": "train_noul_ko_11",
+    "kind": "noul",
+    "state": "경기 중 관중석 구조 센서가 적색이다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "경기 중단과 대피 검토가 필요한가?"
+      }
+    },
+    "idx": 67
+  },
+  {
+    "id": "train_noul_ko_12",
+    "kind": "noul",
+    "state": "보조금 포털에서 주민번호 파일이 노출됐다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "유출 대응과 후원자 통지가 즉시 필요한가?"
+      }
+    },
+    "idx": 68
+  },
+  {
+    "id": "train_noul_ko_13",
+    "kind": "noul",
+    "state": "대시보드 아이콘 색을 바꾸고 싶다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "비상 부하차단을 해야 하는가?"
+      }
+    },
+    "idx": 69
+  },
+  {
+    "id": "train_noul_ko_14",
+    "kind": "noul",
+    "state": "팬이 응원봉 색상을 문의했다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "전 서버를 잠가야 하는가?"
+      }
+    },
+    "idx": 70
+  },
+  {
+    "id": "train_noul_ko_15",
+    "kind": "noul",
+    "state": "민원인이 쓰레기 수거일을 물었다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "시 재난사태를 선포해야 하는가?"
+      }
+    },
+    "idx": 71
+  },
+  {
+    "id": "train_noul_ko_16",
+    "kind": "noul",
+    "state": "약관 PDF 다운로드 방법을 물었다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "전체 보험금 지급을 멈춰야 하는가?"
+      }
+    },
+    "idx": 72
+  },
+  {
+    "id": "train_noul_ko_17",
+    "kind": "noul",
+    "state": "피펫 팁 위치를 물어봤다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "연구동 전체를 대피시켜야 하는가?"
+      }
+    },
+    "idx": 73
+  },
+  {
+    "id": "train_noul_ko_18",
+    "kind": "noul",
+    "state": "그라파나 테마를 어둡게 하고 싶다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "전국 광케이블을 차단해야 하는가?"
+      }
+    },
+    "idx": 74
+  },
+  {
+    "id": "train_noul_ko_19",
+    "kind": "noul",
+    "state": "식당 메뉴에 고수를 빼 달란다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "전국 리콜을 시작해야 하는가?"
+      }
+    },
+    "idx": 75
+  },
+  {
+    "id": "train_noul_ko_20",
+    "kind": "noul",
+    "state": "점심 커피 주문을 바꿨다.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "타워크레인 작업을 전면 중지하라?"
+      }
+    },
+    "idx": 76
+  },
+  {
+    "id": "train_noul_syn_yes_1_5",
+    "kind": "noul",
+    "state": "Grid: N-1 contingency violated for 5 minutes on west corridor.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 77
+  },
+  {
+    "id": "train_noul_syn_yes_1_14",
+    "kind": "noul",
+    "state": "Grid: N-1 contingency violated for 14 minutes on west corridor.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 78
+  },
+  {
+    "id": "train_noul_syn_yes_1_27",
+    "kind": "noul",
+    "state": "Grid: N-1 contingency violated for 27 minutes on west corridor.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 79
+  },
+  {
+    "id": "train_noul_syn_yes_1_41",
+    "kind": "noul",
+    "state": "Grid: N-1 contingency violated for 41 minutes on west corridor.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 80
+  },
+  {
+    "id": "train_noul_syn_yes_2_5",
+    "kind": "noul",
+    "state": "Anti-cheat: wallhack signature on 5 accounts in masters lobby.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 81
+  },
+  {
+    "id": "train_noul_syn_yes_2_14",
+    "kind": "noul",
+    "state": "Anti-cheat: wallhack signature on 14 accounts in masters lobby.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 82
+  },
+  {
+    "id": "train_noul_syn_yes_2_27",
+    "kind": "noul",
+    "state": "Anti-cheat: wallhack signature on 27 accounts in masters lobby.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 83
+  },
+  {
+    "id": "train_noul_syn_yes_2_41",
+    "kind": "noul",
+    "state": "Anti-cheat: wallhack signature on 41 accounts in masters lobby.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 84
+  },
+  {
+    "id": "train_noul_syn_yes_3_5",
+    "kind": "noul",
+    "state": "311: sinkhole reports expanding across 5 blocks downtown.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 85
+  },
+  {
+    "id": "train_noul_syn_yes_3_14",
+    "kind": "noul",
+    "state": "311: sinkhole reports expanding across 14 blocks downtown.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 86
+  },
+  {
+    "id": "train_noul_syn_yes_3_27",
+    "kind": "noul",
+    "state": "311: sinkhole reports expanding across 27 blocks downtown.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 87
+  },
+  {
+    "id": "train_noul_syn_yes_3_41",
+    "kind": "noul",
+    "state": "311: sinkhole reports expanding across 41 blocks downtown.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 88
+  },
+  {
+    "id": "train_noul_syn_yes_4_5",
+    "kind": "noul",
+    "state": "Insurance: hail FNOL volume spiked 5x vs seasonal baseline.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 89
+  },
+  {
+    "id": "train_noul_syn_yes_4_14",
+    "kind": "noul",
+    "state": "Insurance: hail FNOL volume spiked 14x vs seasonal baseline.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 90
+  },
+  {
+    "id": "train_noul_syn_yes_4_27",
+    "kind": "noul",
+    "state": "Insurance: hail FNOL volume spiked 27x vs seasonal baseline.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 91
+  },
+  {
+    "id": "train_noul_syn_yes_4_41",
+    "kind": "noul",
+    "state": "Insurance: hail FNOL volume spiked 41x vs seasonal baseline.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 92
+  },
+  {
+    "id": "train_noul_syn_yes_5_5",
+    "kind": "noul",
+    "state": "Biotech: -80C freezer alarm silenced incorrectly for 5 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 93
+  },
+  {
+    "id": "train_noul_syn_yes_5_14",
+    "kind": "noul",
+    "state": "Biotech: -80C freezer alarm silenced incorrectly for 14 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 94
+  },
+  {
+    "id": "train_noul_syn_yes_5_27",
+    "kind": "noul",
+    "state": "Biotech: -80C freezer alarm silenced incorrectly for 27 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 95
+  },
+  {
+    "id": "train_noul_syn_yes_5_41",
+    "kind": "noul",
+    "state": "Biotech: -80C freezer alarm silenced incorrectly for 41 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 96
+  },
+  {
+    "id": "train_noul_syn_yes_6_5",
+    "kind": "noul",
+    "state": "Telecom: SIP trunk ASR collapsed for 5 minutes across region.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 97
+  },
+  {
+    "id": "train_noul_syn_yes_6_14",
+    "kind": "noul",
+    "state": "Telecom: SIP trunk ASR collapsed for 14 minutes across region.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 98
+  },
+  {
+    "id": "train_noul_syn_yes_6_27",
+    "kind": "noul",
+    "state": "Telecom: SIP trunk ASR collapsed for 27 minutes across region.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 99
+  },
+  {
+    "id": "train_noul_syn_yes_6_41",
+    "kind": "noul",
+    "state": "Telecom: SIP trunk ASR collapsed for 41 minutes across region.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 100
+  },
+  {
+    "id": "train_noul_syn_yes_7_5",
+    "kind": "noul",
+    "state": "Food safety: metal detector reject rate 5x normal on line 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 101
+  },
+  {
+    "id": "train_noul_syn_yes_7_14",
+    "kind": "noul",
+    "state": "Food safety: metal detector reject rate 14x normal on line 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 102
+  },
+  {
+    "id": "train_noul_syn_yes_7_27",
+    "kind": "noul",
+    "state": "Food safety: metal detector reject rate 27x normal on line 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 103
+  },
+  {
+    "id": "train_noul_syn_yes_7_41",
+    "kind": "noul",
+    "state": "Food safety: metal detector reject rate 41x normal on line 2.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 104
+  },
+  {
+    "id": "train_noul_syn_yes_8_5",
+    "kind": "noul",
+    "state": "Construction: fall-protection harness failures reported 5 times today.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 105
+  },
+  {
+    "id": "train_noul_syn_yes_8_14",
+    "kind": "noul",
+    "state": "Construction: fall-protection harness failures reported 14 times today.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 106
+  },
+  {
+    "id": "train_noul_syn_yes_8_27",
+    "kind": "noul",
+    "state": "Construction: fall-protection harness failures reported 27 times today.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 107
+  },
+  {
+    "id": "train_noul_syn_yes_8_41",
+    "kind": "noul",
+    "state": "Construction: fall-protection harness failures reported 41 times today.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 108
+  },
+  {
+    "id": "train_noul_syn_yes_9_5",
+    "kind": "noul",
+    "state": "Climate: flash-flood gauges above berm for 5 consecutive minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 109
+  },
+  {
+    "id": "train_noul_syn_yes_9_14",
+    "kind": "noul",
+    "state": "Climate: flash-flood gauges above berm for 14 consecutive minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 110
+  },
+  {
+    "id": "train_noul_syn_yes_9_27",
+    "kind": "noul",
+    "state": "Climate: flash-flood gauges above berm for 27 consecutive minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 111
+  },
+  {
+    "id": "train_noul_syn_yes_9_41",
+    "kind": "noul",
+    "state": "Climate: flash-flood gauges above berm for 41 consecutive minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 112
+  },
+  {
+    "id": "train_noul_syn_yes_10_5",
+    "kind": "noul",
+    "state": "Archives: vault RH above 70% for 5 minutes on parchment aisle.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 113
+  },
+  {
+    "id": "train_noul_syn_yes_10_14",
+    "kind": "noul",
+    "state": "Archives: vault RH above 70% for 14 minutes on parchment aisle.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 114
+  },
+  {
+    "id": "train_noul_syn_yes_10_27",
+    "kind": "noul",
+    "state": "Archives: vault RH above 70% for 27 minutes on parchment aisle.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 115
+  },
+  {
+    "id": "train_noul_syn_yes_10_41",
+    "kind": "noul",
+    "state": "Archives: vault RH above 70% for 41 minutes on parchment aisle.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 116
+  },
+  {
+    "id": "train_noul_syn_yes_11_5",
+    "kind": "noul",
+    "state": "Sports: AED deployed; unresponsive athlete for 5 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 117
+  },
+  {
+    "id": "train_noul_syn_yes_11_14",
+    "kind": "noul",
+    "state": "Sports: AED deployed; unresponsive athlete for 14 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 118
+  },
+  {
+    "id": "train_noul_syn_yes_11_27",
+    "kind": "noul",
+    "state": "Sports: AED deployed; unresponsive athlete for 27 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 119
+  },
+  {
+    "id": "train_noul_syn_yes_11_41",
+    "kind": "noul",
+    "state": "Sports: AED deployed; unresponsive athlete for 41 minutes.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 120
+  },
+  {
+    "id": "train_noul_syn_yes_12_5",
+    "kind": "noul",
+    "state": "Grants: phishing redirected subaward wires totaling $50k.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 121
+  },
+  {
+    "id": "train_noul_syn_yes_12_14",
+    "kind": "noul",
+    "state": "Grants: phishing redirected subaward wires totaling $140k.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 122
+  },
+  {
+    "id": "train_noul_syn_yes_12_27",
+    "kind": "noul",
+    "state": "Grants: phishing redirected subaward wires totaling $270k.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 123
+  },
+  {
+    "id": "train_noul_syn_yes_12_41",
+    "kind": "noul",
+    "state": "Grants: phishing redirected subaward wires totaling $410k.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 124
+  },
+  {
+    "id": "train_noul_syn_no_1_3",
+    "kind": "noul",
+    "state": "Grid intern asks how to export CSV of day-3 load chart.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 125
+  },
+  {
+    "id": "train_noul_syn_no_1_11",
+    "kind": "noul",
+    "state": "Grid intern asks how to export CSV of day-11 load chart.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 126
+  },
+  {
+    "id": "train_noul_syn_no_1_22",
+    "kind": "noul",
+    "state": "Grid intern asks how to export CSV of day-22 load chart.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 127
+  },
+  {
+    "id": "train_noul_syn_no_1_39",
+    "kind": "noul",
+    "state": "Grid intern asks how to export CSV of day-39 load chart.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 128
+  },
+  {
+    "id": "train_noul_syn_no_2_3",
+    "kind": "noul",
+    "state": "Gamer wants sticker pack #3 color tweak.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 129
+  },
+  {
+    "id": "train_noul_syn_no_2_11",
+    "kind": "noul",
+    "state": "Gamer wants sticker pack #11 color tweak.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 130
+  },
+  {
+    "id": "train_noul_syn_no_2_22",
+    "kind": "noul",
+    "state": "Gamer wants sticker pack #22 color tweak.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 131
+  },
+  {
+    "id": "train_noul_syn_no_2_39",
+    "kind": "noul",
+    "state": "Gamer wants sticker pack #39 color tweak.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 132
+  },
+  {
+    "id": "train_noul_syn_no_3_3",
+    "kind": "noul",
+    "state": "311 user asks recycling schedule for week 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 133
+  },
+  {
+    "id": "train_noul_syn_no_3_11",
+    "kind": "noul",
+    "state": "311 user asks recycling schedule for week 11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 134
+  },
+  {
+    "id": "train_noul_syn_no_3_22",
+    "kind": "noul",
+    "state": "311 user asks recycling schedule for week 22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 135
+  },
+  {
+    "id": "train_noul_syn_no_3_39",
+    "kind": "noul",
+    "state": "311 user asks recycling schedule for week 39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 136
+  },
+  {
+    "id": "train_noul_syn_no_4_3",
+    "kind": "noul",
+    "state": "Insured asks where to find form page 3 for address change.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 137
+  },
+  {
+    "id": "train_noul_syn_no_4_11",
+    "kind": "noul",
+    "state": "Insured asks where to find form page 11 for address change.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 138
+  },
+  {
+    "id": "train_noul_syn_no_4_22",
+    "kind": "noul",
+    "state": "Insured asks where to find form page 22 for address change.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 139
+  },
+  {
+    "id": "train_noul_syn_no_4_39",
+    "kind": "noul",
+    "state": "Insured asks where to find form page 39 for address change.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 140
+  },
+  {
+    "id": "train_noul_syn_no_5_3",
+    "kind": "noul",
+    "state": "Lab tech renames notebook section heading level 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 141
+  },
+  {
+    "id": "train_noul_syn_no_5_11",
+    "kind": "noul",
+    "state": "Lab tech renames notebook section heading level 11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 142
+  },
+  {
+    "id": "train_noul_syn_no_5_22",
+    "kind": "noul",
+    "state": "Lab tech renames notebook section heading level 22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 143
+  },
+  {
+    "id": "train_noul_syn_no_5_39",
+    "kind": "noul",
+    "state": "Lab tech renames notebook section heading level 39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 144
+  },
+  {
+    "id": "train_noul_syn_no_6_3",
+    "kind": "noul",
+    "state": "NOC junior reformats runbook markdown step 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 145
+  },
+  {
+    "id": "train_noul_syn_no_6_11",
+    "kind": "noul",
+    "state": "NOC junior reformats runbook markdown step 11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 146
+  },
+  {
+    "id": "train_noul_syn_no_6_22",
+    "kind": "noul",
+    "state": "NOC junior reformats runbook markdown step 22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 147
+  },
+  {
+    "id": "train_noul_syn_no_6_39",
+    "kind": "noul",
+    "state": "NOC junior reformats runbook markdown step 39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 148
+  },
+  {
+    "id": "train_noul_syn_no_7_3",
+    "kind": "noul",
+    "state": "Kitchen asks for tray label font size option 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 149
+  },
+  {
+    "id": "train_noul_syn_no_7_11",
+    "kind": "noul",
+    "state": "Kitchen asks for tray label font size option 11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 150
+  },
+  {
+    "id": "train_noul_syn_no_7_22",
+    "kind": "noul",
+    "state": "Kitchen asks for tray label font size option 22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 151
+  },
+  {
+    "id": "train_noul_syn_no_7_39",
+    "kind": "noul",
+    "state": "Kitchen asks for tray label font size option 39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 152
+  },
+  {
+    "id": "train_noul_syn_no_8_3",
+    "kind": "noul",
+    "state": "Foreman wants coffee order revision #3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 153
+  },
+  {
+    "id": "train_noul_syn_no_8_11",
+    "kind": "noul",
+    "state": "Foreman wants coffee order revision #11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 154
+  },
+  {
+    "id": "train_noul_syn_no_8_22",
+    "kind": "noul",
+    "state": "Foreman wants coffee order revision #22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 155
+  },
+  {
+    "id": "train_noul_syn_no_8_39",
+    "kind": "noul",
+    "state": "Foreman wants coffee order revision #39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 156
+  },
+  {
+    "id": "train_noul_syn_no_9_3",
+    "kind": "noul",
+    "state": "Climate volunteer renames widget title version 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 157
+  },
+  {
+    "id": "train_noul_syn_no_9_11",
+    "kind": "noul",
+    "state": "Climate volunteer renames widget title version 11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 158
+  },
+  {
+    "id": "train_noul_syn_no_9_22",
+    "kind": "noul",
+    "state": "Climate volunteer renames widget title version 22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 159
+  },
+  {
+    "id": "train_noul_syn_no_9_39",
+    "kind": "noul",
+    "state": "Climate volunteer renames widget title version 39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 160
+  },
+  {
+    "id": "train_noul_syn_no_10_3",
+    "kind": "noul",
+    "state": "Librarian asks for quieter LED bulb type 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 161
+  },
+  {
+    "id": "train_noul_syn_no_10_11",
+    "kind": "noul",
+    "state": "Librarian asks for quieter LED bulb type 11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 162
+  },
+  {
+    "id": "train_noul_syn_no_10_22",
+    "kind": "noul",
+    "state": "Librarian asks for quieter LED bulb type 22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 163
+  },
+  {
+    "id": "train_noul_syn_no_10_39",
+    "kind": "noul",
+    "state": "Librarian asks for quieter LED bulb type 39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 164
+  },
+  {
+    "id": "train_noul_syn_no_11_3",
+    "kind": "noul",
+    "state": "Fan asks nacho topping option #3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 165
+  },
+  {
+    "id": "train_noul_syn_no_11_11",
+    "kind": "noul",
+    "state": "Fan asks nacho topping option #11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 166
+  },
+  {
+    "id": "train_noul_syn_no_11_22",
+    "kind": "noul",
+    "state": "Fan asks nacho topping option #22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 167
+  },
+  {
+    "id": "train_noul_syn_no_11_39",
+    "kind": "noul",
+    "state": "Fan asks nacho topping option #39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 168
+  },
+  {
+    "id": "train_noul_syn_no_12_3",
+    "kind": "noul",
+    "state": "Volunteer wants annual-report cover photo crop 3.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 169
+  },
+  {
+    "id": "train_noul_syn_no_12_11",
+    "kind": "noul",
+    "state": "Volunteer wants annual-report cover photo crop 11.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 170
+  },
+  {
+    "id": "train_noul_syn_no_12_22",
+    "kind": "noul",
+    "state": "Volunteer wants annual-report cover photo crop 22.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 171
+  },
+  {
+    "id": "train_noul_syn_no_12_39",
+    "kind": "noul",
+    "state": "Volunteer wants annual-report cover photo crop 39.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is urgent escalation or immediate protective action required?"
+      }
+    },
+    "idx": 172
+  },
+  {
+    "id": "train_noul_pad_1",
+    "kind": "noul",
+    "state": "Battery storage islanding after inverter cluster fault in Microgrid 1001.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should DER ops isolate and notify the balancing authority now?"
+      }
+    },
+    "idx": 173
+  },
+  {
+    "id": "train_noul_pad_2",
+    "kind": "noul",
+    "state": "Tournament bracket API returning 5xx for all viewers region 1002.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is live-ops escalation required immediately?"
+      }
+    },
+    "idx": 174
+  },
+  {
+    "id": "train_noul_pad_3",
+    "kind": "noul",
+    "state": "Hydrant shear after vehicle strike flooding lane 1003.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must traffic + utility emergency response begin?"
+      }
+    },
+    "idx": 175
+  },
+  {
+    "id": "train_noul_pad_4",
+    "kind": "noul",
+    "state": "Cyber claim: ransomware on insured clinic EHR cluster 1004.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should cyber CAT desk open immediately?"
+      }
+    },
+    "idx": 176
+  },
+  {
+    "id": "train_noul_pad_5",
+    "kind": "noul",
+    "state": "CO2 incubator drift +1.5% for culture batch 1005.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must QA hold cultures and alert the PI?"
+      }
+    },
+    "idx": 177
+  },
+  {
+    "id": "train_noul_pad_6",
+    "kind": "noul",
+    "state": "RAN site power lost; battery below 15% on sector 1006.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is field tech emergency dispatch required?"
+      }
+    },
+    "idx": 178
+  },
+  {
+    "id": "train_noul_pad_7",
+    "kind": "noul",
+    "state": "Allergen swab positive on utensil rack 1007 post-CIP.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should line hold and re-sanitation start now?"
+      }
+    },
+    "idx": 179
+  },
+  {
+    "id": "train_noul_pad_8",
+    "kind": "noul",
+    "state": "Excavation cave-in risk after rain on trench 1008.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must workers evacuate and shore immediately?"
+      }
+    },
+    "idx": 180
+  },
+  {
+    "id": "train_noul_pad_9",
+    "kind": "noul",
+    "state": "Wildfire perimeter sensor crossed red near town 1009.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should evacuation alerts be issued?"
+      }
+    },
+    "idx": 181
+  },
+  {
+    "id": "train_noul_pad_10",
+    "kind": "noul",
+    "state": "Digitization scanner overheating rare map set 1010.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is conservation stop-work required?"
+      }
+    },
+    "idx": 182
+  },
+  {
+    "id": "train_noul_pad_11",
+    "kind": "noul",
+    "state": "Lightning delay protocol for outdoor match slot 1011.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must players clear the field under safety rules?"
+      }
+    },
+    "idx": 183
+  },
+  {
+    "id": "train_noul_pad_12",
+    "kind": "noul",
+    "state": "Donor CRM export included minors' case notes file 1012.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should privacy incident response begin now?"
+      }
+    },
+    "idx": 184
+  },
+  {
+    "id": "train_noul_pad_13",
+    "kind": "noul",
+    "state": "Load-forecast chart legend font size tweak request 1013.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should we declare a cascading blackout?"
+      }
+    },
+    "idx": 185
+  },
+  {
+    "id": "train_noul_pad_14",
+    "kind": "noul",
+    "state": "Emote palette suggestion for cosmetic pack 1014.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must ranked integrity lock engage?"
+      }
+    },
+    "idx": 186
+  },
+  {
+    "id": "train_noul_pad_15",
+    "kind": "noul",
+    "state": "Ask about leaf collection week for district 1015.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is citywide disaster declaration required?"
+      }
+    },
+    "idx": 187
+  },
+  {
+    "id": "train_noul_pad_16",
+    "kind": "noul",
+    "state": "Request copy of policy jacket page 1016.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must SIU freeze all nationwide claims?"
+      }
+    },
+    "idx": 188
+  },
+  {
+    "id": "train_noul_pad_17",
+    "kind": "noul",
+    "state": "Battery storage islanding after inverter cluster fault in Microgrid 1017.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should DER ops isolate and notify the balancing authority now?"
+      }
+    },
+    "idx": 189
+  },
+  {
+    "id": "train_noul_pad_18",
+    "kind": "noul",
+    "state": "Tournament bracket API returning 5xx for all viewers region 1018.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is live-ops escalation required immediately?"
+      }
+    },
+    "idx": 190
+  },
+  {
+    "id": "train_noul_pad_19",
+    "kind": "noul",
+    "state": "Hydrant shear after vehicle strike flooding lane 1019.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must traffic + utility emergency response begin?"
+      }
+    },
+    "idx": 191
+  },
+  {
+    "id": "train_noul_pad_20",
+    "kind": "noul",
+    "state": "Cyber claim: ransomware on insured clinic EHR cluster 1020.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should cyber CAT desk open immediately?"
+      }
+    },
+    "idx": 192
+  },
+  {
+    "id": "train_noul_pad_21",
+    "kind": "noul",
+    "state": "CO2 incubator drift +1.5% for culture batch 1021.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must QA hold cultures and alert the PI?"
+      }
+    },
+    "idx": 193
+  },
+  {
+    "id": "train_noul_pad_22",
+    "kind": "noul",
+    "state": "RAN site power lost; battery below 15% on sector 1022.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is field tech emergency dispatch required?"
+      }
+    },
+    "idx": 194
+  },
+  {
+    "id": "train_noul_pad_23",
+    "kind": "noul",
+    "state": "Allergen swab positive on utensil rack 1023 post-CIP.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should line hold and re-sanitation start now?"
+      }
+    },
+    "idx": 195
+  },
+  {
+    "id": "train_noul_pad_24",
+    "kind": "noul",
+    "state": "Excavation cave-in risk after rain on trench 1024.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must workers evacuate and shore immediately?"
+      }
+    },
+    "idx": 196
+  },
+  {
+    "id": "train_noul_pad_25",
+    "kind": "noul",
+    "state": "Wildfire perimeter sensor crossed red near town 1025.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should evacuation alerts be issued?"
+      }
+    },
+    "idx": 197
+  },
+  {
+    "id": "train_noul_pad_26",
+    "kind": "noul",
+    "state": "Digitization scanner overheating rare map set 1026.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Is conservation stop-work required?"
+      }
+    },
+    "idx": 198
+  },
+  {
+    "id": "train_noul_pad_27",
+    "kind": "noul",
+    "state": "Lightning delay protocol for outdoor match slot 1027.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Must players clear the field under safety rules?"
+      }
+    },
+    "idx": 199
+  },
+  {
+    "id": "train_noul_pad_28",
+    "kind": "noul",
+    "state": "Donor CRM export included minors' case notes file 1028.",
+    "questions": {
+      "yes": {
+        "type": "noul",
+        "instructions": "Should privacy incident response begin now?"
+      }
+    },
+    "idx": 200
+  },
+  {
+    "id": "train_choice_energy_1",
+    "kind": "choice",
+    "state": "Cascading trips on 345kV corridor after breaker failure.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 201
+  },
+  {
+    "id": "train_choice_energy_2",
+    "kind": "choice",
+    "state": "Neighborhood feeder fuse blown; 800 meters dark.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 202
+  },
+  {
+    "id": "train_choice_energy_3",
+    "kind": "choice",
+    "state": "Community battery islanding after inverter cluster fault.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 203
+  },
+  {
+    "id": "train_choice_energy_4",
+    "kind": "choice",
+    "state": "Day-ahead bid rejected; settlement mismatch on hub node.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 204
+  },
+  {
+    "id": "train_choice_energy_5",
+    "kind": "choice",
+    "state": "Intertie oscillation growing toward stability limit.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 205
+  },
+  {
+    "id": "train_choice_energy_6",
+    "kind": "choice",
+    "state": "Smart meter mesh gateway offline for one suburb.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 206
+  },
+  {
+    "id": "train_choice_energy_7",
+    "kind": "choice",
+    "state": "Rooftop PV curtailment schedule needs DERMS update.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 207
+  },
+  {
+    "id": "train_choice_energy_8",
+    "kind": "choice",
+    "state": "Virtual bid quantity error in ISO market API.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 208
+  },
+  {
+    "id": "train_choice_energy_9",
+    "kind": "choice",
+    "state": "345kV 선로에서 N-1 여유가 부족합니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 209
+  },
+  {
+    "id": "train_choice_energy_10",
+    "kind": "choice",
+    "state": "주택가 변압기 소음과 정전 신고가 있습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 210
+  },
+  {
+    "id": "train_choice_energy_11",
+    "kind": "choice",
+    "state": "마이크로그리드 배터리 SOC가 급락했습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 211
+  },
+  {
+    "id": "train_choice_energy_12",
+    "kind": "choice",
+    "state": "정산 LMP 이상으로 이의가 접수됐습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which energy desk should own this?",
+        "criteria": {
+          "transmission": "HV lines, N-1, cascading, interconnection",
+          "distribution": "feeders, transformers, customer outages, meters",
+          "der": "solar, battery, microgrid, inverter",
+          "market": "settlement, LMP, bidding, ISO"
+        }
+      }
+    },
+    "idx": 212
+  },
+  {
+    "id": "train_choice_game_1",
+    "kind": "choice",
+    "state": "Memory injector detected in ranked 5v5 lobby.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 213
+  },
+  {
+    "id": "train_choice_game_2",
+    "kind": "choice",
+    "state": "Weekend tournament bracket API returning 503.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 214
+  },
+  {
+    "id": "train_choice_game_3",
+    "kind": "choice",
+    "state": "Battle-pass charge duplicated on player's card.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 215
+  },
+  {
+    "id": "train_choice_game_4",
+    "kind": "choice",
+    "state": "Hate raid flooding global chat with slurs.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 216
+  },
+  {
+    "id": "train_choice_game_5",
+    "kind": "choice",
+    "state": "DMA cheat signature spike after patch Tuesday.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 217
+  },
+  {
+    "id": "train_choice_game_6",
+    "kind": "choice",
+    "state": "Matchmaking MMR soft-lock for Masters queue.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 218
+  },
+  {
+    "id": "train_choice_game_7",
+    "kind": "choice",
+    "state": "Wallet drain after account takeover of streamer.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 219
+  },
+  {
+    "id": "train_choice_game_8",
+    "kind": "choice",
+    "state": "Appeal: false ban for VPN-only login pattern.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 220
+  },
+  {
+    "id": "train_choice_game_9",
+    "kind": "choice",
+    "state": "월핵 사용이 대규모로 탐지됐습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 221
+  },
+  {
+    "id": "train_choice_game_10",
+    "kind": "choice",
+    "state": "토너먼트 대진표가 갱신되지 않습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 222
+  },
+  {
+    "id": "train_choice_game_11",
+    "kind": "choice",
+    "state": "인앱결제 환불이 중복 청구됐습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 223
+  },
+  {
+    "id": "train_choice_game_12",
+    "kind": "choice",
+    "state": "채팅에 혐오 발언 도배가 있습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which gaming ops team?",
+        "criteria": {
+          "anticheat": "cheats, injectors, wallhacks, bans",
+          "liveops": "events, brackets, matchmaking, queues",
+          "payments": "IAP, refunds, chargebacks, wallet",
+          "community": "toxicity, reports, chat mod, appeals"
+        }
+      }
+    },
+    "idx": 224
+  },
+  {
+    "id": "train_choice_muni_1",
+    "kind": "choice",
+    "state": "Water main break flooding intersection of 5th and Pine.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 225
+  },
+  {
+    "id": "train_choice_muni_2",
+    "kind": "choice",
+    "state": "Traffic signal stuck red on both approaches at Oak.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 226
+  },
+  {
+    "id": "train_choice_muni_3",
+    "kind": "choice",
+    "state": "Illegal dumping of construction debris behind lot 12.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 227
+  },
+  {
+    "id": "train_choice_muni_4",
+    "kind": "choice",
+    "state": "Playground swing chain broken at Riverside Park.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 228
+  },
+  {
+    "id": "train_choice_muni_5",
+    "kind": "choice",
+    "state": "Gas odor near manhole cover on Cedar Ave.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 229
+  },
+  {
+    "id": "train_choice_muni_6",
+    "kind": "choice",
+    "state": "Giant pothole damaged two cars on Highway spur.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 230
+  },
+  {
+    "id": "train_choice_muni_7",
+    "kind": "choice",
+    "state": "Missed recycling pickup for whole cul-de-sac.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 231
+  },
+  {
+    "id": "train_choice_muni_8",
+    "kind": "choice",
+    "state": "Fallen tree blocking trail after storm.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 232
+  },
+  {
+    "id": "train_choice_muni_9",
+    "kind": "choice",
+    "state": "상수관 파열로 도로가 침수됐습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 233
+  },
+  {
+    "id": "train_choice_muni_10",
+    "kind": "choice",
+    "state": "신호등이 양쪽 모두 빨간불입니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 234
+  },
+  {
+    "id": "train_choice_muni_11",
+    "kind": "choice",
+    "state": "골목에 불법 폐기물이 쌓여 있습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 235
+  },
+  {
+    "id": "train_choice_muni_12",
+    "kind": "choice",
+    "state": "놀이터 그네가 끊어졌습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which municipal desk?",
+        "criteria": {
+          "utilities": "gas, water, electric, main break",
+          "streets": "pothole, signal, plow, sidewalk",
+          "sanitation": "trash, recycling, illegal dump",
+          "parks": "playground, tree, trail, graffiti park"
+        }
+      }
+    },
+    "idx": 236
+  },
+  {
+    "id": "train_choice_ins_1",
+    "kind": "choice",
+    "state": "Rear-end collision yesterday; need to open a claim.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 237
+  },
+  {
+    "id": "train_choice_ins_2",
+    "kind": "choice",
+    "state": "37 near-identical soft-tissue claims from one clinic.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 238
+  },
+  {
+    "id": "train_choice_ins_3",
+    "kind": "choice",
+    "state": "Hurricane landfall; 900 new wind claims overnight.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 239
+  },
+  {
+    "id": "train_choice_ins_4",
+    "kind": "choice",
+    "state": "Does my policy cover basement sump-pump failure?",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 240
+  },
+  {
+    "id": "train_choice_ins_5",
+    "kind": "choice",
+    "state": "Hit a deer; windshield and bumper damage photos ready.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 241
+  },
+  {
+    "id": "train_choice_ins_6",
+    "kind": "choice",
+    "state": "Provider billing patterns match known staging ring.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 242
+  },
+  {
+    "id": "train_choice_ins_7",
+    "kind": "choice",
+    "state": "Wildfire smoke damage across three counties.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 243
+  },
+  {
+    "id": "train_choice_ins_8",
+    "kind": "choice",
+    "state": "Please explain rental reimbursement endorsement.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 244
+  },
+  {
+    "id": "train_choice_ins_9",
+    "kind": "choice",
+    "state": "어제 추돌사고 접수하고 싶습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 245
+  },
+  {
+    "id": "train_choice_ins_10",
+    "kind": "choice",
+    "state": "동일 클리닉에서 유사한 청구가 다수입니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 246
+  },
+  {
+    "id": "train_choice_ins_11",
+    "kind": "choice",
+    "state": "태풍 피해 청구가 폭증했습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 247
+  },
+  {
+    "id": "train_choice_ins_12",
+    "kind": "choice",
+    "state": "특약 보장 범위를 확인하고 싶습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which insurance claims team?",
+        "criteria": {
+          "fnol": "first notice, loss intake, new claim",
+          "siu": "fraud ring, staged, SIU, identical claims",
+          "cat": "storm surge, wildfire, earthquake CAT",
+          "policy": "coverage question, endorsement, declarations"
+        }
+      }
+    },
+    "idx": 248
+  },
+  {
+    "id": "train_choice_bio_1",
+    "kind": "choice",
+    "state": "Autoclave door opened mid-cycle with biohazard load.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 249
+  },
+  {
+    "id": "train_choice_bio_2",
+    "kind": "choice",
+    "state": "Deviation: lot 22A skipped in-process assay.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 250
+  },
+  {
+    "id": "train_choice_bio_3",
+    "kind": "choice",
+    "state": "-80 freezer compressor failed on wing C.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 251
+  },
+  {
+    "id": "train_choice_bio_4",
+    "kind": "choice",
+    "state": "LIMS accession IDs colliding after migration.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 252
+  },
+  {
+    "id": "train_choice_bio_5",
+    "kind": "choice",
+    "state": "Needle stick during animal procedure; exposure kit.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 253
+  },
+  {
+    "id": "train_choice_bio_6",
+    "kind": "choice",
+    "state": "CAPA overdue for Environmental Monitoring fail.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 254
+  },
+  {
+    "id": "train_choice_bio_7",
+    "kind": "choice",
+    "state": "Coolant leak onto sequencer high-voltage rack.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 255
+  },
+  {
+    "id": "train_choice_bio_8",
+    "kind": "choice",
+    "state": "Pipeline dropped FASTQ uploads for run 884.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 256
+  },
+  {
+    "id": "train_choice_bio_9",
+    "kind": "choice",
+    "state": "생물안전 캐비닛에서 누출이 있었습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 257
+  },
+  {
+    "id": "train_choice_bio_10",
+    "kind": "choice",
+    "state": "로트 일탈 보고서가 미제출입니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 258
+  },
+  {
+    "id": "train_choice_bio_11",
+    "kind": "choice",
+    "state": "초저온 냉동고 알람이 울립니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 259
+  },
+  {
+    "id": "train_choice_bio_12",
+    "kind": "choice",
+    "state": "시퀀싱 데이터 파이프라인이 실패했습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which lab team?",
+        "criteria": {
+          "biosafety": "BSL, autoclave, spill, exposure",
+          "qa": "quarantine, deviation, CAPA, lot hold",
+          "facilities": "HVAC, freezer, power, coolant",
+          "informatics": "LIMS, sequencer data, pipeline"
+        }
+      }
+    },
+    "idx": 260
+  },
+  {
+    "id": "train_choice_tel_1",
+    "kind": "choice",
+    "state": "Core router BGP sessions down to three peers.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 261
+  },
+  {
+    "id": "train_choice_tel_2",
+    "kind": "choice",
+    "state": "OLT PON port flapping; 200 ONTs dropping.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 262
+  },
+  {
+    "id": "train_choice_tel_3",
+    "kind": "choice",
+    "state": "SIP trunk ASR collapsed across region east.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 263
+  },
+  {
+    "id": "train_choice_tel_4",
+    "kind": "choice",
+    "state": "Metro fiber cut; need splice crew on span 14.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 264
+  },
+  {
+    "id": "train_choice_tel_5",
+    "kind": "choice",
+    "state": "MPLS LSP reroute oscillation on ring west.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 265
+  },
+  {
+    "id": "train_choice_tel_6",
+    "kind": "choice",
+    "state": "CPE firmware brick after mass upgrade canary.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 266
+  },
+  {
+    "id": "train_choice_tel_7",
+    "kind": "choice",
+    "state": "SS7 signaling storm from interconnect partner.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 267
+  },
+  {
+    "id": "train_choice_tel_8",
+    "kind": "choice",
+    "state": "Manhole flood threatening splice case.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 268
+  },
+  {
+    "id": "train_choice_tel_9",
+    "kind": "choice",
+    "state": "코어 라우터에서 패킷 손실이 큽니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 269
+  },
+  {
+    "id": "train_choice_tel_10",
+    "kind": "choice",
+    "state": "가입자 CPE가 대량으로 오프라인입니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 270
+  },
+  {
+    "id": "train_choice_tel_11",
+    "kind": "choice",
+    "state": "SIP 호 완료율이 급락했습니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 271
+  },
+  {
+    "id": "train_choice_tel_12",
+    "kind": "choice",
+    "state": "광케이블 절체로 현장 출동이 필요합니다.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which telecom NOC team?",
+        "criteria": {
+          "ipcore": "BGP, MPLS, core router, peering",
+          "access": "OLT, DSLAM, last-mile, CPE",
+          "voice": "SIP, SS7, STP, call completion",
+          "field": "fiber splice, truck roll, OSP"
+        }
+      }
+    },
+    "idx": 272
+  },
+  {
+    "id": "train_choice_lang_1",
+    "kind": "choice",
+    "state": "변전소 점검 일정을 변경하고 싶어요.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 273
+  },
+  {
+    "id": "train_choice_lang_2",
+    "kind": "choice",
+    "state": "Please reset my anti-cheat hardware ID ban.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 274
+  },
+  {
+    "id": "train_choice_lang_3",
+    "kind": "choice",
+    "state": "水道管の漏水を報告します。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 275
+  },
+  {
+    "id": "train_choice_lang_4",
+    "kind": "choice",
+    "state": "我想查询保险理赔进度。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 276
+  },
+  {
+    "id": "train_choice_lang_5",
+    "kind": "choice",
+    "state": "실험실 냉동고 알람이 울려요.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 277
+  },
+  {
+    "id": "train_choice_lang_6",
+    "kind": "choice",
+    "state": "Fiber cut on span 22 needs a truck roll.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 278
+  },
+  {
+    "id": "train_choice_lang_7",
+    "kind": "choice",
+    "state": "アレルゲン表示を確認してください。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 279
+  },
+  {
+    "id": "train_choice_lang_8",
+    "kind": "choice",
+    "state": "工地脚手架需要安全检查。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 280
+  },
+  {
+    "id": "train_choice_lang_9",
+    "kind": "choice",
+    "state": "홍수 경보 문자 수신을 원합니다.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 281
+  },
+  {
+    "id": "train_choice_lang_10",
+    "kind": "choice",
+    "state": "The parchment vault humidity is too high.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 282
+  },
+  {
+    "id": "train_choice_lang_11",
+    "kind": "choice",
+    "state": "試合中の避難経路を教えてください。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 283
+  },
+  {
+    "id": "train_choice_lang_12",
+    "kind": "choice",
+    "state": "请帮我下载非营利组织年度报告。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 284
+  },
+  {
+    "id": "train_choice_lang_13",
+    "kind": "choice",
+    "state": "보조금 포털 비밀번호를 재설정해주세요.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 285
+  },
+  {
+    "id": "train_choice_lang_14",
+    "kind": "choice",
+    "state": "Metal detector rejects spiked on line 2.",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 286
+  },
+  {
+    "id": "train_choice_lang_15",
+    "kind": "choice",
+    "state": "気象センサーの校正記録が必要です。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 287
+  },
+  {
+    "id": "train_choice_lang_16",
+    "kind": "choice",
+    "state": "图书馆珍本需要紧急除湿。",
+    "questions": {
+      "lang": {
+        "type": "choice",
+        "instructions": "Primary language of the message?",
+        "criteria": {
+          "ko": "Korean",
+          "en": "English",
+          "ja": "Japanese",
+          "zh": "Chinese"
+        }
+      }
+    },
+    "idx": 288
+  },
+  {
+    "id": "train_choice_intent_1",
+    "kind": "choice",
+    "state": "Confined-space O2 at 16%; attendant activating rescue.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 289
+  },
+  {
+    "id": "train_choice_intent_2",
+    "kind": "choice",
+    "state": "How do I apply for a nonprofit capacity-building grant?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 290
+  },
+  {
+    "id": "train_choice_intent_3",
+    "kind": "choice",
+    "state": "Your adjuster ignored my flood claim for six weeks. Furious.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 291
+  },
+  {
+    "id": "train_choice_intent_4",
+    "kind": "choice",
+    "state": "Brilliant conservator response saved our parchment set—thank you!",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 292
+  },
+  {
+    "id": "train_choice_intent_5",
+    "kind": "choice",
+    "state": "Stadium upper-deck vibration crossed red mid-game.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 293
+  },
+  {
+    "id": "train_choice_intent_6",
+    "kind": "choice",
+    "state": "What documents are required for municipal tree-removal permit?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 294
+  },
+  {
+    "id": "train_choice_intent_7",
+    "kind": "choice",
+    "state": "Anti-cheat banned me wrongly three times. Unacceptable.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 295
+  },
+  {
+    "id": "train_choice_intent_8",
+    "kind": "choice",
+    "state": "Love the new climate alert map—so clear!",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 296
+  },
+  {
+    "id": "train_choice_intent_9",
+    "kind": "choice",
+    "state": "밀폐공간 산소가 위험 수준입니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 297
+  },
+  {
+    "id": "train_choice_intent_10",
+    "kind": "choice",
+    "state": "재활용 수거 신청은 어디서 하나요?",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 298
+  },
+  {
+    "id": "train_choice_intent_11",
+    "kind": "choice",
+    "state": "보험금 지급이 미뤄져 정말 화가 납니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 299
+  },
+  {
+    "id": "train_choice_intent_12",
+    "kind": "choice",
+    "state": "현장 안전팀 대응이 훌륭해서 감동입니다.",
+    "questions": {
+      "intent": {
+        "type": "choice",
+        "instructions": "Best intent label?",
+        "criteria": {
+          "emergency": "life safety, structural failure, biohazard, active threat, evacuation",
+          "policy_question": "how to, what is covered, docs, eligibility, schedule",
+          "complaint": "angry, unfair, broken promise, refund dispute",
+          "praise": "thanks, excellent, love, great service"
+        }
+      }
+    },
+    "idx": 300
+  },
+  {
+    "id": "train_choice_sev_1",
+    "kind": "choice",
+    "state": "City water SCADA write path down; valve control lost citywide.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 301
+  },
+  {
+    "id": "train_choice_sev_2",
+    "kind": "choice",
+    "state": "Anti-cheat false-positive rate elevated for EU region only.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 302
+  },
+  {
+    "id": "train_choice_sev_3",
+    "kind": "choice",
+    "state": "One climate sensor offline; neighbors still report.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 303
+  },
+  {
+    "id": "train_choice_sev_4",
+    "kind": "choice",
+    "state": "Library catalog typo in FAQ footer copyright year.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 304
+  },
+  {
+    "id": "train_choice_sev_5",
+    "kind": "choice",
+    "state": "Telecom core BGP total failure; national packet loss.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 305
+  },
+  {
+    "id": "train_choice_sev_6",
+    "kind": "choice",
+    "state": "Grant portal slow for 12% of applicants; cache miss spike.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 306
+  },
+  {
+    "id": "train_choice_sev_7",
+    "kind": "choice",
+    "state": "Single freezer alarm acknowledged; redundant unit healthy.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 307
+  },
+  {
+    "id": "train_choice_sev_8",
+    "kind": "choice",
+    "state": "Stadium app icon 1px misaligned on settings screen.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 308
+  },
+  {
+    "id": "train_choice_sev_9",
+    "kind": "choice",
+    "state": "식품공장 MES 전면 다운으로 생산 중단.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 309
+  },
+  {
+    "id": "train_choice_sev_10",
+    "kind": "choice",
+    "state": "공사 안내 전단 오탈자 하나.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 310
+  },
+  {
+    "id": "train_choice_sev_11",
+    "kind": "choice",
+    "state": "일부 피더만 정전, 우회 급전 가능.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 311
+  },
+  {
+    "id": "train_choice_sev_12",
+    "kind": "choice",
+    "state": "전국 광코어 라우팅 전면 실패.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Assign incident severity.",
+        "criteria": {
+          "sev1": "total outage or life-safety / data-loss in progress",
+          "sev2": "major capability degraded for many users/customers",
+          "sev3": "limited impact / workaround exists",
+          "sev4": "cosmetic or documentation only"
+        }
+      }
+    },
+    "idx": 312
+  },
+  {
+    "id": "train_choice_food_1",
+    "kind": "choice",
+    "state": "Listeria PCR positive on RTE line swab.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 313
+  },
+  {
+    "id": "train_choice_food_2",
+    "kind": "choice",
+    "state": "CIP cycle incomplete on filler #2.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 314
+  },
+  {
+    "id": "train_choice_food_3",
+    "kind": "choice",
+    "state": "Peanut oil used but label says nut-free.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 315
+  },
+  {
+    "id": "train_choice_food_4",
+    "kind": "choice",
+    "state": "Reefer trailer at 12C for poultry load.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 316
+  },
+  {
+    "id": "train_choice_food_5",
+    "kind": "choice",
+    "state": "Metal detector reject rate 8x normal.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 317
+  },
+  {
+    "id": "train_choice_food_6",
+    "kind": "choice",
+    "state": "Pest sighting near ingredient silo.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 318
+  },
+  {
+    "id": "train_choice_food_7",
+    "kind": "choice",
+    "state": "Lot code printer skipping digits.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 319
+  },
+  {
+    "id": "train_choice_food_8",
+    "kind": "choice",
+    "state": "Dock seal torn; warm air ingress.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which food-safety team?",
+        "criteria": {
+          "qa_hold": "positive swab, allergen, metal detector, temperature abuse",
+          "sanitation": "CIP, cleaning, pest, hygiene",
+          "labeling": "allergen label, nutrition, lot code print",
+          "shipping": "cold chain logistics, dock temp, carrier"
+        }
+      }
+    },
+    "idx": 320
+  },
+  {
+    "id": "train_choice_sports_pad_1",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 1 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 321
+  },
+  {
+    "id": "train_choice_sports_pad_2",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 2 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 322
+  },
+  {
+    "id": "train_choice_sports_pad_3",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 3 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 323
+  },
+  {
+    "id": "train_choice_sports_pad_4",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 4 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 324
+  },
+  {
+    "id": "train_choice_sports_pad_5",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 5 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 325
+  },
+  {
+    "id": "train_choice_sports_pad_6",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 6 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 326
+  },
+  {
+    "id": "train_choice_sports_pad_7",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 7 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 327
+  },
+  {
+    "id": "train_choice_sports_pad_8",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 8 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 328
+  },
+  {
+    "id": "train_choice_sports_pad_9",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 9 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 329
+  },
+  {
+    "id": "train_choice_sports_pad_10",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 10 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 330
+  },
+  {
+    "id": "train_choice_sports_pad_11",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 11 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 331
+  },
+  {
+    "id": "train_choice_sports_pad_12",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 12 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 332
+  },
+  {
+    "id": "train_choice_sports_pad_13",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 13 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 333
+  },
+  {
+    "id": "train_choice_sports_pad_14",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 14 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 334
+  },
+  {
+    "id": "train_choice_sports_pad_15",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 15 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 335
+  },
+  {
+    "id": "train_choice_sports_pad_16",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 16 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 336
+  },
+  {
+    "id": "train_choice_sports_pad_17",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 17 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 337
+  },
+  {
+    "id": "train_choice_sports_pad_18",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 18 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 338
+  },
+  {
+    "id": "train_choice_sports_pad_19",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 19 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 339
+  },
+  {
+    "id": "train_choice_sports_pad_20",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 20 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 340
+  },
+  {
+    "id": "train_choice_sports_pad_21",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 21 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 341
+  },
+  {
+    "id": "train_choice_sports_pad_22",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 22 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 342
+  },
+  {
+    "id": "train_choice_sports_pad_23",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 23 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 343
+  },
+  {
+    "id": "train_choice_sports_pad_24",
+    "kind": "choice",
+    "state": "Sports ops: ticket scanner offline at gate 24 during preseason open house.",
+    "questions": {
+      "team": {
+        "type": "choice",
+        "instructions": "Which sports ops team?",
+        "criteria": {
+          "ticketing": "scanners, access control, will-call",
+          "safety": "medical, structural, fire, crowd crush",
+          "broadcast": "feeds, replay, overlay",
+          "hospitality": "suites, catering, guest services"
+        }
+      }
+    },
+    "idx": 344
+  },
+  {
+    "id": "train_score_sev_1",
+    "kind": "score",
+    "state": "Library catalog FAQ footer copyright year off by one. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 345
+  },
+  {
+    "id": "train_score_sev_2",
+    "kind": "score",
+    "state": "Anti-cheat false positives affecting ~1% of EU ranked lobbies. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 346
+  },
+  {
+    "id": "train_score_sev_3",
+    "kind": "score",
+    "state": "Municipal 311 app submits fail for most users citywide. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 347
+  },
+  {
+    "id": "train_score_sev_4",
+    "kind": "score",
+    "state": "Telecom core BGP down; national packet loss in progress. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 348
+  },
+  {
+    "id": "train_score_sev_5",
+    "kind": "score",
+    "state": "Biotech LIMS double-writes accession IDs; reconciliation diverging. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 349
+  },
+  {
+    "id": "train_score_sev_6",
+    "kind": "score",
+    "state": "식품 라벨 아이콘 색이 약간 연함. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 350
+  },
+  {
+    "id": "train_score_sev_7",
+    "kind": "score",
+    "state": "일부 피더만 정전 지도 갱신이 느림. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 351
+  },
+  {
+    "id": "train_score_sev_8",
+    "kind": "score",
+    "state": "보조금 포털 결제가 모든 신청자에게 실패. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 352
+  },
+  {
+    "id": "train_score_sev_9",
+    "kind": "score",
+    "state": "경기장 구조 모니터링 쓰기 전면 실패. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 353
+  },
+  {
+    "id": "train_score_sev_10",
+    "kind": "score",
+    "state": "기후 대시보드 로고 정렬 1px 어긋남. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 354
+  },
+  {
+    "id": "train_score_sev_11",
+    "kind": "score",
+    "state": "Grant portal dark-mode toggle misaligned by 2px. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 355
+  },
+  {
+    "id": "train_score_sev_12",
+    "kind": "score",
+    "state": "Food MES write path down; all lines stopped. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 356
+  },
+  {
+    "id": "train_score_sev_13",
+    "kind": "score",
+    "state": "Climate alert SMS failing for entire county. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 357
+  },
+  {
+    "id": "train_score_sev_14",
+    "kind": "score",
+    "state": "Construction permit PDF download slow for 3 users. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 358
+  },
+  {
+    "id": "train_score_sev_15",
+    "kind": "score",
+    "state": "Archives vault RH logging silent for one sensor. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 359
+  },
+  {
+    "id": "train_score_sev_16",
+    "kind": "score",
+    "state": "Esports overlay font weight slightly bold. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 360
+  },
+  {
+    "id": "train_score_sev_17",
+    "kind": "score",
+    "state": "Insurance FNOL intake rejects all uploads. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 361
+  },
+  {
+    "id": "train_score_sev_18",
+    "kind": "score",
+    "state": "Sports ticketing scanners offline stadium-wide. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 362
+  },
+  {
+    "id": "train_score_sev_19",
+    "kind": "score",
+    "state": "Energy SCADA read-only for one substation HMI. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 363
+  },
+  {
+    "id": "train_score_sev_20",
+    "kind": "score",
+    "state": "Nonprofit volunteer signup typo in help tooltip. [TRAIN-SET sev]",
+    "questions": {
+      "severity": {
+        "type": "score",
+        "instructions": "Rate production severity.",
+        "criteria": [
+          "cosmetic / no user impact",
+          "minor annoyance for few users",
+          "degraded experience for many",
+          "major feature broken",
+          "full outage / data loss / life-safety risk"
+        ]
+      }
+    },
+    "idx": 364
+  },
+  {
+    "id": "train_score_urg_1",
+    "kind": "score",
+    "state": "Update nonprofit annual-report cover photo crop. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 365
+  },
+  {
+    "id": "train_score_urg_2",
+    "kind": "score",
+    "state": "Library needs new quiet-hours sign before Friday tour. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 366
+  },
+  {
+    "id": "train_score_urg_3",
+    "kind": "score",
+    "state": "CEO grid board demo of SCADA UI fails tomorrow morning. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 367
+  },
+  {
+    "id": "train_score_urg_4",
+    "kind": "score",
+    "state": "Active ransomware on insured clinic EHR encrypting now. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 368
+  },
+  {
+    "id": "train_score_urg_5",
+    "kind": "score",
+    "state": "Gamer asks for pastel theme on anti-cheat appeal form. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 369
+  },
+  {
+    "id": "train_score_urg_6",
+    "kind": "score",
+    "state": "냉동 식품 콜드체인 알람 진행 중. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 370
+  },
+  {
+    "id": "train_score_urg_7",
+    "kind": "score",
+    "state": "블로그 오탈자 하나 수정 (시정마을 소식). [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 371
+  },
+  {
+    "id": "train_score_urg_8",
+    "kind": "score",
+    "state": "법정 제출 마감 2시간 전 공사 안전 일지 손상. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 372
+  },
+  {
+    "id": "train_score_urg_9",
+    "kind": "score",
+    "state": "다음 주 학회 포스터 색상 변경. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 373
+  },
+  {
+    "id": "train_score_urg_10",
+    "kind": "score",
+    "state": "시 상수 SCADA 쓰기 전면 다운. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 374
+  },
+  {
+    "id": "train_score_urg_11",
+    "kind": "score",
+    "state": "Reprint stadium wayfinding map with clearer icons next month. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 375
+  },
+  {
+    "id": "train_score_urg_12",
+    "kind": "score",
+    "state": "Climate sensor firmware cosmetic changelog tidy. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 376
+  },
+  {
+    "id": "train_score_urg_13",
+    "kind": "score",
+    "state": "Fiber cut affecting 50k voice+data customers ongoing. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 377
+  },
+  {
+    "id": "train_score_urg_14",
+    "kind": "score",
+    "state": "Grant wire phishing in progress; funds moving. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 378
+  },
+  {
+    "id": "train_score_urg_15",
+    "kind": "score",
+    "state": "Replace broken swing chain sometime this season. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 379
+  },
+  {
+    "id": "train_score_urg_16",
+    "kind": "score",
+    "state": "Autoclave interlock failed mid-cycle with load inside. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 380
+  },
+  {
+    "id": "train_score_urg_17",
+    "kind": "score",
+    "state": "Update FAQ emoji on recycling page. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 381
+  },
+  {
+    "id": "train_score_urg_18",
+    "kind": "score",
+    "state": "Wildfire perimeter crossing berm toward town now. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 382
+  },
+  {
+    "id": "train_score_urg_19",
+    "kind": "score",
+    "state": "Adjuster desk wants nicer chart colors next sprint. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 383
+  },
+  {
+    "id": "train_score_urg_20",
+    "kind": "score",
+    "state": "Tournament finals payment rails failing globally. [TRAIN-SET urg]",
+    "questions": {
+      "urgency": {
+        "type": "score",
+        "instructions": "How urgently must this be handled?",
+        "criteria": [
+          "can wait a week",
+          "this week is fine",
+          "today",
+          "within an hour",
+          "drop everything now"
+        ]
+      }
+    },
+    "idx": 384
+  },
+  {
+    "id": "train_multi_guard_1",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat is the maximum inverter islanding time allowed under Grid Code G-12?\n\nRETRIEVED CONTEXT:\nGrid Code G-12 discusses DER telemetry. The numeric islanding time limit is not stated in this excerpt.\n\nMODEL ANSWER:\nInverters may island for exactly 12.5 minutes under G-12.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 385
+  },
+  {
+    "id": "train_multi_guard_2",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat is the anti-cheat hardware-ban appeal window?\n\nRETRIEVED CONTEXT:\nHardware bans may be appealed once. The exact calendar-day window is not listed in this excerpt.\n\nMODEL ANSWER:\nPlayers have exactly 14 days to appeal a hardware ban.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 386
+  },
+  {
+    "id": "train_multi_guard_3",
+    "kind": "multi",
+    "state": "QUESTION:\nWho chairs the municipal floodplain review board?\n\nRETRIEVED CONTEXT:\nThe board reviews elevation certificates within 15 business days. Member names are confidential and not listed here.\n\nMODEL ANSWER:\nDirector Maya Ortiz chairs the floodplain review board.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 387
+  },
+  {
+    "id": "train_multi_guard_4",
+    "kind": "multi",
+    "state": "QUESTION:\nAre sole proprietors eligible for CyberShield policy tier-3 limits?\n\nRETRIEVED CONTEXT:\nTier-3 limits require a registered corporation with two officers. Sole proprietors are limited to tier-1.\n\nMODEL ANSWER:\nNo. Sole proprietors cannot obtain tier-3; they are capped at tier-1.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 388
+  },
+  {
+    "id": "train_multi_guard_5",
+    "kind": "multi",
+    "state": "QUESTION:\nIs parking reimbursed for biotech visiting auditors?\n\nRETRIEVED CONTEXT:\nParking is not reimbursed. Use the shuttle from Lot C.\n\nMODEL ANSWER:\nNo, parking is not reimbursed.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 389
+  },
+  {
+    "id": "train_multi_guard_6",
+    "kind": "multi",
+    "state": "QUESTION:\nMust the climate alert system ban all non-English messages forever?\n\nRETRIEVED CONTEXT:\nAlerts must be clear. Multilingual templates are encouraged. Lifetime bans on non-English are not specified.\n\nMODEL ANSWER:\nYes, all non-English messages must be permanently banned with no exceptions.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 390
+  },
+  {
+    "id": "train_multi_guard_7",
+    "kind": "multi",
+    "state": "QUESTION:\n밀폐공간 산소 하한 기준은?\n\nRETRIEVED CONTEXT:\n산소농도 19.5% 미만이면 진입을 중단한다. 구조팀 호출 기준은 별도 절차에 따른다.\n\nMODEL ANSWER:\n산소농도 19.5% 미만이면 진입을 중단해야 합니다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 391
+  },
+  {
+    "id": "train_multi_guard_8",
+    "kind": "multi",
+    "state": "QUESTION:\n서고 H3의 목표 상대습도는?\n\nRETRIEVED CONTEXT:\n본 발췌에는 서고 H3의 목표 상대습도 수치가 없다. 다른 서고 예시만 언급된다.\n\nMODEL ANSWER:\n서고 H3은 상대습도 35%를 유지합니다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 392
+  },
+  {
+    "id": "train_multi_guard_9",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat is the exact SS7 scrub threshold under NOC Playbook T-4?\n\nRETRIEVED CONTEXT:\nPlaybook T-4 discusses signaling storms. The numeric scrub threshold is not stated in this excerpt.\n\nMODEL ANSWER:\nScrub activates at exactly 50k MSU/sec under T-4.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 393
+  },
+  {
+    "id": "train_multi_guard_10",
+    "kind": "multi",
+    "state": "QUESTION:\nAre food-contact gloves required on Line 7 packaging?\n\nRETRIEVED CONTEXT:\nLine 7 packaging requires food-contact gloves and hairnets. Jewelry is prohibited.\n\nMODEL ANSWER:\nYes. Food-contact gloves and hairnets are required on Line 7 packaging.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 394
+  },
+  {
+    "id": "train_multi_guard_11",
+    "kind": "multi",
+    "state": "QUESTION:\nWho is the named PI for Grant GX-220?\n\nRETRIEVED CONTEXT:\nGrant GX-220 covers capacity building. The PI name is not disclosed in this excerpt.\n\nMODEL ANSWER:\nDr. Samuel Rhee is the PI for Grant GX-220.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 395
+  },
+  {
+    "id": "train_multi_guard_12",
+    "kind": "multi",
+    "state": "QUESTION:\nMust stadium egress maps omit all stairwells forever?\n\nRETRIEVED CONTEXT:\nEgress maps must show stairwells and exits clearly. Omitting stairwells is not permitted.\n\nMODEL ANSWER:\nYes, all stairwells must be omitted forever with no exceptions.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 396
+  },
+  {
+    "id": "train_multi_guard_13",
+    "kind": "multi",
+    "state": "QUESTION:\n공사 비계 점검 주기는?\n\nRETRIEVED CONTEXT:\n비계는 작업 전 매일 점검한다. 강풍 경보 시 추가 점검을 실시한다.\n\nMODEL ANSWER:\n비계는 작업 전 매일 점검하며 강풍 경보 시 추가 점검합니다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 397
+  },
+  {
+    "id": "train_multi_guard_14",
+    "kind": "multi",
+    "state": "QUESTION:\n마이크로그리드 배터리 최소 SOC는?\n\nRETRIEVED CONTEXT:\n본 문서에는 최소 SOC 수치가 명시되어 있지 않다. 텔레메트리 항목만 설명한다.\n\nMODEL ANSWER:\n최소 SOC는 18%입니다.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 398
+  },
+  {
+    "id": "train_multi_guard_15",
+    "kind": "multi",
+    "state": "QUESTION:\nWhat metal-detector calibration interval applies on Line 2?\n\nRETRIEVED CONTEXT:\nLine 2 metal detectors are calibrated every 2 hours and after product changeovers.\n\nMODEL ANSWER:\nCalibrate every 2 hours and after product changeovers.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 399
+  },
+  {
+    "id": "train_multi_guard_16",
+    "kind": "multi",
+    "state": "QUESTION:\nIs the climate sensor firmware changelog publicly versioned?\n\nRETRIEVED CONTEXT:\nFirmware changelogs are internal. Public versioning is not described in this excerpt.\n\nMODEL ANSWER:\nYes, changelogs are always free and public forever with no exceptions.",
+    "questions": {
+      "grounded": {
+        "type": "noul",
+        "instructions": "Is the model answer supported by the retrieved context? Correct refusals count as grounded."
+      },
+      "hallucinated": {
+        "type": "noul",
+        "instructions": "Does the answer invent material facts not in the context?"
+      },
+      "abstain": {
+        "type": "noul",
+        "instructions": "Does the answer correctly refuse because info is missing from context?"
+      },
+      "decision": {
+        "type": "choice",
+        "instructions": "Release decision for this candidate answer.",
+        "criteria": {
+          "pass": "Safe to send",
+          "rewrite": "Needs regeneration",
+          "block": "Must not send"
+        }
+      }
+    },
+    "idx": 400
+  }
+]
