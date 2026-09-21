@@ -10,7 +10,7 @@ import urllib.request
 from typing import Any
 
 UPSTAGE_URL = "https://api.upstage.ai/v1/chat/completions"
-DEFAULT_MODEL = "solar-mini4"
+DEFAULT_MODEL = (os.environ.get("SOLAR_MINI_MODEL") or os.environ.get("UPSTAGE_MODEL") or "solar-mini4").strip()
 
 SYSTEM = """You are a calibrated decision engine compatible with TypeSafe Jev.
 Output JSON only. Be literal and carefully calibrated about urgency.

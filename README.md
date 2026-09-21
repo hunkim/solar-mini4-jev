@@ -1,6 +1,6 @@
 # solar-mini4-jev
 
-Upstage **Solar Mini4**를 [TypeSafe Jev](https://typesafe.ai) System One API 형태로 감싼 드롭인 wrapper.
+Upstage **Solar Mini4**를 TypeSafe Jev System One API 형태로 감싼 드롭인 wrapper.
 
 ```
 POST /v1/systemone
@@ -9,10 +9,32 @@ POST /v1/systemone
 
 지원 질문 타입: `noul` | `choice` | `score` (Jev와 동일 스키마).
 
+## Official gold: Grok 4.6 Judge
+
+**Jev는 gold가 아닙니다.** Jev도 비교 대상 모델입니다.  
+공식 채점 기준은 **Grok 4.6 Judge** 루브릭 라벨입니다 (`bench/gold_grok46_judge_test400.json`).
+
 ## Results at a glance
 
-![Hanna golden · Solar Mini4 vs Jev](bench/infographic_summary.png)
+![Grok 4.6 Judge · Solar Mini4 vs Jev](bench/infographic_grok46_judge.png)
 
+Interactive SVG/HTML: [`bench/infographic_grok46_judge.html`](bench/infographic_grok46_judge.html)
+
+### test400 @ Grok 4.6 Judge (`solar-mini4` → `solar-mini4-260922`)
+
+| model | field_acc | noul≤0.25 | sign@0.5 | choice | score≤1 | miss | avg latency |
+|-------|----------:|----------:|---------:|-------:|--------:|-----:|------------:|
+| **Solar Mini4** | **98.7%** | **97.6%** | **98.8%** | **100%** | **100%** | **6** | 1.41s |
+| Jev | 94.2% | 95.2% | 92.3% | 100% | 85.0% | 26 | **0.38s** |
+
+Language field_acc:
+
+| | KO (n=70) | EN (n=330) |
+|--|----------:|-----------:|
+| **Solar Mini4** | **98.8%** | **98.6%** |
+| Jev | 93.9% | 94.3% |
+
+**Takeaway:** Judge 품질은 Solar Mini4, 속도는 Jev (~3.7×).
 
 ## Quick start
 
@@ -21,8 +43,6 @@ export UPSTAGE_API_KEY=...
 pip install -r requirements.txt
 uvicorn server:app --host 0.0.0.0 --port 8080
 ```
-
-Python에서 바로:
 
 ```python
 from engine import system_one
@@ -35,49 +55,22 @@ print(out["answers"])
 ```
 
 환경변수:
-- `UPSTAGE_API_KEY` — Solar Mini4 (필수)
-- `TYPESAFE_API_KEY` — 벤치마크용 실제 Jev 호출 시에만 필요 (`jev_ref.py`)
+- `UPSTAGE_API_KEY` — Solar Mini4 (필수). `solar-mini4`는 현재 `solar-mini4-260922`로 resolve.
+- `TYPESAFE_API_KEY` — 벤치마크용 실제 Jev 호출 시에만 (`jev_ref.py`)
+- `SOLAR_MINI_MODEL` — 선택적 모델 오버라이드
 
 ## Layout
 
 | path | 설명 |
 |------|------|
-| `engine.py` | Solar Mini4 + Jev-호환 휴리스틱 / 프롬프트 |
+| `engine.py` | Solar Mini4 + Jev-호환 휴리스틱 |
 | `server.py` | FastAPI `POST /v1/systemone` |
-| `jev_ref.py` | 실제 TypeSafe Jev 클라이언트 (gold 고정용) |
-| `bench/` | 케이스 · frozen gold · 결과 · 인포그래픽 |
-
-## Benchmark (Hanna golden set)
-
-**공식 golden**은 Jev가 아니라 Hanna rubric (`bench/gold_hanna_test400.json`)입니다.
-test400에서 Solar Mini4 wrapper vs Jev를 같은 golden으로 채점:
-
-| 모델 | noul≤0.25 | sign@0.5 | choice | score≤1 | field_acc | avg latency |
-|------|----------:|---------:|-------:|--------:|----------:|------------:|
-| **Solar Mini4** | **97.2%** | **98.8%** | 99.4% | **100%** | **98.2%** | 1.77s |
-| Jev | 95.1% | 92.3% | **100%** | 89.2% | 94.6% | **0.38s** |
-
-언어별 field_acc:
-
-| | KO (n=70) | EN (n=330) |
-|--|----------:|-----------:|
-| Solar Mini4 | **98.8%** | **98.1%** |
-| Jev | 95.0% | 94.5% |
-
-분야별 하이라이트 (Solar − Jev, field_acc pp): `score_urg +20`, `noul_syn +15.6`, `noul_ko +10` / Jev 우위: `choice_game −8.3`, `noul_pad −7.4`.
-
-자세한 표·인포그래픽:
-- [`bench/COMPARISON_HANNA_GOLDEN.md`](bench/COMPARISON_HANNA_GOLDEN.md)
-- [`bench/infographic_hanna_golden.html`](bench/infographic_hanna_golden.html)
-- [`bench/HANNA_GOLD_RUBRIC.md`](bench/HANNA_GOLD_RUBRIC.md)
-
-### 재현
-
-```bash
-# train/test 케이스 생성 · Jev gold freeze · Solar 채점 스크립트는 bench/ 참고
-python bench/score_vs_hanna_gold.py
-```
+| `jev_ref.py` | 실제 Jev 클라이언트 (비교용) |
+| `bench/gold_grok46_judge_test400.json` | **공식 gold** (Grok 4.6 Judge) |
+| `bench/gold_jev_test400.json` | Jev 응답 스냅샷 (비교 모델) |
+| `bench/results_test400_rerun_260922.jsonl` | Solar Mini4 재채점 결과 |
+| `bench/infographic_grok46_judge.*` | 결과 인포그래픽 |
 
 ## License
 
-개인/연구 실험 코드. API 키는 커밋하지 마세요.
+실험/연구 코드. API 키는 커밋하지 마세요.

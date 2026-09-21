@@ -1,0 +1,84 @@
+{
+  "official_gold": "Grok 4.6 Judge",
+  "solar_backend": "solar-mini4 → solar-mini4-260922",
+  "overall": {
+    "Solar Mini4": {
+      "n_cases": 400,
+      "noul_tol": 0.9758,
+      "noul_sign": 0.9879,
+      "noul_ok": 0.9758,
+      "choice": 1.0,
+      "score": 1.0,
+      "miss": 6,
+      "latency_avg": 1.409,
+      "field_n": 448,
+      "field_acc": 0.9866
+    },
+    "Jev": {
+      "n_cases": 400,
+      "noul_tol": 0.9516,
+      "noul_sign": 0.9234,
+      "noul_ok": 0.9194,
+      "choice": 1.0,
+      "score": 0.85,
+      "miss": 26,
+      "latency_avg": 0.3819,
+      "field_n": 448,
+      "field_acc": 0.942
+    }
+  },
+  "by_lang": {
+    "KO": {
+      "Solar Mini4": {
+        "n_cases": 70,
+        "noul_tol": 0.9688,
+        "noul_sign": 0.9688,
+        "noul_ok": 0.9688,
+        "choice": 1.0,
+        "score": 1.0,
+        "miss": 1,
+        "latency_avg": 1.4736,
+        "field_n": 82,
+        "field_acc": 0.9878
+      },
+      "Jev": {
+        "n_cases": 70,
+        "noul_tol": 0.9375,
+        "noul_sign": 0.9375,
+        "noul_ok": 0.9062,
+        "choice": 1.0,
+        "score": 0.8,
+        "miss": 5,
+        "latency_avg": 0.3796,
+        "field_n": 82,
+        "field_acc": 0.939
+      }
+    },
+    "EN": {
+      "Solar Mini4": {
+        "n_cases": 330,
+        "noul_tol": 0.9769,
+        "noul_sign": 0.9907,
+        "noul_ok": 0.9769,
+        "choice": 1.0,
+        "score": 1.0,
+        "miss": 5,
+        "latency_avg": 1.3952,
+        "field_n": 366,
+        "field_acc": 0.9863
+      },
+      "Jev": {
+        "n_cases": 330,
+        "noul_tol": 0.9537,
+        "noul_sign": 0.9213,
+        "noul_ok": 0.9213,
+        "choice": 1.0,
+        "score": 0.8667,
+        "miss": 21,
+        "latency_avg": 0.3824,
+        "field_n": 366,
+        "field_acc": 0.9426
+      }
+    }
+  }
+}
