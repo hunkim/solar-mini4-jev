@@ -170,6 +170,19 @@ curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
   }'
 ```
 
+Example response:
+```json
+{
+  "model": "solar-mini4-jev/solar-mini4-260922",
+  "answers": {
+    "urgent": { "type": "noul", "noul": 0.75 }
+  },
+  "usage": { "input_tokens": 816, "output_tokens": 22 },
+  "latency_s": 0.90
+}
+```
+
+
 ### Multi-question (Bearer)
 ```bash
 curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
@@ -194,6 +207,55 @@ curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
       }
     }
   }'
+```
+
+
+### choice + score
+```bash
+curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Checkout p99 latency jumped from 200ms to 2.4s for 8 minutes.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Pick severity",
+        "options": ["sev0", "sev1", "sev2", "sev3"]
+      },
+      "impact": {
+        "type": "score",
+        "instructions": "User impact 0..1",
+        "levels": 5
+      }
+    }
+  }'
+```
+
+Example response:
+```json
+{
+  "model": "solar-mini4-jev/solar-mini4-260922",
+  "answers": {
+    "severity": {
+      "type": "choice",
+      "choice": "sev1",
+      "probabilities": {
+        "sev0": 0.05, "sev1": 0.62, "sev2": 0.25, "sev3": 0.08
+      },
+      "confidence": 0.62
+    },
+    "impact": {
+      "type": "score",
+      "score": 0.75,
+      "probabilities": { "0": 0.03, "1": 0.07, "2": 0.15, "3": 0.35, "4": 0.40 },
+      "confidence": 0.75
+    }
+  },
+  "usage": { "input_tokens": 980, "output_tokens": 78 },
+  "latency_s": 1.05
+}
 ```
 
 ## Python example
