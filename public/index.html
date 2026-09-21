@@ -3,229 +3,199 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solar Mini4 vs Jev · Grok 4.6 Judge</title>
+<title>solar-mini4-jev · System One API (BYOK)</title>
+<meta name="description" content="Jev-compatible System One API powered by Solar Mini4. Bring your own Upstage API key."/>
 <style>
-  :root{
-    --bg:#070b14; --panel:#0f1626; --panel2:#141e33; --line:#2a3a55;
-    --text:#f2f6ff; --muted:#93a4c3; --solar:#4f8cff; --solarG:#7eb0ff;
-    --jev:#ff8f5c; --jevG:#ffc2a3; --good:#35d399; --judge:#c4b5fd;
+  :root {
+    --bg: #0b0f14;
+    --card: #121821;
+    --line: #243041;
+    --text: #e8eef7;
+    --muted: #9aacbf;
+    --accent: #6ee7b7;
+    --solar: #38bdf8;
+    --jev: #5eead4;
+    --warn: #fbbf24;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   }
-  *{box-sizing:border-box}
-  body{
-    margin:0; color:var(--text);
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Pretendard, "Noto Sans KR", sans-serif;
-    background:
-      radial-gradient(900px 420px at 12% -10%, #1b2d55 0%, transparent 60%),
-      radial-gradient(700px 380px at 100% 0%, #2a1848 0%, transparent 55%),
-      var(--bg);
-    padding:28px 16px 48px;
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--sans); line-height: 1.5;
   }
-  .wrap{max-width:1040px;margin:0 auto}
-  .badge{
-    display:inline-flex;align-items:center;gap:8px;
-    background:rgba(196,181,253,.12);border:1px solid rgba(196,181,253,.35);
-    color:var(--judge);font-size:12px;font-weight:700;letter-spacing:.04em;
-    padding:6px 12px;border-radius:999px;text-transform:uppercase;margin-bottom:14px;
+  a { color: var(--solar); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 40px 20px 72px; }
+  header { margin-bottom: 28px; }
+  .badge {
+    display: inline-block; font-size: 12px; letter-spacing: .04em;
+    color: var(--accent); border: 1px solid #2a5a48; background: #0f241c;
+    padding: 4px 10px; border-radius: 999px; margin-bottom: 12px;
   }
-  h1{font-size:34px;line-height:1.15;margin:0 0 8px;letter-spacing:-.03em}
-  .sub{color:var(--muted);font-size:15px;line-height:1.55;margin:0 0 26px;max-width:820px}
-  .sub b{color:var(--judge)}
-  .hero{
-    display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-bottom:16px;
+  h1 { font-size: 1.85rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 16px; max-width: 60ch; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid var(--line); background: var(--card);
+    color: var(--text); padding: 8px 12px; border-radius: 10px; font-size: 14px;
   }
-  @media(max-width:860px){.hero,.row2,.kpis{grid-template-columns:1fr}}
-  .card{
-    background:linear-gradient(180deg,var(--panel2),var(--panel));
-    border:1px solid var(--line);border-radius:20px;padding:20px 20px 18px;
-    box-shadow:0 18px 40px rgba(0,0,0,.28);
+  .btn.primary { border-color: #1d4f78; background: #0f2a40; color: #cfefff; }
+  section {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 18px 16px; margin: 16px 0;
   }
-  .card h2{margin:0 0 14px;font-size:15px;font-weight:700;color:#dbe7ff}
-  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
-  .kpi{padding:18px 16px}
-  .kpi .v{font-size:34px;font-weight:800;letter-spacing:-.04em;margin-bottom:6px}
-  .kpi .l{font-size:13px;color:var(--muted)}
-  .kpi.s .v{color:var(--solarG)} .kpi.j .v{color:var(--jevG)}
-  .kpi.g .v{color:var(--good)} .kpi.p .v{color:var(--judge)}
-  .headline{
-    font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px;line-height:1.3;
+  h2 { font-size: 1.05rem; margin: 0 0 12px; }
+  .metrics {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
   }
-  .headline span{color:var(--solarG)}
-  .bullets{margin:0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.7}
-  .bullets b{color:var(--text)}
-  .legend{display:flex;gap:16px;margin:0 0 12px;font-size:13px;color:var(--muted)}
-  .sw{width:12px;height:12px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px}
-  .sw.s{background:var(--solar)} .sw.j{background:var(--jev)}
-  .metric{
-    display:grid;grid-template-columns:130px 1fr 64px 64px;gap:10px;align-items:center;
-    margin:12px 0;
+  @media (max-width: 640px) { .metrics { grid-template-columns: 1fr; } }
+  .metric {
+    background: #0b1119; border: 1px solid var(--line);
+    border-radius: 12px; padding: 12px 14px;
   }
-  .metric .name{font-size:13px;color:#c9d6ef}
-  .bars{position:relative;height:44px}
-  .bar{
-    position:absolute;left:0;height:16px;border-radius:999px;min-width:8px;
+  .metric .k { color: var(--muted); font-size: 12px; }
+  .metric .v { font-size: 1.35rem; font-weight: 700; margin-top: 2px; }
+  .metric .s { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .solar { color: var(--solar); }
+  .jev { color: var(--jev); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; }
+  pre, code { font-family: var(--mono); }
+  pre {
+    background: #0b1119; border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 14px; overflow-x: auto; font-size: 12.5px; line-height: 1.45;
+    margin: 0;
   }
-  .bar.s{top:2px;background:linear-gradient(90deg,#3b74ff,var(--solarG))}
-  .bar.j{top:24px;background:linear-gradient(90deg,#e86a35,var(--jevG))}
-  .nums{font-variant-numeric:tabular-nums;font-weight:700;font-size:13px}
-  .nums.s{color:var(--solarG)} .nums.j{color:var(--jevG)}
-  .track{
-    position:absolute;left:0;right:0;height:16px;border-radius:999px;background:#1a2740;
-  }
-  .track.s{top:2px} .track.j{top:24px}
-  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-  .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-  .pill{
-    border:1px solid var(--line);background:#0c1424;border-radius:999px;
-    padding:8px 12px;font-size:13px;color:#d7e3ff;
-  }
-  .pill em{font-style:normal;color:var(--good);font-weight:700}
-  .pill.j em{color:var(--jevG)}
-  table{width:100%;border-collapse:collapse;font-size:14px}
-  th,td{padding:10px 8px;border-bottom:1px solid #22324d;text-align:right}
-  th:first-child,td:first-child{text-align:left;color:var(--muted)}
-  th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#7f91b3}
-  td.win{color:var(--good);font-weight:800}
-  footer{margin-top:18px;color:#7b8dad;font-size:12px;line-height:1.5}
+  .note { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  ol.steps { margin: 0; padding-left: 18px; color: var(--text); }
+  ol.steps li { margin: 6px 0; }
+  footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="badge">Official gold · Grok 4.6 Judge</div>
-    <h1>Solar Mini4 beats Jev on judged quality</h1>
-    <p class="sub">
-      test400 · gold = <b>Grok 4.6 Judge</b> (Jev is a peer model, not gold) ·
-      Solar <code>solar-mini4 → solar-mini4-260922 · reasoning_effort=none</code>
-    </p>
+    <header>
+      <div class="badge">BYOK · System One compatible</div>
+      <h1>solar-mini4-jev</h1>
+      <p class="sub">
+        Jev System One API 형식의 Solar Mini4 래퍼입니다.
+        서버에 키를 두지 않고, 요청마다 Upstage API 키를 넘깁니다.
+      </p>
+      <div class="links">
+        <a class="btn primary" href="https://github.com/hunkim/solar-mini4-jev" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">Upstage Console · API Key</a>
+        <a class="btn" href="/infographic.html">벤치 상세</a>
+        <a class="btn" href="/health">/health</a>
+      </div>
+    </header>
 
-    <div class="kpis">
-      <div class="card kpi s"><div class="v">98.4%</div><div class="l">Solar field accuracy</div></div>
-      <div class="card kpi j"><div class="v">94.2%</div><div class="l">Jev field accuracy</div></div>
-      <div class="card kpi g"><div class="v">+4.2 pp</div><div class="l">Solar lead vs Jev</div></div>
-      <div class="card kpi j"><div class="v">3.2×</div><div class="l">Jev faster (avg latency)</div></div>
-    </div>
-
-    <div class="hero">
-      <div class="card">
-        <h2>Accuracy @ Grok 4.6 Judge</h2>
-        <div class="legend">
-          <span><i class="sw s"></i>Solar Mini4</span>
-          <span><i class="sw j"></i>Jev</span>
-        </div>
-
-        <!-- Each metric: label | dual bars with full track | solar num | jev num -->
+    <section>
+      <h2>성능 한눈에 (test400 · Grok 4.6 Judge)</h2>
+      <div class="metrics">
         <div class="metric">
-          <div class="name">noul ≤ 0.25</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:97.2%"></div>
-            <div class="track j"></div><div class="bar j" style="width:95.2%"></div>
-          </div>
-          <div class="nums s">97.2%</div>
-          <div class="nums j">95.2%</div>
+          <div class="k">Field accuracy</div>
+          <div class="v"><span class="solar">98.4%</span> <span style="color:var(--muted);font-size:.9rem">vs</span> <span class="jev">94.2%</span></div>
+          <div class="s">Solar Mini4 · Jev 1.13.0</div>
         </div>
         <div class="metric">
-          <div class="name">sign @ 0.5</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:98.8%"></div>
-            <div class="track j"></div><div class="bar j" style="width:92.3%"></div>
-          </div>
-          <div class="nums s">98.8%</div>
-          <div class="nums j">92.3%</div>
+          <div class="k">Miss (abstain/wrong)</div>
+          <div class="v"><span class="solar">7</span> <span style="color:var(--muted);font-size:.9rem">vs</span> <span class="jev">26</span></div>
+          <div class="s">낮을수록 좋음</div>
         </div>
         <div class="metric">
-          <div class="name">choice exact</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:100%"></div>
-            <div class="track j"></div><div class="bar j" style="width:100%"></div>
-          </div>
-          <div class="nums s">100%</div>
-          <div class="nums j">100%</div>
-        </div>
-        <div class="metric">
-          <div class="name">score ≤ 1</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:100%"></div>
-            <div class="track j"></div><div class="bar j" style="width:85%"></div>
-          </div>
-          <div class="nums s">100%</div>
-          <div class="nums j">85.0%</div>
-        </div>
-
-        <div class="pillrow">
-          <div class="pill">miss fields <em>Solar 7</em></div>
-          <div class="pill j">miss fields <em>Jev 26</em></div>
-          <div class="pill">choice <em>tie @ 100%</em></div>
+          <div class="k">Avg latency</div>
+          <div class="v"><span class="solar">1.21s</span> <span style="color:var(--muted);font-size:.9rem">vs</span> <span class="jev">0.38s</span></div>
+          <div class="s"><code>reasoning_effort=none</code></div>
         </div>
       </div>
-
-      <div class="card">
-        <p class="headline"><span>Solar Mini4</span> matches the judge more often — especially on score &amp; noul sign.</p>
-        <ul class="bullets">
-          <li><b>7 misses</b> vs Jev’s <b>26</b> under the same gold</li>
-          <li><b>score ≤1: 100%</b> vs Jev 85% — calibration win</li>
-          <li><b>KO 98.8%</b> · <b>EN 98.6%</b> field accuracy</li>
-          <li>Tradeoff: Jev still ~<b>3.2× faster</b> (0.38s vs 1.21s)</li>
-        </ul>
-        <div style="margin-top:18px">
-          <svg viewBox="0 0 360 120" width="100%" aria-label="latency">
-            <text x="0" y="22" fill="#93a4c3" font-size="13">Average latency</text>
-            <rect x="0" y="36" width="280" height="22" rx="11" fill="#1a2740"/>
-            <rect x="0" y="36" width="280" height="22" rx="11" fill="url(#sg)"/>
-            <text x="290" y="52" fill="#7eb0ff" font-size="14" font-weight="700">1.21s</text>
-            <rect x="0" y="72" width="76" height="22" rx="11" fill="#1a2740"/>
-            <rect x="0" y="72" width="76" height="22" rx="11" fill="#ff8f5c"/>
-            <text x="90" y="88" fill="#ffc2a3" font-size="14" font-weight="700">0.38s</text>
-            <defs>
-              <linearGradient id="sg" x1="0" x2="1">
-                <stop offset="0%" stop-color="#3b74ff"/><stop offset="100%" stop-color="#7eb0ff"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="row2">
-      <div class="card">
-        <h2>Language field accuracy</h2>
-        <div class="legend"><span><i class="sw s"></i>Solar</span><span><i class="sw j"></i>Jev</span></div>
-        <div class="metric">
-          <div class="name">KO · n=70</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:98.8%"></div>
-            <div class="track j"></div><div class="bar j" style="width:93.9%"></div>
-          </div>
-          <div class="nums s">98.8%</div>
-          <div class="nums j">93.9%</div>
-        </div>
-        <div class="metric">
-          <div class="name">EN · n=330</div>
-          <div class="bars">
-            <div class="track s"></div><div class="bar s" style="width:98.4%"></div>
-            <div class="track j"></div><div class="bar j" style="width:94.3%"></div>
-          </div>
-          <div class="nums s">98.4%</div>
-          <div class="nums j">94.3%</div>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Scoreboard</h2>
+      <div style="overflow-x:auto;margin-top:12px">
         <table>
-          <thead><tr><th>axis</th><th>Solar</th><th>Jev</th><th>winner</th></tr></thead>
+          <thead>
+            <tr><th>model</th><th>field_acc</th><th>noul≤0.25</th><th>sign@0.5</th><th>choice</th><th>miss</th><th>avg</th></tr>
+          </thead>
           <tbody>
-            <tr><td>field accuracy</td><td>98.4%</td><td>94.2%</td><td class="win">Solar</td></tr>
-            <tr><td>noul / score</td><td>97.2 / 100</td><td>95.2 / 85</td><td class="win">Solar</td></tr>
-            <tr><td>choice</td><td>100%</td><td>100%</td><td class="win">tie</td></tr>
-            <tr><td>KO / EN</td><td>98.8 / 98.4</td><td>93.9 / 94.3</td><td class="win">Solar</td></tr>
-            <tr><td>avg latency</td><td>1.21s</td><td>0.38s</td><td class="win">Jev</td></tr>
+            <tr>
+              <td><strong>Solar Mini4</strong></td>
+              <td><strong>98.4%</strong></td><td>97.2%</td><td>98.8%</td><td>100%</td><td><strong>7</strong></td><td>1.21s</td>
+            </tr>
+            <tr>
+              <td>Jev 1.13.0</td>
+              <td>94.2%</td><td>95.2%</td><td>92.3%</td><td>100%</td><td>26</td><td><strong>0.38s</strong></td>
+            </tr>
           </tbody>
         </table>
       </div>
-    </div>
+      <p class="note">정확도는 Solar가 앞서고, 속도는 Jev가 더 빠릅니다. 상세: <a href="/infographic.html">infographic</a> · <a href="https://github.com/hunkim/solar-mini4-jev">README</a></p>
+    </section>
+
+    <section>
+      <h2>1. Upstage API 키 받기</h2>
+      <ol class="steps">
+        <li><a href="https://console.upstage.ai/" target="_blank" rel="noopener">Upstage Console</a>에 로그인</li>
+        <li><a href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">API Keys</a>에서 키 발급</li>
+        <li>아래 요청 헤더에 넣기 (서버에 저장하지 않음 · BYOK)</li>
+      </ol>
+      <p class="note">헤더 중 하나만 있으면 됩니다: <code>X-Upstage-Api-Key</code> 또는 <code>Authorization: Bearer …</code></p>
+    </section>
+
+    <section>
+      <h2>2. System One API 호출 예</h2>
+      <pre>curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Payment success rate dropped to 12%.",
+    "questions": {
+      "urgent": {
+        "type": "noul",
+        "instructions": "Should on-call be paged immediately?"
+      }
+    }
+  }'</pre>
+      <p class="note">응답 필드: <code>model</code>, <code>answers</code>, <code>usage</code>, <code>latency_s</code> (Jev System One과 동일 형태)</p>
+    </section>
+
+    <section>
+      <h2>3. Bearer 헤더 예</h2>
+      <pre>curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "고객이 환불을 세 번 요청했습니다.",
+    "questions": {
+      "refund": {
+        "type": "noul",
+        "instructions": "즉시 환불 처리가 필요한가?"
+      },
+      "urgency": {
+        "type": "score",
+        "instructions": "긴급도 0~1"
+      }
+    }
+  }'</pre>
+    </section>
+
+    <section>
+      <h2>엔드포인트</h2>
+      <table>
+        <thead><tr><th>Method</th><th>Path</th><th>설명</th></tr></thead>
+        <tbody>
+          <tr><td>GET</td><td><code>/</code></td><td>이 안내 페이지</td></tr>
+          <tr><td>GET</td><td><code>/health</code></td><td>헬스체크</td></tr>
+          <tr><td>POST</td><td><code>/v1/systemone</code></td><td>System One (BYOK)</td></tr>
+          <tr><td>GET</td><td><code>/openapi.json</code></td><td>OpenAPI 스키마</td></tr>
+        </tbody>
+      </table>
+    </section>
 
     <footer>
-      Official gold: <code>bench/gold_grok46_judge_test400.json</code> ·
-      Solar results: <code>results_test400_rerun_260922.jsonl</code> ·
-      Pages: <code>/docs</code>
+      Source: <a href="https://github.com/hunkim/solar-mini4-jev">github.com/hunkim/solar-mini4-jev</a>
+      · Key: <a href="https://console.upstage.ai/api-keys">console.upstage.ai/api-keys</a>
     </footer>
   </div>
 </body>
