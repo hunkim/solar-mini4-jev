@@ -1,0 +1,272 @@
+# solar-mini4-jev
+
+> Jev-compatible System One API powered by Solar Mini4 (Upstage). Bring Your Own Key (BYOK) — pass an Upstage API key on every request; the server does not store keys.
+
+Base URL (production): https://solar-mini4-jev.vercel.app
+Docs site: https://hunkim.github.io/solar-mini4-jev/
+Source: https://github.com/hunkim/solar-mini4-jev
+Upstage API keys: https://console.upstage.ai/api-keys
+OpenAPI: https://solar-mini4-jev.vercel.app/openapi.json
+This file: https://hunkim.github.io/solar-mini4-jev/llms.txt
+
+## Auth (BYOK, required)
+
+Send exactly one of:
+
+- Header `X-Upstage-Api-Key: <UPSTAGE_API_KEY>`
+- Header `X-Api-Key: <UPSTAGE_API_KEY>`
+- Header `Authorization: Bearer <UPSTAGE_API_KEY>`
+
+Missing key → HTTP 401 with JSON detail:
+`{"detail":{"error":"missing_api_key","message":"..."}}`
+
+Get a key: https://console.upstage.ai/api-keys
+
+## Endpoints
+
+### GET /
+
+Service discovery JSON (on the API host) or this HTML guide (on GitHub Pages).
+
+### GET /health
+
+Liveness. No auth.
+
+Example response:
+```json
+{"ok": true, "backend": "solar-mini4", "byok": true}
+```
+
+### POST /v1/systemone
+
+System One inference (also accepted as `POST /v1/systemone/`).
+
+Content-Type: application/json
+
+#### Request body
+
+```json
+{
+  "model": "solar-mini4-jev",
+  "state": "<string or any JSON state context>",
+  "questions": {
+    "<id>": {
+      "type": "noul | choice | score",
+      "instructions": "<what to judge>",
+      "...type-specific fields"
+    }
+  }
+}
+```
+
+- `model` (string, optional, default `solar-mini4-jev`): aliases `solar-mini4-jev`, `solar-mini4`, `jev-latest` all route to Solar Mini4.
+- `state` (any, required): situation / transcript / document context the model conditions on.
+- `questions` (object, required): map of question id → question spec.
+
+#### Question types
+
+1) `noul` — continuous judgment in [0, 1] (urgency / yes-likelihood / confidence-style).
+
+```json
+{
+  "type": "noul",
+  "instructions": "Should on-call be paged immediately?"
+}
+```
+
+Answer shape:
+```json
+{"type": "noul", "noul": 0.75}
+```
+
+2) `choice` — pick one key from an enum; include probability mass over options.
+
+```json
+{
+  "type": "choice",
+  "instructions": "Which team should own this?",
+  "options": ["billing", "sales", "support", "eng"]
+}
+```
+
+(Implementation also accepts option keys via question metadata used by the engine; prefer an explicit list of keys in `options` / `choices` as provided by Jev clients.)
+
+Answer shape:
+```json
+{
+  "type": "choice",
+  "choice": "billing",
+  "probabilities": {"billing": 0.7, "sales": 0.1, "support": 0.15, "eng": 0.05},
+  "confidence": 0.7
+}
+```
+
+3) `score` — ordinal / continuous score (often 0..N-1 levels or 0..1).
+
+```json
+{
+  "type": "score",
+  "instructions": "Urgency from 0 to 1",
+  "levels": 5
+}
+```
+
+Answer shape:
+```json
+{
+  "type": "score",
+  "score": 0.8,
+  "probabilities": {"0": 0.05, "1": 0.05, "2": 0.1, "3": 0.3, "4": 0.5},
+  "confidence": 0.8
+}
+```
+
+#### Success response (HTTP 200)
+
+```json
+{
+  "model": "solar-mini4-jev/solar-mini4-...",
+  "answers": {
+    "<id>": { "type": "noul", "noul": 0.75 }
+  },
+  "usage": {"input_tokens": 816, "output_tokens": 22},
+  "latency_s": 0.895
+}
+```
+
+Fields:
+- `model` (string)
+- `answers` (object): same keys as `questions`
+- `usage` (object): token usage (`input_tokens`, `output_tokens`)
+- `latency_s` (number): server-side latency seconds
+
+#### Error responses
+
+- 401 — missing/invalid BYOK key
+- 422 — request validation error (FastAPI)
+- 502 — upstream Upstage / inference failure (`detail` string)
+
+## curl examples
+
+### Health
+```bash
+curl -s https://solar-mini4-jev.vercel.app/health
+```
+
+### noul (X-Upstage-Api-Key)
+```bash
+curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Payment success rate dropped to 12%.",
+    "questions": {
+      "urgent": {
+        "type": "noul",
+        "instructions": "Should on-call be paged immediately?"
+      }
+    }
+  }'
+```
+
+### Multi-question (Bearer)
+```bash
+curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Customer asked for a refund three times after a failed charge.",
+    "questions": {
+      "refund": {
+        "type": "noul",
+        "instructions": "Should we refund immediately?"
+      },
+      "urgency": {
+        "type": "score",
+        "instructions": "Urgency from 0 to 1"
+      },
+      "owner": {
+        "type": "choice",
+        "instructions": "Which team should own this?",
+        "options": ["billing", "sales", "support", "eng"]
+      }
+    }
+  }'
+```
+
+## Python example
+
+```python
+import os, requests
+
+r = requests.post(
+    "https://solar-mini4-jev.vercel.app/v1/systemone",
+    headers={
+        "Content-Type": "application/json",
+        "X-Upstage-Api-Key": os.environ["UPSTAGE_API_KEY"],
+    },
+    json={
+        "model": "solar-mini4-jev",
+        "state": "Latency p99 jumped from 200ms to 2.4s on checkout.",
+        "questions": {
+            "page": {
+                "type": "noul",
+                "instructions": "Page on-call now?",
+            }
+        },
+    },
+    timeout=60,
+)
+r.raise_for_status()
+print(r.json())
+```
+
+## JavaScript (fetch) example
+
+```js
+const res = await fetch("https://solar-mini4-jev.vercel.app/v1/systemone", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "X-Upstage-Api-Key": process.env.UPSTAGE_API_KEY,
+  },
+  body: JSON.stringify({
+    model: "solar-mini4-jev",
+    state: "Error rate on /checkout is 18% for the last 10 minutes.",
+    questions: {
+      urgent: {
+        type: "noul",
+        instructions: "Is this a Sev-1?",
+      },
+    },
+  }),
+});
+const data = await res.json();
+```
+
+## Compatibility notes
+
+- Drop-in for Jev System One clients that POST `{model, state, questions}` and read `{model, answers, usage, latency_s}`.
+- Backend model is always Solar Mini4 regardless of requested alias.
+- CORS is open (`*`) for browser clients.
+- No server-side `UPSTAGE_API_KEY` is required in production BYOK mode.
+
+## Benchmark (context for agents)
+
+test400 · Grok 4.6 Judge · `reasoning_effort=none`:
+
+| model | field_acc | miss | avg latency |
+| Solar Mini4 | 98.4% | 7 | 1.21s |
+| Jev 1.13.0 | 94.2% | 26 | 0.38s |
+
+## Links
+
+- GitHub: https://github.com/hunkim/solar-mini4-jev
+- GitHub Pages: https://hunkim.github.io/solar-mini4-jev/
+- API: https://solar-mini4-jev.vercel.app/v1/systemone
+- Health: https://solar-mini4-jev.vercel.app/health
+- OpenAPI: https://solar-mini4-jev.vercel.app/openapi.json
+- Upstage keys: https://console.upstage.ai/api-keys
+- Infographic: https://hunkim.github.io/solar-mini4-jev/infographic.html

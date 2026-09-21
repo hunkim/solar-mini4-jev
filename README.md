@@ -44,6 +44,13 @@ Field accuracy by language:
 **Takeaway:** Solar Mini4 wins on judged quality (`none`). Jev wins on speed (~3.2×). p50 latency 1.17s; ~22% of Solar calls are sub-1s.
 
 
+
+## For LLMs
+
+Machine-readable API reference: [`llms.txt`](https://hunkim.github.io/solar-mini4-jev/llms.txt)
+
+Docs: https://hunkim.github.io/solar-mini4-jev/
+
 ## Deploy (Vercel) · BYOK System One
 
 The live API is **Bring Your Own Key**. The server never stores your Upstage key.

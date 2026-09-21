@@ -5,24 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>solar-mini4-jev · System One API (BYOK)</title>
 <meta name="description" content="Jev-compatible System One API powered by Solar Mini4. Bring your own Upstage API key."/>
+<link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt"/>
 <style>
   :root {
-    --bg: #0b0f14;
-    --card: #121821;
-    --line: #243041;
-    --text: #e8eef7;
-    --muted: #9aacbf;
-    --accent: #6ee7b7;
-    --solar: #38bdf8;
-    --jev: #5eead4;
+    --bg: #0b0f14; --card: #121821; --line: #243041; --text: #e8eef7;
+    --muted: #9aacbf; --accent: #6ee7b7; --solar: #38bdf8; --jev: #5eead4;
     --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: var(--sans); line-height: 1.5;
-  }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.5; }
   a { color: var(--solar); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .wrap { max-width: 880px; margin: 0 auto; padding: 40px 20px 72px; }
@@ -46,9 +38,8 @@
     border-radius: 14px; padding: 18px 18px 16px; margin: 16px 0;
   }
   h2 { font-size: 1.05rem; margin: 0 0 12px; }
-  .metrics {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
-  }
+  h3 { font-size: 0.95rem; margin: 14px 0 8px; color: var(--muted); font-weight: 600; }
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
   @media (max-width: 640px) { .metrics { grid-template-columns: 1fr; } }
   .metric {
     background: #0b1119; border: 1px solid var(--line);
@@ -65,13 +56,13 @@
   pre, code { font-family: var(--mono); }
   pre {
     background: #0b1119; border: 1px solid var(--line); border-radius: 10px;
-    padding: 12px 14px; overflow-x: auto; font-size: 12.5px; line-height: 1.45;
-    margin: 0;
+    padding: 12px 14px; overflow-x: auto; font-size: 12.5px; line-height: 1.45; margin: 0;
   }
   .note { color: var(--muted); font-size: 13px; margin-top: 10px; }
-  ol.steps { margin: 0; padding-left: 18px; color: var(--text); }
+  ol.steps { margin: 0; padding-left: 18px; }
   ol.steps li { margin: 6px 0; }
   footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+  .toc a { margin-right: 12px; }
 </style>
 </head>
 <body>
@@ -85,10 +76,23 @@
       </p>
       <div class="links">
         <a class="btn primary" href="https://github.com/hunkim/solar-mini4-jev" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">Upstage Console · API Key</a>
-        <a class="btn" href="/infographic.html">Bench details</a>
-        <a class="btn" href="/health">/health</a>
+        <a class="btn" href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">Upstage API Key</a>
+        <a class="btn" href="llms.txt">llms.txt</a>
+        <a class="btn" href="https://solar-mini4-jev.vercel.app/openapi.json" target="_blank" rel="noopener">OpenAPI</a>
+        <a class="btn" href="infographic.html">Bench details</a>
+        <a class="btn" href="https://solar-mini4-jev.vercel.app/health" target="_blank" rel="noopener">/health</a>
       </div>
+      <p class="note toc" style="margin-top:14px">
+        Jump:
+        <a href="#key">API key</a>
+        <a href="#noul">noul</a>
+        <a href="#multi">multi</a>
+        <a href="#choice-score">choice + score</a>
+        <a href="#python">Python</a>
+        <a href="#js">JavaScript</a>
+        <a href="#endpoints">endpoints</a>
+        <a href="llms.txt">llms.txt</a>
+      </p>
     </header>
 
     <section>
@@ -127,21 +131,22 @@
           </tbody>
         </table>
       </div>
-      <p class="note">Solar leads on accuracy; Jev is faster. More: <a href="/infographic.html">infographic</a> · <a href="https://github.com/hunkim/solar-mini4-jev">README</a></p>
+      <p class="note">Solar leads on accuracy; Jev is faster. More: <a href="infographic.html">infographic</a> · <a href="https://github.com/hunkim/solar-mini4-jev">README</a></p>
     </section>
 
-    <section>
+    <section id="key">
       <h2>1. Get an Upstage API key</h2>
       <ol class="steps">
         <li>Sign in to the <a href="https://console.upstage.ai/" target="_blank" rel="noopener">Upstage Console</a></li>
         <li>Create a key under <a href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">API Keys</a></li>
         <li>Pass it on each request (BYOK — not stored on this server)</li>
       </ol>
-      <p class="note">Use either header: <code>X-Upstage-Api-Key</code> or <code>Authorization: Bearer …</code></p>
+      <p class="note">Headers (any one): <code>X-Upstage-Api-Key</code> · <code>X-Api-Key</code> · <code>Authorization: Bearer …</code></p>
+      <p class="note">API base: <code>https://solar-mini4-jev.vercel.app</code> · Machine-readable spec: <a href="llms.txt"><code>llms.txt</code></a></p>
     </section>
 
-    <section>
-      <h2>2. System One API example</h2>
+    <section id="noul">
+      <h2>2. curl — noul (urgency)</h2>
       <pre>curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
   -H "Content-Type: application/json" \
   -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
@@ -155,17 +160,17 @@
       }
     }
   }'</pre>
-      <p class="note">Response fields: <code>model</code>, <code>answers</code>, <code>usage</code>, <code>latency_s</code> (same shape as Jev System One)</p>
+      <p class="note">Example answer: <code>{"urgent":{"type":"noul","noul":0.75}}</code> · Response also includes <code>model</code>, <code>usage</code>, <code>latency_s</code></p>
     </section>
 
-    <section>
-      <h2>3. Bearer header example</h2>
+    <section id="multi">
+      <h2>3. curl — multi-question (Bearer)</h2>
       <pre>curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $UPSTAGE_API_KEY" \
   -d '{
     "model": "solar-mini4-jev",
-    "state": "The customer asked for a refund three times.",
+    "state": "The customer asked for a refund three times after a failed charge.",
     "questions": {
       "refund": {
         "type": "noul",
@@ -174,27 +179,107 @@
       "urgency": {
         "type": "score",
         "instructions": "Urgency from 0 to 1"
+      },
+      "owner": {
+        "type": "choice",
+        "instructions": "Which team should own this?",
+        "options": ["billing", "sales", "support", "eng"]
       }
     }
   }'</pre>
     </section>
 
-    <section>
+    <section id="choice-score">
+      <h2>4. curl — choice + score only</h2>
+      <pre>curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
+  -H "Content-Type: application/json" \
+  -H "X-Upstage-Api-Key: $UPSTAGE_API_KEY" \
+  -d '{
+    "model": "solar-mini4-jev",
+    "state": "Checkout p99 latency jumped from 200ms to 2.4s for 8 minutes.",
+    "questions": {
+      "severity": {
+        "type": "choice",
+        "instructions": "Pick severity",
+        "options": ["sev0", "sev1", "sev2", "sev3"]
+      },
+      "impact": {
+        "type": "score",
+        "instructions": "User impact 0..1",
+        "levels": 5
+      }
+    }
+  }'</pre>
+    </section>
+
+    <section id="python">
+      <h2>5. Python</h2>
+      <pre>import os, requests
+
+r = requests.post(
+    "https://solar-mini4-jev.vercel.app/v1/systemone",
+    headers={
+        "Content-Type": "application/json",
+        "X-Upstage-Api-Key": os.environ["UPSTAGE_API_KEY"],
+    },
+    json={
+        "model": "solar-mini4-jev",
+        "state": "Error rate on /checkout is 18% for the last 10 minutes.",
+        "questions": {
+            "page": {
+                "type": "noul",
+                "instructions": "Page on-call now?",
+            }
+        },
+    },
+    timeout=60,
+)
+r.raise_for_status()
+print(r.json())</pre>
+    </section>
+
+    <section id="js">
+      <h2>6. JavaScript (fetch)</h2>
+      <pre>const res = await fetch("https://solar-mini4-jev.vercel.app/v1/systemone", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "X-Upstage-Api-Key": process.env.UPSTAGE_API_KEY,
+  },
+  body: JSON.stringify({
+    model: "solar-mini4-jev",
+    state: "Error rate on /checkout is 18% for the last 10 minutes.",
+    questions: {
+      urgent: { type: "noul", instructions: "Is this a Sev-1?" },
+    },
+  }),
+});
+console.log(await res.json());</pre>
+    </section>
+
+    <section id="endpoints">
       <h2>Endpoints</h2>
       <table>
         <thead><tr><th>Method</th><th>Path</th><th>Description</th></tr></thead>
         <tbody>
-          <tr><td>GET</td><td><code>/</code></td><td>This guide</td></tr>
-          <tr><td>GET</td><td><code>/health</code></td><td>Health check</td></tr>
+          <tr><td>GET</td><td><code>/</code></td><td>This guide (Pages) / service JSON (API host)</td></tr>
+          <tr><td>GET</td><td><code>/health</code></td><td>Health check (API host)</td></tr>
           <tr><td>POST</td><td><code>/v1/systemone</code></td><td>System One (BYOK)</td></tr>
           <tr><td>GET</td><td><code>/openapi.json</code></td><td>OpenAPI schema</td></tr>
+          <tr><td>GET</td><td><code>/llms.txt</code></td><td>Full API reference for LLMs</td></tr>
         </tbody>
       </table>
+      <p class="note">
+        Production API: <a href="https://solar-mini4-jev.vercel.app">solar-mini4-jev.vercel.app</a>
+        · LLM brief: <a href="llms.txt">llms.txt</a>
+        · OpenAPI: <a href="https://solar-mini4-jev.vercel.app/openapi.json">openapi.json</a>
+      </p>
     </section>
 
     <footer>
       Source: <a href="https://github.com/hunkim/solar-mini4-jev">github.com/hunkim/solar-mini4-jev</a>
       · Key: <a href="https://console.upstage.ai/api-keys">console.upstage.ai/api-keys</a>
+      · For LLMs: <a href="llms.txt">llms.txt</a>
     </footer>
   </div>
 </body>
