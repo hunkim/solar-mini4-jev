@@ -795,7 +795,52 @@ def _heuristic_overrides(state_s: str, questions: dict[str, Any], answers: dict[
                 cur = float((answers.get(name) or {}).get("noul") or 0)
                 answers[name] = {"type": "noul", "noul": max(cur, 0.72) if cur < 0.5 else min(max(cur, 0.65), 0.85)}
 
-                # --- insurance claims routing ---
+        # --- time-window + safety-action boost (patch3) ---
+        # Principle: closing deadline in STATE + protective/emergency ask in INSTR,
+        # with hazard signal and not a mild/complaint scene → force HIGH noul.
+        if qtype == "noul":
+            time_pressure = bool(
+                _re.search(
+                    r"(?:\bin|\bwithin)\s+\d+\s*(?:min(?:ute)?s?|hours?|hrs?|h)\b|"
+                    r"\beta\s*\d+|window closes|closes at|"
+                    r"before (?:opening|shift|start)|forecast\s+\d+\s*h|"
+                    r"scheduled.{0,40}(?:in|at)\s+\d+",
+                    low,
+                )
+            )
+            safety_action = any(
+                w in instr
+                for w in (
+                    "evacuat", "close ", "close the", "halt ", "freeze ", "recall ",
+                    "withdraw", "quarantine", "emergency", "cpr", "lockdown",
+                    "stop the", "authorize emergency", "before opening",
+                    "immediately", "rescue", "cut power", "hard-cut", "reject ",
+                    "block entry", "대피", "즉시", "긴급",
+                )
+            )
+            mild_scene = any(
+                w in low
+                for w in (
+                    "complains", "within permit", "no medical", "printer", "nominal",
+                    "no threat", "faq", "typo", "readme", "badge", "volume is loud",
+                    "spl within", "gift shop", "wait time", "liaison channel",
+                )
+            )
+            hazard = bool(
+                _re.search(
+                    r"\b(?:outbreak|fracture|threat|bomb|crush|leak|smok(?:e|ing)|fire|"
+                    r"gas(?:oline)?|unconscious|displacement|ransomware|swarm|residue|"
+                    r"oxygen|ammonia|rupture|failed|offline|stuck|weak layer)\b|"
+                    r"\b\d+(?:\.\d+)?\s*(?:ppm|mg/l|mm|cm|degrees?|%)\b|"
+                    r"\blists?\s+\d+",
+                    low,
+                )
+            )
+            if time_pressure and safety_action and hazard and not mild_scene:
+                cur = float((answers.get(name) or {}).get("noul") or 0)
+                answers[name] = {"type": "noul", "noul": max(cur, 0.88)}
+
+        # --- insurance claims routing ---
         if qtype == "choice" and set(keys) >= {"fnol", "siu", "cat", "policy"}:
             pick = None
             if any(w in low for w in ("hurricane", "wildfire", "storm surge", "태풍", "산불", "cat ", "landfall", "900 new", "폭증")):
