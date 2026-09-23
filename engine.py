@@ -9,6 +9,8 @@ import urllib.error
 import urllib.request
 from typing import Any
 
+from compat import description_text, instructions_text
+
 UPSTAGE_URL = "https://api.upstage.ai/v1/chat/completions"
 DEFAULT_MODEL = (os.environ.get("SOLAR_MINI_MODEL") or os.environ.get("UPSTAGE_MODEL") or "solar-mini4").strip()
 
@@ -235,7 +237,7 @@ def _prompt(state: Any, questions: dict[str, Any]) -> str:
     ]
     for name, q in questions.items():
         qtype = q.get("type")
-        instr = (q.get("instructions") or "").strip()
+        instr = instructions_text(q.get("instructions"))
         # reinforce abstain wording if present
         low = instr.lower()
         if qtype == "noul" and "abstain" in name.lower():
@@ -248,17 +250,19 @@ def _prompt(state: Any, questions: dict[str, Any]) -> str:
         parts.append(f"- {name} ({qtype}): {instr}")
         if qtype == "choice":
             crit = q.get("criteria") or {}
-            for k, v in crit.items():
-                parts.append(f"    option `{k}`: {v}")
+            if isinstance(crit, dict):
+                for k, v in crit.items():
+                    parts.append(f"    option `{k}`: {description_text(v)}")
         elif qtype == "score":
             crit = q.get("criteria") or []
-            for i, desc in enumerate(crit):
-                parts.append(f"    level {i}: {desc}")
+            if isinstance(crit, list):
+                for i, desc in enumerate(crit):
+                    parts.append(f"    level {i}: {description_text(desc)}")
         elif qtype == "noul":
             crit = q.get("criteria") or {}
             if isinstance(crit, dict):
                 for k, v in crit.items():
-                    parts.append(f"    {k}: {v}")
+                    parts.append(f"    {k}: {description_text(v)}")
     return "\n".join(parts)
 
 
@@ -303,7 +307,12 @@ def _normalize_answers(questions: dict[str, Any], parsed: dict[str, Any]) -> dic
             if ans.get("score") is not None:
                 score = float(ans["score"])
             else:
-                score = sum(int(k) * v for k, v in probs.items())
+                score = 0.0
+                for k, v in probs.items():
+                    try:
+                        score += int(k) * v
+                    except (TypeError, ValueError):
+                        continue
             conf = float(ans.get("confidence") if ans.get("confidence") is not None else max(probs.values()))
             legend = {str(i): (criteria[i] if i < len(criteria) else str(i)) for i in range(n)}
             out[name] = {
@@ -324,7 +333,7 @@ def _lang_override(state_s: str, questions: dict[str, Any], answers: dict[str, A
         keys = list((q.get("criteria") or {}).keys())
         if not ({"ko", "en", "ja", "zh"} & set(keys)):
             continue
-        instr = (q.get("instructions") or "").lower()
+        instr = instructions_text(q.get("instructions")).lower()
         if "language" not in instr and "lang" not in name.lower():
             continue
         has_hangul = bool(re.search(r"[\uac00-\ud7a3]", state_s))
@@ -365,7 +374,7 @@ def _heuristic_overrides(state_s: str, questions: dict[str, Any], answers: dict[
         qtype = q.get("type")
         criteria = q.get("criteria")
         keys = list(criteria.keys()) if isinstance(criteria, dict) else []
-        instr = (q.get("instructions") or "").lower()
+        instr = instructions_text(q.get("instructions")).lower()
 
         # --- support routing ---
         if qtype == "choice" and set(keys) >= {"billing", "sales"}:

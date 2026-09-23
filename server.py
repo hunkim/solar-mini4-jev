@@ -2,11 +2,11 @@
 """Jev-compatible System One endpoint backed by solar-mini4 (BYOK)."""
 from __future__ import annotations
 
-from typing import Any
+from typing import Annotated, Any, Literal, Union
 
-from fastapi import FastAPI, Header, HTTPException, Request
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from engine import system_one
 
@@ -31,11 +31,66 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Flexible JSON values matching TypeSafe OpenAPI anyOf for instructions/descriptions.
+FlexibleText = Annotated[
+    Union[str, dict[str, Any], list[Any], None],
+    Field(description="string | object | array | null (Jev-compatible)"),
+]
+
+
+class NoulCriteria(BaseModel):
+    """Criteria defining what counts as yes/no. true/false may be nested."""
+
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    true: FlexibleText = None
+    false: FlexibleText = None
+
+
+class NoulQuestion(BaseModel):
+    model_config = ConfigDict(extra="allow")
+
+    type: Literal["noul"]
+    instructions: FlexibleText = None
+    criteria: NoulCriteria | None = None
+
+
+# Score level descriptions: string | object | array (null not in TypeSafe items anyOf).
+ScoreLevel = Annotated[
+    Union[str, dict[str, Any], list[Any]],
+    Field(description="string | object | array (Jev score criteria item)"),
+]
+
+
+class ChoiceQuestion(BaseModel):
+    model_config = ConfigDict(extra="allow")
+
+    type: Literal["choice"]
+    instructions: FlexibleText = None
+    # Values mirror TypeSafe: string | object | array | null
+    criteria: dict[str, FlexibleText]
+
+
+class ScoreQuestion(BaseModel):
+    model_config = ConfigDict(extra="allow")
+
+    type: Literal["score"]
+    instructions: FlexibleText = None
+    criteria: list[ScoreLevel] = Field(min_length=1)
+
+
+Question = Annotated[
+    Union[NoulQuestion, ChoiceQuestion, ScoreQuestion],
+    Field(discriminator="type"),
+]
+
 
 class SystemOneRequest(BaseModel):
+    """Request shape aligned with TypeSafe SystemOneRequest."""
+
     model: str = Field(default="solar-mini4-jev")
     state: Any
-    questions: dict[str, Any]
+    questions: dict[str, Question] = Field(min_length=1)
 
 
 def _extract_byok(
@@ -65,6 +120,14 @@ def _extract_byok(
             ),
         },
     )
+
+
+def _questions_as_dicts(body: SystemOneRequest) -> dict[str, Any]:
+    """Pass validated questions to the engine as plain dicts."""
+    out: dict[str, Any] = {}
+    for name, q in body.questions.items():
+        out[name] = q.model_dump(by_alias=True, exclude_none=False)
+    return out
 
 
 @app.get("/")
@@ -97,7 +160,12 @@ def systemone(
         model = "solar-mini4"
         if body.model and body.model not in ("solar-mini4-jev", "solar-mini4", "jev-latest"):
             model = "solar-mini4"
-        result = system_one(body.state, body.questions, model=model, api_key=api_key)
+        result = system_one(
+            body.state,
+            _questions_as_dicts(body),
+            model=model,
+            api_key=api_key,
+        )
     except RuntimeError as e:
         # missing key / bad config
         raise HTTPException(status_code=401, detail=str(e)) from e

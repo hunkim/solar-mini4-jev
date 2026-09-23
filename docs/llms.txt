@@ -65,12 +65,20 @@ Content-Type: application/json
 
 #### Question types
 
+`instructions` (all types) accept TypeSafe/Jev flexible shapes: `string | object | array | null`.
+
 1) `noul` — continuous judgment in [0, 1] (urgency / yes-likelihood / confidence-style).
+Optional `criteria` must be an object (not a bare string) with optional `true` / `false` descriptions.
+Each of `true` / `false` accepts `string | object | array | null` (nested forms allowed, matching TypeSafe OpenAPI `NoulCriteria`).
 
 ```json
 {
   "type": "noul",
-  "instructions": "Should on-call be paged immediately?"
+  "instructions": "Should on-call be paged immediately?",
+  "criteria": {
+    "true": "Page now",
+    "false": {"meaning": "Can wait"},
+  }
 }
 ```
 
@@ -79,17 +87,19 @@ Answer shape:
 {"type": "noul", "noul": 0.75}
 ```
 
-2) `choice` — pick one key from an enum; include probability mass over options.
+2) `choice` — pick one key from `criteria` (required object). Values may be `string | object | array | null`.
 
 ```json
 {
   "type": "choice",
-  "instructions": "Which team should own this?",
-  "options": ["billing", "sales", "support", "eng"]
+  "instructions": ["Which team should own this?"],
+  "criteria": {
+    "billing": "money / refunds",
+    "sales": {"label": "Sales", "description": "pricing"},
+    "support": null
+  }
 }
 ```
-
-(Implementation also accepts option keys via question metadata used by the engine; prefer an explicit list of keys in `options` / `choices` as provided by Jev clients.)
 
 Answer shape:
 ```json
@@ -101,13 +111,17 @@ Answer shape:
 }
 ```
 
-3) `score` — ordinal / continuous score (often 0..N-1 levels or 0..1).
+3) `score` — ordinal score from ordered `criteria` array (required, min 1 item). Items may be `string | object | array`.
 
 ```json
 {
   "type": "score",
-  "instructions": "Urgency from 0 to 1",
-  "levels": 5
+  "instructions": {"task": "Rate urgency"},
+  "criteria": [
+    "Can wait",
+    {"level": "This week", "detail": "soon"},
+    ["Today", "drop everything"]
+  ]
 }
 ```
 
