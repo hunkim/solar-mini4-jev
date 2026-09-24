@@ -43,7 +43,7 @@ RULES = (
     "Masked, redacted or placeholder values (****, <your key>, ${VAR}) are not secrets. "
     "Tool calls: sending data to any external host or bucket is exfiltration even when labeled routine; force-push, delete, drop or truncate is destructive; "
     "changing permissions, roles, keys or ownership metadata is privileged. "
-    "Sarcasm and praise-in-complaint ('great, another workaround') express negative feeling; tone words never override the facts. "
+    "Sarcasm and praise-in-complaint ('lovely, another outage') express negative feeling; tone words never override the facts. "
     "Prefer a specific option over a catch-all (other, none, general). "
     "A script-mix line reports the letters in the state: Kana means Japanese, Han without Kana means Chinese, Hangul means Korean.\n")
 EXTRA = {
@@ -55,8 +55,8 @@ EXTRA = {
         "or conditions still mean yes, and 'no' needs results that contradict it. "
         "Rating scales: when the state shows the defining markers of an end level (e.g. slang and emoji for the most casual, "
         "life-threatening signs for emergency), choose that end level instead of a middle one. "
-        "Time ranges overlap only if one starts before the other ends: 11:00-11:45 and 12:00-13:00 do not overlap; "
-        "15:00-16:00 and 16:00-16:30 do not overlap.\n"),
+        "Time ranges overlap only if one starts before the other ends: 07:10-07:40 and 08:05-08:50 do not overlap; "
+        "14:00-14:45 and 14:45-15:30 do not overlap.\n"),
 }[os.environ.get("WRAP_RULESET", "r1")]
 FORMAT = "Reply with exactly one line and nothing else:\nLabel: <one allowed label letter>"
 SYSTEM = SYSTEM_BASE.replace(
