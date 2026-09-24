@@ -33,6 +33,19 @@ curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
 
 Bring your own [Upstage API key](https://console.upstage.ai/api-keys). The server does not store it.
 
+## Benchmarks
+
+| benchmark | Jev 1.13.0 | solar-decide (TBA) | solar-mini4 | solar-pro4 |
+|---|---:|---:|---:|---:|
+| jev-benchmark: tool-call risk (60) | 91.7 | 88.3 | 90.0 | **93.3** |
+| classifier-benchmark v1 (78) | **97.4** | 91.0 | 89.7 | **97.4** |
+| Jevals: HelpSteer2 (300) | 38.3 | 34.7 | 34.0 | **41.0** |
+| test400 (448) | 94.6 | 93.5 | 90.8 | **95.1** |
+| **total, item-weighted (886)** | 75.6 | 73.0 | 71.4 | **76.9** |
+| p50 latency (measured from Korea) | 633ms | **324ms** | 424ms | 749ms |
+
+\* Disclaimer: results use a subset of public Jev benchmarks.
+
 ## For LLMs
 
 Machine-readable API reference: [`llms.txt`](https://hunkim.github.io/solar-mini4-jev/llms.txt)
