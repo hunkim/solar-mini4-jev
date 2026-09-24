@@ -1,6 +1,6 @@
 # solar-mini4-jev
 
-> Jev-compatible System One API powered by Solar Mini4 (Upstage). Bring Your Own Key (BYOK) — pass an Upstage API key on every request; the server does not store keys.
+> Jev-compatible System One API powered by Solar Pro4 (Upstage). Bring Your Own Key (BYOK) — pass an Upstage API key on every request; the server does not store keys.
 
 Base URL (production): https://solar-mini4-jev.vercel.app
 Docs site: https://hunkim.github.io/solar-mini4-jev/
@@ -59,7 +59,7 @@ Content-Type: application/json
 }
 ```
 
-- `model` (string, optional, default `solar-mini4-jev`): aliases `solar-mini4-jev`, `solar-mini4`, `jev-latest` all route to Solar Mini4.
+- `model` (string, optional, default `solar-mini4-jev`): aliases `solar-mini4-jev`, `solar-mini4`, `jev-latest` all route to the configured Solar model (default `solar-pro4`).
 - `state` (any, required): situation / transcript / document context the model conditions on.
 - `questions` (object, required): map of question id → question spec.
 
@@ -311,7 +311,7 @@ const data = await res.json();
 ## Compatibility notes
 
 - Drop-in for Jev System One clients that POST `{model, state, questions}` and read `{model, answers, usage, latency_s}`.
-- Backend model is always Solar Mini4 regardless of requested alias.
+- Backend model is the configured Solar model (default `solar-pro4`) regardless of requested alias.
 - CORS is open (`*`) for browser clients.
 - No server-side `UPSTAGE_API_KEY` is required in production BYOK mode.
 

@@ -1,6 +1,6 @@
 # solar-mini4-jev
 
-A drop-in wrapper that exposes Upstage **Solar Mini4** through the TypeSafe Jev System One API shape.
+A drop-in wrapper that exposes Upstage **Solar Pro4** (default; `solar-mini4` optional) through the TypeSafe Jev System One API shape.
 
 ```
 POST /v1/systemone
@@ -96,16 +96,16 @@ print(out["answers"])
 ```
 
 Environment variables:
-- `UPSTAGE_API_KEY` — Solar Mini4 (required). `solar-mini4` currently resolves to `solar-mini4-260922`.
+- `UPSTAGE_API_KEY` — Upstage API key (required). `solar-pro4` currently resolves to `solar-pro4-260806`.
 - `TYPESAFE_API_KEY` — only for calling the real Jev during benchmarks (`jev_ref.py`, uses `jev-latest`, which resolved to `jev-1.13.0` for this run)
-- `SOLAR_MINI_MODEL` — optional model override
-- `WRAP_EVIDENCE_WORDS` — default `0` (label only). e.g. `15` adds a one-line evidence before the label: more accurate, ~300ms slower. Reasoning is always `none`.
+- `SOLAR_MINI_MODEL` — base model, default `solar-pro4` (`solar-mini4` is faster but less accurate)
+- Reasoning is always `none`; the model answers with a single option letter.
 
 ## Layout
 
 | path | description |
 |------|------|
-| `engine.py` | Jev System One questions → Solar Mini4 chat (lettered-option prompt) |
+| `engine.py` | Jev System One questions → Solar chat, default `solar-pro4` (lettered-option prompt) |
 | `server.py` | FastAPI `POST /v1/systemone` |
 | `jev_ref.py` | Real Jev client (for comparison) |
 | `docs/index.html` | API usage page (GitHub Pages) |

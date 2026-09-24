@@ -1,11 +1,11 @@
-"""Map Jev-style questions onto solar-mini4 chat completions (one call per question, reasoning_effort=none).
+"""Map Jev-style questions onto Solar chat completions (one call per question, reasoning_effort=none).
 
-Prompt = the solar-jev (whale) systemone-mini4-v2 prompt with lettered options and a five-level noul
-(0/25/50/75/100% likely yes), plus rules for solar-mini4 tendencies found on public Jev benchmarks:
-numeric probabilities read as confidence, "no" drift on policy claims, masked secrets, tool-call
-exfiltration vs privilege, sarcasm, catch-all options, CJK script confusion (script-mix hint).
-The model replies "Label: <letter>" only (~4 output tokens). WRAP_EVIDENCE_WORDS>0 adds an Evidence
-line first (more accurate, ~300ms slower).
+Default base model: solar-pro4 (override with SOLAR_MINI_MODEL, e.g. solar-mini4 for lower latency).
+Prompt = the solar-jev (whale) systemone prompt with lettered options, yes/no options for noul questions,
+plus rules for tendencies found on public Jev benchmarks: numeric probabilities read as confidence,
+"no" drift on policy claims, safeguards (escaping, masking), tool-call exfiltration vs privilege, sarcasm,
+catch-all options, rating-scale end levels, time-range overlap, CJK script confusion (script-mix hint).
+The model replies "Label: <letter>" only.
 """
 from __future__ import annotations
 
@@ -19,9 +19,10 @@ from typing import Any
 from compat import description_text, instructions_text
 
 UPSTAGE_URL = "https://api.upstage.ai/v1/chat/completions"
-DEFAULT_MODEL = (os.environ.get("SOLAR_MINI_MODEL") or "solar-mini4").strip()
+DEFAULT_MODEL = (os.environ.get("SOLAR_MINI_MODEL") or "solar-pro4").strip()
 LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 NOUL_LEVELS = [0.0, 0.25, 0.5, 0.75, 1.0]
+NOUL_STYLE = os.environ.get("WRAP_NOUL_STYLE", "yn")  # five | yn | yn_rev
 
 # verbatim from llm-serving go/pkg/jev/prompt/prompt.go SystemText (systemone-mini4-v2)
 SYSTEM_BASE = ("Evaluate the supplied state against the question and its criteria. "
@@ -36,7 +37,6 @@ SYSTEM_BASE = ("Evaluate the supplied state against the question and its criteri
     "For severity/urgency, judge actual impact and immediacy: cosmetic or distant work is low, broad active disruption is high, limited disruption is intermediate. "
     "Option descriptions define semantic categories, not literal word-match conditions; select the best matching category. Do not invent missing facts.\n"
     "Answer in exactly two lines:\nEvidence: <the decisive fact or calculation, at most 15 words>\nLabel: <one allowed label letter>")
-EVW = int(os.environ.get("WRAP_EVIDENCE_WORDS", "0"))  # 0 = label only
 RULES = (
     "Eligibility/policy claims: if the facts meet the stated conditions and no stated exception applies, the claim holds (100% likely yes); "
     "do not demand proof the state does not mention. "
@@ -46,11 +46,23 @@ RULES = (
     "Sarcasm and praise-in-complaint ('great, another workaround') express negative feeling; tone words never override the facts. "
     "Prefer a specific option over a catch-all (other, none, general). "
     "A script-mix line reports the letters in the state: Kana means Japanese, Han without Kana means Chinese, Hangul means Korean.\n")
-FORMAT = ("Reply with exactly one line and nothing else:\nLabel: <one allowed label letter>" if EVW == 0 else
-          f"Answer in exactly two lines:\nEvidence: <the decisive fact or calculation, at most {EVW} words>\nLabel: <one allowed label letter>")
+EXTRA = {
+    "": "",
+    "r1": (
+        "Safeguards count: escaping, parameterization, input validation, masking, approvals or allow-lists stated in the state "
+        "mitigate the risk; a mitigated case is not a violation or vulnerability. "
+        "Research abstracts: answer the research question by what the study's results conclude; supportive results with caveats "
+        "or conditions still mean yes, and 'no' needs results that contradict it. "
+        "Rating scales: when the state shows the defining markers of an end level (e.g. slang and emoji for the most casual, "
+        "life-threatening signs for emergency), choose that end level instead of a middle one. "
+        "Time ranges overlap only if one starts before the other ends: 11:00-11:45 and 12:00-13:00 do not overlap; "
+        "15:00-16:00 and 16:00-16:30 do not overlap.\n"),
+}[os.environ.get("WRAP_RULESET", "r1")]
+FORMAT = "Reply with exactly one line and nothing else:\nLabel: <one allowed label letter>"
 SYSTEM = SYSTEM_BASE.replace(
     "Answer in exactly two lines:\nEvidence: <the decisive fact or calculation, at most 15 words>\nLabel: <one allowed label letter>",
-    RULES + FORMAT)
+    RULES + EXTRA + FORMAT)
+REASONING = os.environ.get("WRAP_REASONING", "none")  # "omit" for non-reasoning models; lowest level otherwise
 KINDS = {"noul": "yes/no", "choice": "choice", "score": "rating"}
 
 
@@ -82,9 +94,15 @@ def _compile(state: Any, q: dict[str, Any]):
             cands.append(i)
         rows.append("(Options are listed in rubric order.)")
     else:
-        for i, v in enumerate(NOUL_LEVELS):
-            rows.append(f"{LETTERS[i]} = {int(v * 100)}% likely yes")
-            cands.append(v)
+        if NOUL_STYLE == "five":
+            for i, v in enumerate(NOUL_LEVELS):
+                rows.append(f"{LETTERS[i]} = {int(v * 100)}% likely yes")
+                cands.append(v)
+        else:
+            pairs = [("Yes", 1.0), ("No", 0.0)] if NOUL_STYLE == "yn" else [("No", 0.0), ("Yes", 1.0)]
+            for i, (lab, v) in enumerate(pairs):
+                rows.append(f"{LETTERS[i]} = {lab}")
+                cands.append(v)
         if isinstance(crit, dict):
             if crit.get("true") is not None:
                 instr += "\nYes means: " + description_text(crit["true"])
@@ -109,7 +127,7 @@ def _script_line(text):
 
 
 def _ask(user: str, model: str, api_key):
-    body = {"model": model, "temperature": 0.0, "reasoning_effort": "none", "max_tokens": 6 + int(EVW * 2.2) + (8 if EVW else 0),
+    body = {"model": model, "temperature": 0.0, **({} if REASONING == "omit" else {"reasoning_effort": REASONING}), "max_tokens": 6,
             "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]}
     req = urllib.request.Request(UPSTAGE_URL, data=json.dumps(body).encode(), method="POST",
                                  headers={"Authorization": f"Bearer {_key(api_key)}", "Content-Type": "application/json"})
