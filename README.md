@@ -33,25 +33,6 @@ curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
 
 Bring your own [Upstage API key](https://console.upstage.ai/api-keys). The server does not store it.
 
-## Public Jev benchmarks (engine v9, 2026-09-24)
-
-Engine v9 = solar-jev prompt with lettered options + rules for solar-mini4 tendencies; one call per question,
-`reasoning_effort=none`, ~4 output tokens. Held-out split (not used for tuning), measured from Korea:
-
-| benchmark | n | Jev 1.13.0 | solar-jev (server) | previous wrapper | **v9** |
-|---|---:|---:|---:|---:|---:|
-| jev-benchmark tool risk | 38 | 94.7 | 94.7 | 89.5 | **92.1** |
-| classifier-benchmark v1 | 54 | 98.1 | 87.0 | 81.5 | **87.0** |
-| classifier-benchmark v2 | 499 | 96.0 | 86.2 | 71.9 | **84.0** |
-| Jevals PubMedQA | 180 | 92.2 | 82.2 | 76.1 | **82.8** |
-| Jevals HelpSteer2 | 189 | 38.6 | 35.4 | 40.2 | **32.8** |
-| test400 (Grok 4.6 judge) | 260 | 94.6 | 92.7 | 98.5* | **90.8** |
-| macro | | 85.7 | 79.7 | 76.3 | **78.2** |
-| p50 latency (Korea) | | 624ms | 300ms | 1050ms | **406ms** |
-
-\* the previous wrapper's heuristics were fit to test400. Jev still leads on accuracy; most of Jev's latency
-from Korea is network (its API is in us-west-2).
-
 ## For LLMs
 
 Machine-readable API reference: [`llms.txt`](https://hunkim.github.io/solar-mini4-jev/llms.txt)
