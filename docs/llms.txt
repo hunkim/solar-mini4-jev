@@ -329,14 +329,6 @@ const data = await res.json();
 - CORS is open (`*`) for browser clients.
 - No server-side `UPSTAGE_API_KEY` is required in production BYOK mode.
 
-## Benchmark (context for agents)
-
-test400 · Grok 4.6 Judge · `reasoning_effort=none`:
-
-| model | field_acc | miss | avg latency |
-| Solar Mini4 | 98.4% | 7 | 1.21s |
-| Jev 1.13.0 | 94.2% | 26 | 0.38s |
-
 ## Links
 
 - GitHub: https://github.com/hunkim/solar-mini4-jev
@@ -345,4 +337,3 @@ test400 · Grok 4.6 Judge · `reasoning_effort=none`:
 - Health: https://solar-mini4-jev.vercel.app/health
 - OpenAPI: https://solar-mini4-jev.vercel.app/openapi.json
 - Upstage keys: https://console.upstage.ai/api-keys
-- Infographic: https://hunkim.github.io/solar-mini4-jev/infographic.html

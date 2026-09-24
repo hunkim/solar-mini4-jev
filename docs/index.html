@@ -84,7 +84,6 @@
         <a class="btn" href="https://console.upstage.ai/api-keys" target="_blank" rel="noopener">Upstage API Key</a>
         <a class="btn" href="llms.txt">llms.txt</a>
         <a class="btn" href="https://solar-mini4-jev.vercel.app/openapi.json" target="_blank" rel="noopener">OpenAPI</a>
-        <a class="btn" href="infographic.html">Bench details</a>
         <a class="btn" href="https://solar-mini4-jev.vercel.app/health" target="_blank" rel="noopener">/health</a>
       </div>
       <p class="note toc" style="margin-top:14px">
@@ -99,45 +98,6 @@
         <a href="llms.txt">llms.txt</a>
       </p>
     </header>
-
-    <section>
-      <h2>Performance at a glance (test400 · Grok 4.6 Judge)</h2>
-      <div class="metrics">
-        <div class="metric">
-          <div class="k">Field accuracy</div>
-          <div class="v"><span class="solar">98.4%</span> <span style="color:var(--muted);font-size:.9rem">vs</span> <span class="jev">94.2%</span></div>
-          <div class="s">Solar Mini4 · Jev 1.13.0</div>
-        </div>
-        <div class="metric">
-          <div class="k">Miss (abstain / wrong)</div>
-          <div class="v"><span class="solar">7</span> <span style="color:var(--muted);font-size:.9rem">vs</span> <span class="jev">26</span></div>
-          <div class="s">Lower is better</div>
-        </div>
-        <div class="metric">
-          <div class="k">Avg latency</div>
-          <div class="v"><span class="solar">1.21s</span> <span style="color:var(--muted);font-size:.9rem">vs</span> <span class="jev">0.38s</span></div>
-          <div class="s"><code>reasoning_effort=none</code></div>
-        </div>
-      </div>
-      <div style="overflow-x:auto;margin-top:12px">
-        <table>
-          <thead>
-            <tr><th>model</th><th>field_acc</th><th>noul≤0.25</th><th>sign@0.5</th><th>choice</th><th>miss</th><th>avg</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Solar Mini4</strong></td>
-              <td><strong>98.4%</strong></td><td>97.2%</td><td>98.8%</td><td>100%</td><td><strong>7</strong></td><td>1.21s</td>
-            </tr>
-            <tr>
-              <td>Jev 1.13.0</td>
-              <td>94.2%</td><td>95.2%</td><td>92.3%</td><td>100%</td><td>26</td><td><strong>0.38s</strong></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note">Solar leads on accuracy; Jev is faster. More: <a href="infographic.html">infographic</a> · <a href="https://github.com/hunkim/solar-mini4-jev">README</a></p>
-    </section>
 
     <section id="key">
       <h2>1. Get an Upstage API key</h2>

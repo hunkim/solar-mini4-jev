@@ -131,7 +131,6 @@ Environment variables:
 | `bench/gold_jev_test400.json` | Jev response snapshot (peer model) |
 | `bench/results_test400_reasoning_none.jsonl` | Solar Mini4 results (`reasoning_effort=none`) |
 | `docs/index.html` | Interactive scorecard (GitHub Pages) |
-| `bench/infographic_grok46_judge*.png` | Scorecard PNG crops used in this README |
 
 ## License
 
