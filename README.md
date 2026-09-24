@@ -67,6 +67,25 @@ Field accuracy by language:
 
 **Takeaway:** Solar Mini4 wins on judged quality (`none`). Jev wins on speed (~3.2×). p50 latency 1.17s; ~22% of Solar calls are sub-1s.
 
+## Public Jev benchmarks (engine v9, 2026-09-24)
+
+Engine v9 = solar-jev prompt with lettered options + rules for solar-mini4 tendencies; one call per question,
+`reasoning_effort=none`, ~4 output tokens. Held-out split (not used for tuning), measured from Korea:
+
+| benchmark | n | Jev 1.13.0 | solar-jev (server) | previous wrapper | **v9** |
+|---|---:|---:|---:|---:|---:|
+| jev-benchmark tool risk | 38 | 94.7 | 94.7 | 89.5 | **92.1** |
+| classifier-benchmark v1 | 54 | 98.1 | 87.0 | 81.5 | **87.0** |
+| classifier-benchmark v2 | 499 | 96.0 | 86.2 | 71.9 | **84.0** |
+| Jevals PubMedQA | 180 | 92.2 | 82.2 | 76.1 | **82.8** |
+| Jevals HelpSteer2 | 189 | 38.6 | 35.4 | 40.2 | **32.8** |
+| test400 (Grok 4.6 judge) | 260 | 94.6 | 92.7 | 98.5* | **90.8** |
+| macro | | 85.7 | 79.7 | 76.3 | **78.2** |
+| p50 latency (Korea) | | 624ms | 300ms | 1050ms | **406ms** |
+
+\* the previous wrapper's heuristics were fit to test400. Jev still leads on accuracy; most of Jev's latency
+from Korea is network (its API is in us-west-2).
+
 ## For LLMs
 
 Machine-readable API reference: [`llms.txt`](https://hunkim.github.io/solar-mini4-jev/llms.txt)
@@ -133,7 +152,7 @@ Environment variables:
 - `UPSTAGE_API_KEY` — Solar Mini4 (required). `solar-mini4` currently resolves to `solar-mini4-260922`.
 - `TYPESAFE_API_KEY` — only for calling the real Jev during benchmarks (`jev_ref.py`, uses `jev-latest`, which resolved to `jev-1.13.0` for this run)
 - `SOLAR_MINI_MODEL` — optional model override
-- `SOLAR_REASONING_EFFORT` — default `none` (latency). `medium` is ~10×+ slower
+- `WRAP_EVIDENCE_WORDS` — default `0` (label only). e.g. `15` adds a one-line evidence before the label: more accurate, ~300ms slower. Reasoning is always `none`.
 
 ## Layout
 
