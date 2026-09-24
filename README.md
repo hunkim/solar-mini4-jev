@@ -33,40 +33,6 @@ curl -s https://solar-mini4-jev.vercel.app/v1/systemone \
 
 Bring your own [Upstage API key](https://console.upstage.ai/api-keys). The server does not store it.
 
-## Official gold: Grok 4.6 Judge
-
-**Jev is not the gold standard.** Jev is a peer model under comparison.
-The official scoring reference is the **Grok 4.6 Judge** rubric labels (`bench/gold_grok46_judge_test400.json`).
-
-## Results at a glance
-
-**Judged by an independent grader (Grok 4.6 Judge), Solar Mini4 is right more often than Jev.**
-Out of 447 scored answer fields, Solar Mini4 missed **7** and Jev missed **26**. On the 31 fields where the two disagree, Solar is right on 25 and Jev on 6.
-
-![Solar Mini4 98.4% vs Jev 94.2% field accuracy, with a 447-field head-to-head grid](bench/infographic_grok46_judge.png)
-
-Solar leads or ties on every accuracy metric, in both Korean and English. Jev keeps the speed edge at 0.38s per call against 1.21s with `reasoning_effort=none`.
-
-![Accuracy by metric and by language, plus latency](bench/infographic_grok46_judge_detail.png)
-
-Interactive scorecard: [view on GitHub Pages](https://hunkim.github.io/solar-mini4-jev/) · [source](docs/index.html) · per-case misses: [COMPARISON_GROK46_JUDGE.md](bench/COMPARISON_GROK46_JUDGE.md)
-
-### test400 @ Grok 4.6 Judge (`solar-mini4` → `solar-mini4-260922`, `reasoning_effort=none`)
-
-| model | field_acc | noul≤0.25 | sign@0.5 | choice | score≤1 | miss | avg latency |
-|-------|----------:|----------:|---------:|-------:|--------:|-----:|------------:|
-| **Solar Mini4** (`reasoning_effort=none`) | **98.4%** | **97.2%** | **98.8%** | **100%** | **100%** | **7** | **1.21s** |
-| Jev 1.13.0 | 94.2% | 95.2% | 92.3% | 100% | 85.0% | 26 | **0.38s** |
-
-Field accuracy by language:
-
-| | KO (n=70 cases) | EN (n=330 cases) |
-|--|----------:|-----------:|
-| **Solar Mini4** | **98.8%** | **98.4%** |
-| Jev | 93.9% | 94.3% |
-
-**Takeaway:** Solar Mini4 wins on judged quality (`none`). Jev wins on speed (~3.2×). p50 latency 1.17s; ~22% of Solar calls are sub-1s.
-
 ## Public Jev benchmarks (engine v9, 2026-09-24)
 
 Engine v9 = solar-jev prompt with lettered options + rules for solar-mini4 tendencies; one call per question,
