@@ -127,7 +127,7 @@ Environment variables:
 | `engine.py` | Solar Mini4 + Jev-compatible heuristics |
 | `server.py` | FastAPI `POST /v1/systemone` |
 | `jev_ref.py` | Real Jev client (for comparison) |
-| `bench/gold_grok46_judge_test400.json` | **Official gold** (Grok 4.6 Judge) |
+| `bench/gold_grok46_judge_test400.json` | Grok 4.6 Judge labels for test400 |
 | `bench/gold_jev_test400.json` | Jev response snapshot (peer model) |
 | `bench/results_test400_reasoning_none.jsonl` | Solar Mini4 results (`reasoning_effort=none`) |
 | `docs/index.html` | Interactive scorecard (GitHub Pages) |
